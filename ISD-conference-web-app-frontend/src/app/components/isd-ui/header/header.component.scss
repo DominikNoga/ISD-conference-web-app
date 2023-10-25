@@ -1,0 +1,31 @@
+@import '../../../styles/isd-variables.scss';
+
+.isd-header {
+    $logo-size: 70px;
+    $padding-value: 4em;
+    display: flex;
+    flex-direction: row;
+    .rectangle {
+        background-color: $primary-bg-color;
+        padding: 0 $padding-value;
+    }
+    .logo-container {
+        background-color: $primary-bg-color;
+        .isd-logo {
+            max-height: $logo-size;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .triangle {
+        $triangle-size: calc($logo-size + 1em);
+        width: 0; 
+        height: 0; 
+        border-left: $triangle-size solid  $primary-bg-color; 
+        border-right: $triangle-size solid transparent; 
+        border-top: $triangle-size solid transparent; 
+    }
+    
+}

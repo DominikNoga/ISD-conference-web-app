@@ -1,0 +1,22 @@
+@import '../../../styles/isd-variables.scss';
+
+.nav-list {
+    font-family: $primary-font;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    .nav-item {
+        padding: 1em 1.2em;
+    }
+
+    .nav-link {
+        &:hover {
+            color: #333;
+        }
+    }
+
+    .nav-link-extend {
+        @extend .nav-link;
+    }
+
+}
