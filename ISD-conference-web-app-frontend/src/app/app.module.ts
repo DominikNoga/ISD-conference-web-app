@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { ComponentsModule } from './components/isd-ui/components.module';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @NgModule({

@@ -3,6 +3,18 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    &:visited {
+        color: inherit;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
 * {
     box-sizing: border-box;
 }
