@@ -3,14 +3,14 @@
         <li class="nav-item">
             <a routerLink="/" class="nav-link">Home</a>
         </li>
-        <li class="nav-item">
-            <span class="nav-link-dropdown">Submissions</span>
+        <li class="nav-item-dropdown" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+            <span class="nav-link-dropdown">Submissions <fa-icon [icon]="currentIcon"></fa-icon></span>
             <ul class="nav-dropdown">
                 <li class="nav-dropdown-item">
-                    <a routerLink="/call-for-papers">Call for Papers</a>
+                    <a routerLink="/call-for-papers" class="nav-dropdown-link">Call for Papers</a>
                 </li>
                 <li class="nav-dropdown-item">
-                    <a routerLink="/tracks">Tracks</a>
+                    <a routerLink="/tracks" class="nav-dropdown-link">Tracks</a>
                 </li>
             </ul>
         </li>
