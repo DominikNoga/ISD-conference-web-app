@@ -1,0 +1,49 @@
+@import "../../styles/isd-variables.scss";
+
+$default-gap: 1rem;
+
+.isd-history {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    $padding-horizontal: 2rem;
+    color: rgba(rgb(0, 0, 0), 1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .top-text{
+        font-size: 38px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        padding: 4*$default-gap $default-gap;
+    }
+
+    .hosting{
+        font-size: 28px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: left;
+        $padding-horizontal: 2rem;
+    }
+
+    .text-wall{
+        font-size:medium;
+        width: 75%;
+        text-align: left;
+        line-height: 1.5;
+        a {
+            color: #6900ff;
+            background-color: transparent;
+            text-decoration: none;
+          }
+    }
+
+    .more-text{
+        font-size:medium;
+        width: 78%;
+        text-align: left;
+        line-height: 1.5;
+        padding: 2*$default-gap $default-gap;
+    }
+}
