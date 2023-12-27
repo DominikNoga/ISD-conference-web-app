@@ -17,7 +17,7 @@ $default-gap: 1rem;
         font-size: 38px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
-        padding: 4*$default-gap $default-gap;
+        padding-bottom:45px;
     }
 
     .hosting{
@@ -32,11 +32,15 @@ $default-gap: 1rem;
         width: 75%;
         text-align: left;
         line-height: 1.5;
+        .text-section{
+        padding-top: 10px;
+        padding-bottom: 15px;
         a {
             color: #6900ff;
             background-color: transparent;
             text-decoration: none;
           }
+        }
     }
 
     .more-text{
@@ -45,5 +49,6 @@ $default-gap: 1rem;
         text-align: left;
         line-height: 1.5;
         padding: 2*$default-gap $default-gap;
+        
     }
 }
