@@ -25,4 +25,22 @@ export const EVENTS: my_event[] = [
         location: 'Universitat Politècnica de València, Spain, September 8–10, 2021',
         homepage: 'https://isd2020.webs.upv.es/',
     },
+    {
+        title: 'ISD2019 – Toulon, France',
+        topic: 'Information Systems Beyond 2020',
+        location: 'Higher Institute for Electronics and Digital Training (ISEN Yncréa Méditerranée), Toulon, France, August 28–30, 2019',
+        homepage: 'https://web.archive.org/web/20220816182745/https://isd2019.isen.fr/',
+    },
+    {
+        title: 'ISD2018 – Lund, Sweden',
+        topic: 'Designing Digitalization',
+        location: 'Lund University, Sweden, August 22–24, 2018',
+        homepage: 'https://web.archive.org/web/20230425011310/http://www.isd2018.ics.lu.se/',
+    },
+    {
+        title: 'ISD2017 – Larnaca, Cyprus',
+        topic: 'Advances in Methods, Tools and Management',
+        location: 'UCLan Cyprus, School of Sciences, Larnaca, Cyprus, September 6–8, 2017',
+        homepage: 'http://isd2017.uclancyprus.ac.cy/',
+    },
 ];
