@@ -1,1 +1,38 @@
-<p>footer works!</p>
+<footer class="isd-footer">
+    <div class="top-footer-wrapper">
+        <section class="top-footer">
+            <div class="isd-info">
+                <span>
+                    The ISD 2024 conference focuses on the interplay of approaches in
+                    information systems development with organizational aspects and trends in society. Scientists and
+                    practitioners are welcome to participate and share their knowledge and expertise.
+                </span>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <fa-icon [icon]="twitterIcon"></fa-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <fa-icon [icon]="emailIcon"></fa-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="isd-info-links">
+                <strong class="footer-section-header">IMPORTANT INFORMATION</strong>
+                <a routerLink="/call-for-papers" class="footer-link">Call for Papers</a>
+                <a routerLink="/register" class="footer-link">Register</a>
+                <a routerLink="/committees" class="footer-link">Committees</a>
+            </div>
+            <div class="isd-about-links">
+                <strong class="footer-section-header">ABOUT ISD</strong>
+                <a routerLink="/history" class="footer-link">History</a>
+                <a routerLink="/location" class="footer-link">Location</a>
+            </div>
+        </section>
+    </div>
+    <div class="bottom-footer-wrapper">
+        <section class="bottom-footer">
+            <span class="copyright">&copy; ISD 2025 City, Country</span>
+            <a href="#top" class="backToTop"><span>Back to top</span><fa-icon [icon]="upIcon"></fa-icon></a>
+        </section>
+    </div>
+</footer>

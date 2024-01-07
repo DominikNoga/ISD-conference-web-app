@@ -3,6 +3,20 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    &:visited {
+        color: inherit;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
