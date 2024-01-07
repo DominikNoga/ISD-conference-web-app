@@ -7,7 +7,6 @@ import { PagesModule } from './pages/pages.module';
 import { ComponentsModule } from './components/isd-ui/components.module';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +15,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

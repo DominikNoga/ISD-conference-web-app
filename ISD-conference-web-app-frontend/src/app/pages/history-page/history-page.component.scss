@@ -1,0 +1,68 @@
+@import "../../styles/isd-variables.scss";
+
+$default-gap: 1rem;
+
+.isd-history {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(rgb(0, 0, 0), 1);
+    width: 100%;
+
+    .top-text {
+        font-size: 38px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        padding-bottom: 45px;
+        padding-top: 100px;
+    }
+
+    .hosting {
+        font-size: 28px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: left;
+        padding-left: 13.50%;
+        $padding-horizontal: 2rem;
+    }
+
+    .text-wall {
+        font-size: medium;
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+
+        .text-section {
+            width: 75%;
+            padding: 15px;
+            margin: 0 auto;     
+        }
+
+        .more-text {
+            font-size: medium;
+            width: 75%;
+            margin: 0 auto;
+            padding: 15px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #6900ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    }
+
+    .entry-wrapper {
+        //background: #23e542;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-bottom: 50px;
+    }
+
+    .entry {
+        width: 65%;
+        //background: #6900ff;
+        margin: 0 auto;
+    }
+
+}

@@ -6,9 +6,16 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { HistoryPageComponent } from './history-page/history-page.component';
 import { CommitteesPageComponent } from './committees-page/committees-page.component';
 import { LocationPageComponent } from './location-page/location-page.component';
-
+import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
+  imports: [
+    CommonModule,
+    FontAwesomeModule,
+    RouterModule
+  ],
   declarations: [
     HomePageComponent,
     CallForPapersPageComponent,
@@ -16,7 +23,7 @@ import { LocationPageComponent } from './location-page/location-page.component';
     RegisterPageComponent,
     HistoryPageComponent,
     CommitteesPageComponent,
-    LocationPageComponent
+    LocationPageComponent,
   ],
   exports: [
     HomePageComponent,
