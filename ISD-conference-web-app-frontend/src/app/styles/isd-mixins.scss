@@ -1,0 +1,18 @@
+@mixin fontHoverWhite() {
+    &:hover {
+        color: white;
+    }
+}
+
+@mixin hoverEfect($cursor: pointer) {
+    &:hover { 
+        cursor: $cursor;
+        @content;
+    }
+}
+
+@mixin basicBoxShadow($width, $opacity) {
+    box-shadow: 0 0 $width rgba(black, $opacity);
+}
+
+

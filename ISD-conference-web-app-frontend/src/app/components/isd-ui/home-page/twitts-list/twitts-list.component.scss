@@ -1,0 +1,67 @@
+@import '../../../../styles/isd-variables.scss';
+@import '../../../../styles/isd-mixins.scss';
+
+$twitter-blue-color: rgb(29, 161, 242);
+$border: 1px solid rgba(0, 0, 0, 0.3);
+
+.twitts-list-wrapper {
+    border: $border;
+    border-radius: 1rem;
+    background-color: $white;
+    font-family: $primary-font;
+
+    .twitts-list-header {
+        font-weight: bold;
+        padding: 0.5*$default-gap $default-gap;
+        font-size: $font-size-slightly-bigger;
+        border-radius: 1rem 1rem 0 0;
+        border-bottom: $border;
+
+        @include hoverEfect() {
+            background-color: rgba($twitter-blue-color, .2);
+            text-decoration: underline;
+        }
+    }
+
+    .twitts-list-content {
+        padding: $default-gap 2*$default-gap;
+        display: flex;
+        flex-direction: column;
+        gap: 2*$default-gap;
+
+        .no-twitts {
+            display: flex;
+            flex-direction: column;
+            gap: $default-gap;
+
+            .no-twitts-header {
+                font-weight: bolder;
+                font-size: $font-size-very-big;
+            }
+
+            .no-twitts-sub-text {
+                color: rgba(black, .8);
+            }
+        }
+
+        .twitter-icon {
+            color: $twitter-blue-color;
+            font-size: $font-size-huge;
+        }
+
+        .see-twitts-btn {
+            border: none;
+            font-size: $font-size-big;
+            background-color: $twitter-blue-color;
+            color: white;
+            font-weight: bold;
+            border-radius: 2rem;
+            padding: .7rem 1rem;
+            transition: opacity .3s;
+
+            @include hoverEfect() {
+                opacity: .9;
+            }
+        }
+    }
+}

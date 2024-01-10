@@ -1,0 +1,9 @@
+@import '../../../styles/isd-variables.scss';
+
+.section-header {
+    font-size: $font-size-bigger;
+    font-family: $lato;
+    font-weight: bold;
+    display: block;
+    margin-bottom: $default-gap;
+}

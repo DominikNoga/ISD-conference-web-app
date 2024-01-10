@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 $primary-bg-color: #0b6ec7;
 $primary-dark-bg-color: #00277c;
 $primary-darker-bg-color: #02223f;
+$white: white;
+$white-darker: rgb(247, 247, 247);
 $primary-font: 'Poppins';
+$roboto: 'Roboto', sans-serif;
+$lato: 'Lato', sans-serif;
+$roboto-header: 'Roboto Mono', monospace;
 
 // font-sizes
 $font-size-huge: 2em;
+$font-size-very-big: 1.75em;
 $font-size-bigger: 1.5em;
 $font-size-big: 1.2em;
+$font-size-slightly-bigger: 1.1em;
 $font-size-normal: 1em;
 $font-size-small: .8em;
 
-@mixin fontHoverWhite() {
-    &:hover {
-        color: white;
-    }
-}
+$default-gap: 1rem;

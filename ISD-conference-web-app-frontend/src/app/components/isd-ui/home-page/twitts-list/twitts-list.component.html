@@ -1,0 +1,21 @@
+<div class="twitts-list-wrapper">
+    <header class="twitts-list-header" (click)="goToTwitter()">
+        <a target="_blank" [href]="LINK_TO_ISD_TWITTER">Tweets from @isdconf</a>
+    </header>
+    <div class="twitts-list-content">
+        <div class="twitter-icon">
+            <fa-icon [icon]="TWITTER_ICON"></fa-icon>
+        </div>
+        <div class="twitts">
+            <div *ngIf="noTwitts()" class="no-twitts">
+                <span class="no-twitts-header">
+                    {{ NO_TWITTS_TEXT_HEADER }}
+                </span>
+                <span class="no-twitts-sub-text">
+                    {{ NO_TWITTS_TEXT_SUB_TEXT }}
+                </span>
+            </div>
+        </div>
+        <button class="see-twitts-btn">View on Twitter</button>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+@import "../../../../styles/isd-variables.scss";
+@import "../../../../styles/isd-mixins.scss";
+
+.track-item-wrapper {
+    font-size: $font-size-big;
+    font-weight: 500    ;
+    height: 8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: $white;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    display: grid;
+    place-items: center;
+    @include basicBoxShadow(6px, .2);
+    
+    @include hoverEfect() {
+        @include basicBoxShadow(10px, .3);
+    }
+
+    .track-item-title {
+        
+    }
+}

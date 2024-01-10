@@ -1,0 +1,13 @@
+<div class="track-list-wrapper">
+    <header class="tracks-list-header">
+        <isd-section-header>
+            List of tracks
+        </isd-section-header>
+        <h4>
+            ISD {{ YEAR }} shall be primarily focused on the following tracks:
+        </h4>
+    </header>
+    <div class="tracks-list">
+        <isd-tracks-list-item *ngFor="let track of tracks" [track]="track"></isd-tracks-list-item>
+    </div>
+</div>

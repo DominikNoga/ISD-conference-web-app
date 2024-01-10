@@ -1,6 +1,10 @@
 @import "../../../styles/isd-variables.scss";
+@import '../../../styles/isd-mixins.scss';
 
-$default-gap: 1rem;
+:host {
+    position: relative;
+    bottom: 0;
+}
 
 .isd-footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

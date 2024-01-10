@@ -1,15 +1,17 @@
 @import "../../styles/isd-variables.scss";
 
-$default-gap: 1rem;
-
+// [DN] TODO: Do not hardcode the font-size it would be better if they were moved to a isd-variables.scss file to 
+// maintain the same font-sizes all over the a
 .isd-history {
-
+    // TODO: move the font to a variable
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(rgb(0, 0, 0), 1);
     width: 100%;
 
     .top-text {
+        // Do not use pixels for the font size. Use rems
         font-size: 38px;
+        // Move a font to a variable to avoid repeating it
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
         padding-bottom: 45px;
@@ -21,10 +23,12 @@ $default-gap: 1rem;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: left;
         padding-left: 13.50%;
+        // Where is this variable used? Why is it declared
         $padding-horizontal: 2rem;
     }
 
     .text-wall {
+        // Use a font-size defined in the isd-variables
         font-size: medium;
         width: 100%;
         text-align: left;
@@ -45,6 +49,7 @@ $default-gap: 1rem;
         }
 
         a {
+            // Add a color to isd-variables it may be needed in other pages
             color: #6900ff;
             background-color: transparent;
             text-decoration: none;
