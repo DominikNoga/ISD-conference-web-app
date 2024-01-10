@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EVENTS } from './conference-timeline.constants';
 
 @Component({
   selector: 'isd-conference-timeline',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conference-timeline.component.scss']
 })
 export class ConferenceTimelineComponent implements OnInit {
+  readonly EVENTS = EVENTS;
 
   constructor() { }
 

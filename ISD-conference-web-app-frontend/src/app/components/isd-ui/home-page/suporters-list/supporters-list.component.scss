@@ -1,0 +1,20 @@
+@import '../../../../styles/isd-variables.scss';
+@import '../../../../styles/isd-mixins.scss';
+
+.supporters-list {
+    padding: 3* $default-gap 0 $default-gap 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    // TODO: remove this, just temporary
+    margin-bottom: $content-gap-from-nav;
+
+    .supporter-link {
+        .supporter-img {
+            width: 150px;
+            aspect-ratio: 3/1;
+        }
+
+        @include addOpacityTransition($after-transition-value: .7);
+    }
+}

@@ -1,11 +1,13 @@
+@import './isd-variables.scss';
+
 @mixin fontHoverWhite() {
     &:hover {
         color: white;
     }
 }
 
-@mixin hoverEfect($cursor: pointer) {
-    &:hover { 
+@mixin hoverEffect($cursor: pointer) {
+    &:hover {
         cursor: $cursor;
         @content;
     }
@@ -15,4 +17,46 @@
     box-shadow: 0 0 $width rgba(black, $opacity);
 }
 
+@mixin addSimpleTransition($property, $time: .3s, $before-transition-value, $after-transition-value, $cursor: pointer) {
+    transition: #{$property} $time;
+    #{$property}: $before-transition-value;
+    will-change: #{$property};
 
+    @include hoverEffect($cursor) {
+        #{$property}: $after-transition-value;
+    }
+}
+
+@mixin addOpacityTransition($time: .3s, $before-transition-value: 1, $after-transition-value: .9, $cursor: pointer) {
+    @include addSimpleTransition(opacity, $time, $before-transition-value, $after-transition-value, $cursor);
+}
+
+@mixin simpleFlexLayout($direction: column, $align-items: default, $justify-content: default, $gap: $default-gap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    gap: $gap;
+}
+
+@mixin addComplexTransition($transition-properties...) {
+    @each $property in $transition-properties {
+        $property-name: nth($property, 1);
+        $time: nth($property, 2, .3s);
+        $before-transition-value: nth($property, 3, null);
+        $after-transition-value: nth($property, 4, null);
+        $cursor: nth($property, 5, pointer);
+
+        // TODO: this probably won't work cause it will just add 5 transition properies for example so only the last one will work
+        transition: #{$property-name} $time;
+        #{$property-name}: $before-transition-value;
+
+        @include hoverEffect($cursor) {
+            #{$property-name}: $after-transition-value;
+        }
+
+        $will-change-properties: append($will-change-properties, $property-name);
+    }
+
+    will-change: $will-change-properties;
+}

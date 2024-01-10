@@ -11,11 +11,7 @@
     border-radius: .5rem;
     display: grid;
     place-items: center;
-    @include basicBoxShadow(6px, .2);
-    
-    @include hoverEfect() {
-        @include basicBoxShadow(10px, .3);
-    }
+    @include addSimpleTransition($property: box-shadow, $time: .5s, $before-transition-value: 0 0 6px rgba(black, .2), $after-transition-value: 0 0 15px rgba(black, .3));
 
     .track-item-title {
         

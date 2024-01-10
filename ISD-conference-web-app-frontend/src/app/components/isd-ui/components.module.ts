@@ -9,10 +9,13 @@ import { ParagraphComponent } from './paragraph/paragraph.component';
 import { TracksListComponent } from './home-page/tracks-list/tracks-list.component';
 import { TracksListItemComponent } from './home-page/tracks-list-item/tracks-list-item.component';
 import { ConferenceTimelineComponent } from './home-page/conference-timeline/conference-timeline.component';
-import { SuportersListComponent } from './home-page/suporters-list/suporters-list.component';
+import { SupportersListComponent } from './home-page/suporters-list/supporters-list.component';
 import { SectionComponent } from './section/section.component';
 import { TwittsListComponent } from './home-page/twitts-list/twitts-list.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
+import { CountdownClockComponent } from './home-page/conference-timeline/helper/countdown-clock/countdown-clock.component';
+import { TimelineComponent } from './home-page/conference-timeline/helper/timeline/timeline.component';
+import { TimelineSingleEventComponent } from './home-page/conference-timeline/helper/timeline-single-event/timeline-single-event.component';
 
 @NgModule({
     declarations: [
@@ -23,10 +26,13 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
         TracksListComponent,
         TracksListItemComponent,
         ConferenceTimelineComponent,
-        SuportersListComponent,
+        SupportersListComponent,
         SectionComponent,
         TwittsListComponent,
         SectionHeaderComponent,
+        CountdownClockComponent,
+        TimelineComponent,
+        TimelineSingleEventComponent,
     ],
     exports: [
         FooterComponent,
@@ -36,7 +42,8 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
         ParagraphComponent,
         SectionComponent,
         TwittsListComponent,
-        SectionHeaderComponent
+        SectionHeaderComponent,
+        SupportersListComponent
     ],
     imports: [
         CommonModule,

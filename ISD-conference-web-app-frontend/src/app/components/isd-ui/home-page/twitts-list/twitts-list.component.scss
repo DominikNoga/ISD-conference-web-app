@@ -17,7 +17,7 @@ $border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 1rem 1rem 0 0;
         border-bottom: $border;
 
-        @include hoverEfect() {
+        @include hoverEffect() {
             background-color: rgba($twitter-blue-color, .2);
             text-decoration: underline;
         }
@@ -57,11 +57,7 @@ $border: 1px solid rgba(0, 0, 0, 0.3);
             font-weight: bold;
             border-radius: 2rem;
             padding: .7rem 1rem;
-            transition: opacity .3s;
-
-            @include hoverEfect() {
-                opacity: .9;
-            }
+            @include addOpacityTransition();
         }
     }
 }

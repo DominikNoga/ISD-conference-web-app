@@ -10,14 +10,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     $padding-horizontal: 2rem;
     color: rgba(white, .5);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    @include simpleFlexLayout($gap: 0);
 
     .footer-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include simpleFlexLayout($direction: row, $justify-content: center, $gap: 0);
     }
 
     .footer-section {
@@ -37,9 +33,7 @@
 
             .isd-info {
                 text-align: left;
-                display: flex;
-                flex-direction: column;
-                gap: $default-gap;
+                @include simpleFlexLayout();
 
                 .social-icon {
                     margin-left: $default-gap;
@@ -52,13 +46,11 @@
 
             .footer-section-header {
                 color: white;
-                font-size: .9rem;
+                font-size: $font-size-slightly-smaller;
             }
 
             .isd-info-links {
-                display: flex;
-                flex-direction: column;
-                gap: $default-gap;
+                @include simpleFlexLayout();
             }
 
             .isd-about-links {
@@ -77,16 +69,14 @@
 
         .bottom-footer {
             @extend .footer-section;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            @include simpleFlexLayout($direction: row, $justify-content: space-between, $gap: 0);
 
             .backToTop {
                 display: flex;
                 flex-direction: row;
                 gap: .5rem;
                 align-items: center;
-
+                @include simpleFlexLayout($direction: row, $align-items: center, $gap: 0.5*$default-gap);
                 &:hover {
                     color: white;
                 }

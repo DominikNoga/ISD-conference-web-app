@@ -1,6 +1,7 @@
 @import '../../styles/isd-variables.scss';
 
 .home-page-content-wrapper {
+    padding-top: $content-gap-from-nav;
     .home-page {
         &-header {
             padding: 0 2rem;
@@ -28,6 +29,12 @@
                 column-gap: $default-gap;
             }
             
+            .legacy-and-supporters {
+                display: flex;
+                flex-direction: column;
+                gap: 2*$default-gap;
+            }
+
             @media screen and (max-width: 1100px) { 
                 .description-and-twitts {
                     display: flex;
