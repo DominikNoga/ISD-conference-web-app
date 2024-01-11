@@ -1,10 +1,8 @@
-<isd-section>
+<div>
     <isd-section-header>
         Conference timeline
     </isd-section-header>
     <div class="timeline-content">
-        <div *ngFor="let event of events">
-            <fa-icon [icon]="CHECK_ICON" *ngIf="eventAlreadyHappned(event.date)"></fa-icon>
-        </div>
+        <isd-timeline-single-event *ngFor="let event of events" [event]="event"></isd-timeline-single-event>
     </div>
-</isd-section>
+</div>

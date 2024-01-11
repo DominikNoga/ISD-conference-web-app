@@ -23,6 +23,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@types/lodash-es": "^4.17.12",
+    "dayjs": "^1.11.10",
     "lodash-es": "^4.17.21",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

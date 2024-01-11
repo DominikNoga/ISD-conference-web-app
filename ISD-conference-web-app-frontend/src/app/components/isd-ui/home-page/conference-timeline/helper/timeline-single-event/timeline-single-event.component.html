@@ -1,1 +1,5 @@
-<p>timeline-single-event works!</p>
+<div class="single-timeline-event">
+    <fa-icon class="check-icon" [icon]="CHECK_ICON" *ngIf="eventAlreadyHappned()"></fa-icon>
+    <span class="event-description">{{ event.description }}:</span>
+    <span class="event-date">{{ getFormattedEventDate()  }}</span>
+</div>

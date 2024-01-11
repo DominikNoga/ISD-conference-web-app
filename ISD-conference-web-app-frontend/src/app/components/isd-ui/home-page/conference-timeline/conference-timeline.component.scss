@@ -1,0 +1,9 @@
+@import '../../../../styles/isd-mixins.scss';
+
+.conference-timeline-wrapper {
+    @include simpleFlexLayout($direction: row, $justify-content: space-between);
+    
+    .countdown-clock-wrapper {
+        justify-self: center;
+    }
+}

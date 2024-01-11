@@ -24,4 +24,4 @@ $font-size-small: .8em;
 
 // UI variables
 $default-gap: 1rem;
-$content-gap-from-nav: 100px;
+$content-gap-from-nav: calc(100px - 5rem);

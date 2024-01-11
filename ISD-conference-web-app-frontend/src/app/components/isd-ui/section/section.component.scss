@@ -1,6 +1,8 @@
+@import '../../../styles/isd-variables.scss';
+
 .isd-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 5*$default-gap $default-gap;
 }

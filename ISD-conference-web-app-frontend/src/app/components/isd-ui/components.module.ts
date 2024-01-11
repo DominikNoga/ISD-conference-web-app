@@ -43,7 +43,8 @@ import { TimelineSingleEventComponent } from './home-page/conference-timeline/he
         SectionComponent,
         TwittsListComponent,
         SectionHeaderComponent,
-        SupportersListComponent
+        SupportersListComponent,
+        ConferenceTimelineComponent
     ],
     imports: [
         CommonModule,
