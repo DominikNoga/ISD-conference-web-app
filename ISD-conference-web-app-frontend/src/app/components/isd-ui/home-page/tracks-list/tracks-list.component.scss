@@ -1,0 +1,12 @@
+@import '../../../../styles/isd-variables.scss';
+
+.track-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2*$default-gap;
+    .tracks-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $default-gap;
+    }
+}

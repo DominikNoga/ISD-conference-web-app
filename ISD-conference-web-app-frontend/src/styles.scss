@@ -1,6 +1,9 @@
+@import './app/styles/isd-variables.scss';
+
 body {
     padding: 0;
     margin: 0;
+    font-family: $primary-font;
 }
 
 a {

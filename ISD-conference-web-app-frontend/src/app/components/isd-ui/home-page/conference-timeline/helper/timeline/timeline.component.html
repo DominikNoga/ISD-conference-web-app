@@ -1,0 +1,8 @@
+<div>
+    <isd-section-header>
+        Conference timeline
+    </isd-section-header>
+    <div class="timeline-content">
+        <isd-timeline-single-event *ngFor="let event of events" [event]="event"></isd-timeline-single-event>
+    </div>
+</div>

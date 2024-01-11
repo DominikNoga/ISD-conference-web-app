@@ -1,0 +1,15 @@
+@import '../../../../../../styles/isd-mixins.scss';
+@import '../../../../../../styles/isd-variables.scss';
+
+.single-timeline-event {
+    border-bottom: 1px solid rgba(black, .3);
+    padding: $default-gap;
+    @include simpleFlexLayout($direction: row, $align-items: center);
+    .event-description {
+        font-weight: bold;
+    }
+
+    .check-icon {
+        color: $primary-bg-color;
+    }
+}

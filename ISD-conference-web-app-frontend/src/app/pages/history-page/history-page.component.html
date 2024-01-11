@@ -34,24 +34,21 @@
     <div class="text-section">
       The International Steering Committee welcomes proposals for hosting future ISD conferences. For further
       information,
-      please contact the <a
-      routerLink="../call-for-papers">International Steering Committee</a>.
+      please contact the <a routerLink="../call-for-papers">International Steering Committee</a>.
     </div>
+    <!-- TODO: Do not use styles in html tags it is not a good practice -->
+    <hr style="width:75%; margin: auto;" />
 
-    <hr  style="width:75%; margin: auto;"/>
-
-    <div class="more-text">
+    <!-- TODO: think of a better name for this class. 'more-text' does not mean anything -->
+    <div class="more-text"> 
       These are the various editions that make up the history of the ISD conference.
-  
     </div>
 
   </div>
 
-
-
- 
-
-
+  <!-- TODO: It would be good to convert the entry div to a separate component for the code quality. 
+    It should be created in the components/isd-ui/history-page 
+  -->
   <div class="entry-wrapper">
     <div class="entry" *ngFor="let event of events">
       <h2>{{ event.title }}</h2>

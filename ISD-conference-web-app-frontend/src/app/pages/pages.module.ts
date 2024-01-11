@@ -9,12 +9,15 @@ import { LocationPageComponent } from './location-page/location-page.component';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
+import { TracksListComponent } from '../components/isd-ui/home-page/tracks-list/tracks-list.component';
+import { ComponentsModule } from '../components/isd-ui/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FontAwesomeModule,
-    RouterModule
+    RouterModule,
+    ComponentsModule
   ],
   declarations: [
     HomePageComponent,

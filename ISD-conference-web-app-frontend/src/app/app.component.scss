@@ -1,4 +1,15 @@
+@import './styles/isd-variables.scss';
+
 .content-wrapper {
-    display: grid;
-    //grid-template-rows: 1fr 5fr 2fr;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > * {
+        width: 100%;
+    }
+    .router-content {
+        background-color: $white-darker;
+        flex: 1;
+    }
 }

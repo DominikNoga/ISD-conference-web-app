@@ -1,1 +1,95 @@
-<h1>Hello everybody</h1>
+<div class="home-page-content-wrapper">
+    <main>
+        <isd-section class="home-page-section" [bgColor]="WHITE_DARKER_COLOR"> 
+            <div class="section-content description-and-twitts">
+                <div class="text-content">
+                    <isd-section-header>
+                        Welcome to ISD 2025 in City, Country
+                    </isd-section-header>
+                    <isd-paragraph class="home-page-paragraph">
+                        The <b>33rd International Conference on Information Systems Development (ISD {{ YEAR }})</b> conference provides a forum
+                        for
+                        research and developments in the field of information systems. The theme of ISD {{ YEAR }} is "Harnessing
+                        Opportunities:
+                        Reshaping ISD in the post-COVID-19 and Generative AI Era".
+                    </isd-paragraph>
+            
+                    <isd-paragraph class="home-page-paragraph">
+                        The post-COVID-19 era has posed significant challenges, not only for software development teams, prompting
+                        them
+                        to
+                        revisit their practices, procedures, and collaboration models, but also for entire organizations, which must
+                        undergo
+                        cultural, structural, and process transformations to leverage the opportunities presented by hybrid work.
+                    </isd-paragraph>
+            
+                    <isd-paragraph class="home-page-paragraph">
+                        Alongside this shift, recent advancements in the AI ecosystem have given rise to powerful large language
+                        models
+                        (LLMs), fundamentally reshaping the software profession by reducing the technical expertise required for
+                        excellence.
+                        Furthermore, generative AI tools have streamlined software development processes by providing valuable
+                        assistance
+                        across all phases of the software development life cycle.
+                    </isd-paragraph>
+            
+                    <isd-paragraph class="home-page-paragraph">
+                        This year, the conference aims to address a series of emerging questions pertinent to research and practice
+                        in
+                        the
+                        evolving landscape:
+                        <!-- TODO: add component which will present list of topics which will be talked during the conference -->
+                    </isd-paragraph>
+            
+                    <isd-paragraph class="home-page-paragraph">
+                        The ISD {{ YEAR }} conference held this year also provides an opportunity for researchers and practitioners to
+                        promote
+                        their research and practical experience, as well as to discuss issues related to Information Systems through
+                        papers, posters, and journal-first paper presentations.
+                    </isd-paragraph>
+            
+                    <isd-paragraph class="home-page-paragraph">
+                        ISD {{ YEAR }} will be hosted by the University of Gdańsk on August 26 – 28, {{ YEAR }}.
+                    </isd-paragraph>
+                </div>
+                <div class="tiwtts">
+                    <isd-twitts-list></isd-twitts-list>
+                </div>
+            </div>
+        </isd-section>
+        <isd-section class="home-page-section" [bgColor]="WHITE_COLOR">
+            <div class="section-content">
+                <isd-tracks-list></isd-tracks-list>
+            </div>
+        </isd-section>
+        <isd-section class="home-page-section" [bgColor]="WHITE_DARKER_COLOR">
+            <div class="section-content">
+                <isd-conference-timeline></isd-conference-timeline>
+            </div>
+        </isd-section>
+        <isd-section class="home-page-section" [bgColor]="WHITE_COLOR">
+            <div class="section-content legacy-and-supporters">
+                <div>
+                    <!-- TODO: do not hardcode that -->
+                    <isd-section-header>
+                        Legacy
+                    </isd-section-header>
+                    <p>
+                        ISD has evolved since the first Polish-Scandinavian Seminar on Current Trends in Information Systems Development
+                        Methodologies, held in Gdańsk, Poland in 1988. Since 1997 it has been held as an annual international conference
+                        and is now a highly regarded IS conference.
+                    </p>
+                    <p>
+                        See ISD History for further details on the various conference editions.
+                    </p>
+                </div>
+                <div>
+                    <isd-section-header>
+                        Supported by
+                    </isd-section-header>
+                    <isd-supporters-list></isd-supporters-list>
+                </div>
+            </div>
+        </isd-section>
+    </main>
+</div>

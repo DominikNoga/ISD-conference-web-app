@@ -1,0 +1,21 @@
+@import '../../../../../../styles/isd-mixins.scss';
+
+.countdown-clock-wrapper {
+    @include simpleFlexLayout($align-items: center);
+
+    .countdown-clock {
+        @include simpleFlexLayout($direction: row, $align-items: center, $gap: 2rem);
+        .countdown-block {
+            @include simpleFlexLayout($align-items: center);
+        }
+
+        .time-value {
+            color: $primary-bg-color;
+            font-size: 3.5em;
+        }
+
+        .separator {
+            @extend .time-value;
+        }
+    }
+}
