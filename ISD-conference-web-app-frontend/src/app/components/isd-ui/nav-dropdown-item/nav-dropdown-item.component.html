@@ -1,0 +1,11 @@
+<li class="nav-item-dropdown" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+    <div class="nav-link-dropdown" routerLinkActive="nav-link-dropdown-active">
+        {{ navItem.label }}<fa-icon [icon]="currentIcon"></fa-icon>
+        <ul class="nav-dropdown">
+            <li class="nav-dropdown-item" *ngFor="let item of navItem.items">
+                <a routerLink="{{ item.route }}" class="nav-dropdown-link" (routerLinkActive)="setIsDropdownActive(true)" routerLinkActive="nav-dropdown-link-active">{{ item.label }}</a>
+            </li>
+        </ul>
+    </div>
+    
+</li>

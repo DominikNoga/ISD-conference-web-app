@@ -1,0 +1,68 @@
+@import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
+
+.nav-item-dropdown {
+    padding: 1em 1.2em;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+
+        .nav-dropdown {
+            display: flex;
+            flex-direction: column;
+            scale: 1;
+            opacity: 1;
+        }
+    }
+
+    .nav-link-dropdown-active {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            padding: 1px;
+            border-radius: .5rem;
+            background-color: $primary-bg-color;
+        }
+    }
+
+    .nav-dropdown {
+        background-color: $white;
+        border-top: 3px solid $primary-bg-color;
+        $transition-time: .2s;
+        scale: 0;
+        opacity: 0;
+        width: max-content;
+        position: absolute;
+        transform-origin: top;
+        margin-top: 1em;
+        box-shadow: 0 0 10px rgba(black, .3);
+        transition: scale $transition-time, opacity $transition-time;
+        will-change: scale, opacity;
+        z-index: 2;
+
+        &-item {
+            padding: .5rem 1.5rem;
+            color: black;
+            text-align: left;
+        }
+
+        .nav-dropdown-link {
+            color: black;
+            transition: color $transition-time;
+            will-change: color;
+            &:hover {
+                color: $primary-bg-color;
+            }
+
+            &-active {
+                color: $primary-bg-color;
+            }
+        }
+    }
+}

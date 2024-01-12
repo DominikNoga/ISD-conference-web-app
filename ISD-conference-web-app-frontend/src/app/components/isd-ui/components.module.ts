@@ -16,6 +16,8 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
 import { CountdownClockComponent } from './home-page/conference-timeline/helper/countdown-clock/countdown-clock.component';
 import { TimelineComponent } from './home-page/conference-timeline/helper/timeline/timeline.component';
 import { TimelineSingleEventComponent } from './home-page/conference-timeline/helper/timeline-single-event/timeline-single-event.component';
+import { NavItemComponent } from './nav-item/nav-item.component';
+import { NavDropdownItemComponent } from './nav-dropdown-item/nav-dropdown-item.component';
 
 @NgModule({
     declarations: [
@@ -33,6 +35,8 @@ import { TimelineSingleEventComponent } from './home-page/conference-timeline/he
         CountdownClockComponent,
         TimelineComponent,
         TimelineSingleEventComponent,
+        NavItemComponent,
+        NavDropdownItemComponent,
     ],
     exports: [
         FooterComponent,
