@@ -1,10 +1,11 @@
 @import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
 
 .isd-header {
     $logo-size: 70px;
     $padding-value: 4em;
-    display: flex;
-    flex-direction: row;
+    @include simpleFlexLayout($direction: row, $gap: 0);
+
     .rectangle {
         background-color: $primary-bg-color;
         padding: 0 $padding-value;
@@ -13,9 +14,7 @@
         background-color: $primary-bg-color;
         .isd-logo {
             max-height: $logo-size;
-            &:hover {
-                cursor: pointer;
-            }
+            @include addOpacityTransition();
         }
     }
 

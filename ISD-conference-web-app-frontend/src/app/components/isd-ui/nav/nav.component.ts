@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTE_PROPS } from './nav.constants';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { NAV_ITEMS } from './nav.constants';
+import { NavDefaultItem, NavDropdownItem, NavItem } from 'src/app/interfaces/Nav';
 
 @Component({
   selector: 'isd-nav',
@@ -9,8 +10,8 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavComponent implements OnInit {
   currentIcon = faChevronDown
-  ROUTE_PROPS = ROUTE_PROPS;
-  
+  NAV_ITEMS = NAV_ITEMS;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,4 +24,10 @@ export class NavComponent implements OnInit {
   onMouseOver = () => {
     this.currentIcon = faChevronUp;
   }
+
+  getNavDefaultItem = (navItem: NavItem): NavDefaultItem => <NavDefaultItem>navItem.item;
+
+  getNavDropdopdownItem = (navItem: NavItem): NavDropdownItem => <NavDropdownItem>navItem.item;
+
+  isDefaultItem = (navItem: NavDefaultItem | NavDropdownItem): boolean => navItem instanceof Object && 'route' in navItem;
 }

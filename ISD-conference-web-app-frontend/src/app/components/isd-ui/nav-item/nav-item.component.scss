@@ -1,0 +1,43 @@
+@import '../../../styles/isd-variables.scss';
+
+.nav-item {
+    padding: 1em 1.2em;
+
+    .nav-link {
+        $transition-time: .2s;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            padding: 1px;
+            border-radius: .5rem;
+            opacity: 0;
+            scale: 0;
+            background-color: $primary-bg-color;
+            transition: scale $transition-time, opacity $transition-time;
+            will-change: scale, opacity;
+        }
+
+        &-active {
+            &::before {
+                scale: 1;
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                scale: 1;
+            }
+
+            color: #333;
+            cursor: pointer;
+        }
+    }
+}
