@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ConferenceEvent} from './ConferenceEvent';
-import {EVENTS} from './Events';
+import {ConferenceEvent} from '../../interfaces/ConferenceEvent';
+import {EVENTS} from './history-page.constants';
 import { faChevronUp, faEnvelope, faHouse, faLightbulb, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 

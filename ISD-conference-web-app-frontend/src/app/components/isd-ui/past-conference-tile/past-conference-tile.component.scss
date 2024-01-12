@@ -1,0 +1,14 @@
+@import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
+
+.homepage-link {
+    @include hoverEffect() {
+        text-decoration: underline;
+        color: $primary-bg-color;
+    }
+}
+
+.event-paragraph {
+    @include simpleFlexLayout($direction: row, $gap: 0.5*$default-gap);
+}
+

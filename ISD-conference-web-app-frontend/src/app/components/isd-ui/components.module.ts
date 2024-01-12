@@ -19,6 +19,7 @@ import { TimelineSingleEventComponent } from './home-page/conference-timeline/he
 import { NavItemComponent } from './nav-item/nav-item.component';
 import { NavDropdownItemComponent } from './nav-dropdown-item/nav-dropdown-item.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { PastConferenceTileComponent } from './past-conference-tile/past-conference-tile.component';
 
 @NgModule({
     declarations: [
@@ -39,6 +40,7 @@ import { PageHeaderComponent } from './page-header/page-header.component';
         NavItemComponent,
         NavDropdownItemComponent,
         PageHeaderComponent,
+        PastConferenceTileComponent,
     ],
     exports: [
         FooterComponent,
@@ -51,7 +53,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
         SectionHeaderComponent,
         SupportersListComponent,
         ConferenceTimelineComponent,
-        PageHeaderComponent
+        PageHeaderComponent,
+        PastConferenceTileComponent
     ],
     imports: [
         CommonModule,

@@ -51,13 +51,7 @@
   <isd-section [padding]="PADDING_BETWEEN_SECTIONS">
     <div class="entry-wrapper">
       These are the various editions that make up the history of the ISD conference.
-      <div class="entry" *ngFor="let event of events">
-        <h2>{{ event.title }}</h2>
-        <p><fa-icon [icon]="lightbulbIcon"></fa-icon>{{ event.topic }}</p>
-        <p><fa-icon [icon]="locationIcon"></fa-icon> {{ event.location }}</p>
-        <p><fa-icon [icon]="houseIcon"></fa-icon><a href="{{ event.homepage }}">{{ event.homepage }}</a> </p>
-        <hr>
-      </div>
+      <isd-past-conference-tile *ngFor="let event of events" [event]="event"></isd-past-conference-tile>
     </div>
   </isd-section>
 </div>
