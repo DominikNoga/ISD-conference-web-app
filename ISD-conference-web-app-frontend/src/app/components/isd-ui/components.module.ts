@@ -18,6 +18,7 @@ import { TimelineComponent } from './home-page/conference-timeline/helper/timeli
 import { TimelineSingleEventComponent } from './home-page/conference-timeline/helper/timeline-single-event/timeline-single-event.component';
 import { NavItemComponent } from './nav-item/nav-item.component';
 import { NavDropdownItemComponent } from './nav-dropdown-item/nav-dropdown-item.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 @NgModule({
     declarations: [
@@ -37,6 +38,7 @@ import { NavDropdownItemComponent } from './nav-dropdown-item/nav-dropdown-item.
         TimelineSingleEventComponent,
         NavItemComponent,
         NavDropdownItemComponent,
+        PageHeaderComponent,
     ],
     exports: [
         FooterComponent,
@@ -48,7 +50,8 @@ import { NavDropdownItemComponent } from './nav-dropdown-item/nav-dropdown-item.
         TwittsListComponent,
         SectionHeaderComponent,
         SupportersListComponent,
-        ConferenceTimelineComponent
+        ConferenceTimelineComponent,
+        PageHeaderComponent
     ],
     imports: [
         CommonModule,

@@ -1,6 +1,6 @@
-import { my_event } from './my_event';
+import { ConferenceEvent } from './ConferenceEvent';
 
-export const EVENTS: my_event[] = [
+export const EVENTS: ConferenceEvent[] = [
     {
         title: 'ISD2024 – Gdańsk, Poland',
         topic: 'Harnessing Opportunities: Reshaping ISD in the post-COVID-19 and Generative AI Era',

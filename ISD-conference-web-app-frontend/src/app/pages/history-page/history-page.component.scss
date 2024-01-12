@@ -1,73 +1,30 @@
 @import "../../styles/isd-variables.scss";
+@import "../../styles/isd-mixins.scss";
 
-// [DN] TODO: Do not hardcode the font-size it would be better if they were moved to a isd-variables.scss file to 
-// maintain the same font-sizes all over the a
 .isd-history {
-    // TODO: move the font to a variable
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(rgb(0, 0, 0), 1);
-    width: 100%;
-
+    font-family: $primary-font;
     .top-text {
-        // Do not use pixels for the font size. Use rems
-        font-size: 38px;
-        // Move a font to a variable to avoid repeating it
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: $font-size-huge;
+        font-weight: bold;
+        font-family: $roboto-header;
         text-align: center;
-        padding-bottom: 45px;
-        padding-top: $content-gap-from-nav;
+        padding: $content-gap-from-nav 0 45px 0;
     }
 
-    .hosting {
-        font-size: 28px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: left;
-        padding-left: 13.50%;
-        // Where is this variable used? Why is it declared
-        $padding-horizontal: 2rem;
+    .sections-separator {
+        width: calc($content-width - 2 * $default-gap);
+        background-color: black;
+        height: 2px;
+        border: none;
     }
 
-    .text-wall {
-        // Use a font-size defined in the isd-variables
-        font-size: medium;
-        width: 100%;
-        text-align: left;
-        line-height: 1.5;
-
-        .text-section {
-            width: 75%;
-            padding: 15px;
-            margin: 0 auto;     
-        }
-
-        .more-text {
-            font-size: medium;
-            width: 75%;
-            margin: 0 auto;
-            padding: 15px;
-            line-height: 1.5;
-        }
-
-        a {
-            // Add a color to isd-variables it may be needed in other pages
-            color: #6900ff;
-            background-color: transparent;
-            text-decoration: none;
-        }
+    .contact-link {
+        color: #6900ff;
     }
 
     .entry-wrapper {
-        //background: #23e542;
         display: flex;
         flex-direction: column;
-        text-align: left;
         padding-bottom: 50px;
     }
-
-    .entry {
-        width: 65%;
-        //background: #6900ff;
-        margin: 0 auto;
-    }
-
 }

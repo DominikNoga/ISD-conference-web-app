@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {my_event} from './my_event';
+import {ConferenceEvent} from './ConferenceEvent';
 import {EVENTS} from './Events';
 import { faChevronUp, faEnvelope, faHouse, faLightbulb, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -11,11 +11,11 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 })
 
 export class HistoryPageComponent implements OnInit {
-
+  readonly PADDING_BETWEEN_SECTIONS = '1rem';
   houseIcon = faHouse;
   locationIcon = faLocationDot;
   lightbulbIcon = faLightbulb;
-  events: my_event[] = EVENTS;
+  events: ConferenceEvent[] = EVENTS;
 
   constructor() { }
 

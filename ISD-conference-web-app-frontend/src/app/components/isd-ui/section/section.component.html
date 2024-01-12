@@ -1,3 +1,5 @@
 <section class="isd-section" [ngStyle]="{'background-color': bgColor}">
-    <ng-content></ng-content>
+    <div class="section-content" [ngStyle]="{padding: padding}">
+        <ng-content></ng-content>
+    </div>
 </section>
