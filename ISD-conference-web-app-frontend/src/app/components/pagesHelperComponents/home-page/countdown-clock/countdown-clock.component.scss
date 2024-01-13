@@ -1,4 +1,4 @@
-@import '../../../../../../styles/isd-mixins.scss';
+@import '../../../../styles/isd-mixins.scss';
 
 .countdown-clock-wrapper {
     @include simpleFlexLayout($align-items: center);

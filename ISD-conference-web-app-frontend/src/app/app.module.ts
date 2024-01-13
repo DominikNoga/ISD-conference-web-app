@@ -4,8 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
-import { ComponentsModule } from './components/isd-ui/components.module';
+import { UiComponentsModule } from './components/isd-ui/components.module';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { PagesHelperCompnentsModule } from './components/pagesHelperComponents/pagesHelperComponents.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    ComponentsModule,
+    UiComponentsModule,
+    PagesHelperCompnentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

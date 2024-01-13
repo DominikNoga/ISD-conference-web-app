@@ -18,13 +18,10 @@
         border: none;
     }
 
-    .contact-link {
-        color: #6900ff;
-    }
-
-    .entry-wrapper {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 50px;
+    .history-page-link {
+        color: $primary-bg-color;
+        @include hoverEffect() {
+            text-decoration: underline
+        }
     }
 }

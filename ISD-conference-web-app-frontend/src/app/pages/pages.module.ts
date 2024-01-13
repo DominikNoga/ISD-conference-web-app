@@ -9,15 +9,16 @@ import { LocationPageComponent } from './location-page/location-page.component';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
-import { TracksListComponent } from '../components/isd-ui/home-page/tracks-list/tracks-list.component';
-import { ComponentsModule } from '../components/isd-ui/components.module';
+import { UiComponentsModule } from '../components/isd-ui/components.module';
+import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/pagesHelperComponents.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FontAwesomeModule,
     RouterModule,
-    ComponentsModule
+    UiComponentsModule,
+    PagesHelperCompnentsModule
   ],
   declarations: [
     HomePageComponent,

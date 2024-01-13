@@ -21,7 +21,7 @@
         receives a significant audience.
       </isd-paragraph>
       <isd-paragraph class="text-section">
-        As an Affiliated Conference of the Association for Information Systems (<a
+        As an Affiliated Conference of the Association for Information Systems (<a class="history-page-link"
           href="https://aisnet.org/page/AffiliatedConference">AIS</a>), the ISD conference has strong connections within
         the international information systems community.
       </isd-paragraph>
@@ -40,18 +40,12 @@
       <div class="text-section">
         The International Steering Committee welcomes proposals for hosting future ISD conferences. For further
         information,
-        please contact the <a class="contact-link" routerLink="/call-for-papers">International Steering Committee</a>.
-      </div>
-      <div class="more-text">
-        These are the various editions that make up the history of the ISD conference.
+        please contact the <a class="history-page-link" routerLink="/call-for-papers">International Steering Committee</a>.
       </div>
     </div>
   </isd-section>
   <hr class="sections-separator">
   <isd-section [padding]="PADDING_BETWEEN_SECTIONS">
-    <div class="entry-wrapper">
-      These are the various editions that make up the history of the ISD conference.
-      <isd-past-conference-tile *ngFor="let event of events" [event]="event"></isd-past-conference-tile>
-    </div>
+    <isd-past-conferences-list></isd-past-conferences-list>
   </isd-section>
 </div>

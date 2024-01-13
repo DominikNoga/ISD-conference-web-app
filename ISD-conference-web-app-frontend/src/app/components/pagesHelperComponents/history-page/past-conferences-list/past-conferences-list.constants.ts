@@ -1,4 +1,4 @@
-import { ConferenceEvent } from '../../interfaces/ConferenceEvent';
+import { ConferenceEvent } from "src/app/interfaces/ConferenceEvent";
 
 export const EVENTS: ConferenceEvent[] = [
     {
