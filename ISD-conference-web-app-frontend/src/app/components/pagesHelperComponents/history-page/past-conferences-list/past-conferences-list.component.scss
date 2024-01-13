@@ -1,0 +1,7 @@
+@import '../../../../styles/isd-mixins.scss';
+@import '../../../../styles/isd-variables.scss';
+
+.past-conferences-list {
+    @include simpleFlexLayout();
+    padding-bottom: 3rem;
+}

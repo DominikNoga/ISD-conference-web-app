@@ -8,12 +8,16 @@ import { isNil } from 'lodash-es';
 })
 export class SectionComponent implements OnInit {
   @Input() bgColor!: string;
-  readonly DEFAULT_BG_COLOR = 'white';
+  @Input() padding!: string;
+  
+  readonly DEFAULT_BG_COLOR = 'rgb(247, 247, 247)';
+  readonly DEFAULT_PADDING = '5rem 1rem';
 
   constructor() { }
 
   ngOnInit(): void {
     this.bgColor = isNil(this.bgColor) ? this.DEFAULT_BG_COLOR : this.bgColor;
+    this.padding = isNil(this.padding) ? this.DEFAULT_PADDING : this.padding;
   }
 
 }

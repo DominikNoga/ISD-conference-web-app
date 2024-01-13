@@ -1,0 +1,10 @@
+@import "../../../styles/isd-variables.scss";
+
+.page-header {
+    width: 100%;
+    font-size: $font-size-huge;
+    font-weight: bold;
+    font-family: $roboto-header;
+    text-align: center;
+    padding-top: $content-gap-from-nav;
+}

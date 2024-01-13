@@ -1,4 +1,4 @@
-export interface my_event{
+export interface ConferenceEvent {
     title: string;
     topic: string;
     location: string;

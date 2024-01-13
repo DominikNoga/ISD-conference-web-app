@@ -1,62 +1,51 @@
 <div class="isd-history">
-  <div class="top-text">
-    ISD History
-  </div>
-  <div class="text-wall">
-    <div class="text-section">
-      The <strong>International Conference on Information Systems Development </strong>is an academic conference hosted
-      annually across different locations worldwide, where scientists and practitioners are welcome to participate and
-      share their knowledge and expertise in the field of information systems development. During its history, the
-      conference has focused on different aspects – ranging from methodological,
-      infrastructural, or educational challenges in the ISD field, to bridging the gaps between industry, academia, and
-      society. However,
-      the mission of the conference has remained the same throughout its time: to research,
-      share, and discuss developments and trends in Information Systems and Information Systems Development.
+  <isd-page-header title="ISD History"></isd-page-header>
+  <isd-section class="info-text-section" [padding]="PADDING_BETWEEN_SECTIONS">
+    <div class="text-wall">
+      <isd-paragraph class="text-section">
+        The <strong>International Conference on Information Systems Development </strong>is an academic conference
+        hosted
+        annually across different locations worldwide, where scientists and practitioners are welcome to participate and
+        share their knowledge and expertise in the field of information systems development. During its history, the
+        conference has focused on different aspects – ranging from methodological,
+        infrastructural, or educational challenges in the ISD field, to bridging the gaps between industry, academia,
+        and
+        society. However,
+        the mission of the conference has remained the same throughout its time: to research,
+        share, and discuss developments and trends in Information Systems and Information Systems Development.
+      </isd-paragraph>
+      <isd-paragraph class="text-section">
+        Demanding high-quality standards, the organizers and reviewers put the quality of submitted papers over
+        quantity,
+        which has kept the conference size at an intimate level with an average of 100 papers, and where each researcher
+        receives a significant audience.
+      </isd-paragraph>
+      <isd-paragraph class="text-section">
+        As an Affiliated Conference of the Association for Information Systems (<a class="history-page-link"
+          href="https://aisnet.org/page/AffiliatedConference">AIS</a>), the ISD conference has strong connections within
+        the international information systems community.
+      </isd-paragraph>
+      <isd-paragraph class="text-section">
+        ISD evolved from the first Polish-Scandinavian Seminar on Current Trends in Information Systems Development
+        Methodologies, held in Gdańsk, Poland in 1988. Since 1997 it has been held as an annual international conference
+        and is now a highly regarded specialist IS conference. The list below offers essential information on the
+        various
+        conference editions.
+      </isd-paragraph>
     </div>
-    <div class="text-section">
-      Demanding high-quality standards, the organizers and reviewers put the quality of submitted papers over quantity,
-      which has kept the conference size at an intimate level with an average of 100 papers, and where each researcher
-      receives a significant audience.
+    <div class="hosting-section">
+      <isd-section-header>
+        Hosting Future Conferences
+      </isd-section-header>
+      <div class="text-section">
+        The International Steering Committee welcomes proposals for hosting future ISD conferences. For further
+        information,
+        please contact the <a class="history-page-link" routerLink="/call-for-papers">International Steering Committee</a>.
+      </div>
     </div>
-    <div class="text-section">
-      As an Affiliated Conference of the Association for Information Systems (<a
-        href="https://aisnet.org/page/AffiliatedConference">AIS</a>), the ISD conference has strong connections within
-      the international information systems community.
-    </div>
-    <div class="text-section">
-      ISD evolved from the first Polish-Scandinavian Seminar on Current Trends in Information Systems Development
-      Methodologies, held in Gdańsk, Poland in 1988. Since 1997 it has been held as an annual international conference
-      and is now a highly regarded specialist IS conference. The list below offers essential information on the various
-      conference editions.
-    </div>
-
-    <div class="hosting"><strong>Hosting Future Conferences</strong></div>
-    <div class="text-section">
-      The International Steering Committee welcomes proposals for hosting future ISD conferences. For further
-      information,
-      please contact the <a routerLink="../call-for-papers">International Steering Committee</a>.
-    </div>
-    <!-- TODO: Do not use styles in html tags it is not a good practice -->
-    <hr style="width:75%; margin: auto;" />
-
-    <!-- TODO: think of a better name for this class. 'more-text' does not mean anything -->
-    <div class="more-text"> 
-      These are the various editions that make up the history of the ISD conference.
-    </div>
-
-  </div>
-
-  <!-- TODO: It would be good to convert the entry div to a separate component for the code quality. 
-    It should be created in the components/isd-ui/history-page 
-  -->
-  <div class="entry-wrapper">
-    <div class="entry" *ngFor="let event of events">
-      <h2>{{ event.title }}</h2>
-      <p><fa-icon [icon]="lightbulbIcon"></fa-icon>{{ event.topic }}</p>
-      <p> <fa-icon [icon]="locationIcon"></fa-icon> {{ event.location }}</p>
-      <p> <fa-icon [icon]="houseIcon"></fa-icon><a href="{{ event.homepage }}">{{ event.homepage }}</a> </p>
-      <hr>
-    </div>
-  </div>
-
+  </isd-section>
+  <hr class="sections-separator">
+  <isd-section [padding]="PADDING_BETWEEN_SECTIONS">
+    <isd-past-conferences-list></isd-past-conferences-list>
+  </isd-section>
 </div>
