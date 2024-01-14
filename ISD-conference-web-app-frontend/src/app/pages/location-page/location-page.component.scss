@@ -1,7 +1,9 @@
 @import '../../styles/isd-variables.scss';
 
+//TODO copy all hardcoded values to isd-variables.scss
+
 .location-page-content-wrapper{
-    padding-top: $content-gap-from-nav;
+    padding-top: 1rem;
     .top-text {
         font-family: $roboto;
         color: rgba(rgb(0, 0, 0), 1);
@@ -16,9 +18,10 @@
         width: 100%;
         text-align: left;
         font-size: $font-size-very-big; //add to isd-variables.scss
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .content{
+        font-family: $roboto;
         text-align: left;
         width: 80%;
         float: left;
@@ -32,5 +35,17 @@
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    
+    .small-header{
+        font-weight: bold;
+    }
+    .guide-text{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .about-venue{
+        padding-bottom: 2rem;
+    }
+    .about-venue-header{
+        font-size: $font-size-very-big;
+    }
 }
