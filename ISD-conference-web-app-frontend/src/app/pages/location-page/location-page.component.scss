@@ -1,0 +1,36 @@
+@import '../../styles/isd-variables.scss';
+
+.location-page-content-wrapper{
+    padding-top: $content-gap-from-nav;
+    .top-text {
+        font-family: $roboto;
+        color: rgba(rgb(0, 0, 0), 1);
+        width: 100%;
+        text-align: center;
+        font-size: $font-size-huge; //add to isd-variables.scss
+        padding-top: 2rem;
+    }
+    .venue-name{
+        font-family: $roboto;
+        color: rgba(rgb(0, 0, 0), 1);
+        width: 100%;
+        text-align: left;
+        font-size: $font-size-very-big; //add to isd-variables.scss
+        padding-top: 2rem;
+    }
+    .content{
+        text-align: left;
+        width: 80%;
+        float: left;
+        padding-left: 20%; //zapytać jak to poprawnie wyśrodkować xd
+    }
+    .description{
+        padding-top: 1rem;
+    }
+    iframe{
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+}
