@@ -3,47 +3,50 @@
 //TODO copy all hardcoded values to isd-variables.scss
 
 .location-page-content-wrapper{
-    padding-top: 1rem;
+    padding-top: $default-gap;
     .top-text {
         font-family: $roboto;
-        color: rgba(rgb(0, 0, 0), 1);
+        color: $black;
         width: 100%;
         text-align: center;
-        font-size: $font-size-huge; //add to isd-variables.scss
-        padding-top: 2rem;
+        font-size: $font-size-huge;
+        padding-top: 2*$default-gap;
     }
     .venue-name{
         font-family: $roboto;
-        color: rgba(rgb(0, 0, 0), 1);
+        color: $black;
         width: 100%;
         text-align: left;
-        font-size: $font-size-very-big; //add to isd-variables.scss
-        padding-top: 1rem;
+        font-size: $font-size-very-big; 
+        padding-top: $default-gap;
     }
     .content{
         font-family: $roboto;
         text-align: left;
         width: 80%;
         float: left;
-        padding-left: 20%; //zapytać jak to poprawnie wyśrodkować xd
+        padding-left: 20%; 
     }
     .description{
-        padding-top: 1rem;
+        padding-top: $default-gap;
     }
     iframe{
         width: 100%;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 2*$default-gap;
+        padding-bottom: 2*$default-gap;
     }
     .small-header{
         font-weight: bold;
     }
+    .how-to-reach-text{
+        padding-bottom: $default-gap;
+    }
     .guide-text{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: $default-gap;
+        padding-bottom: $default-gap;
     }
     .about-venue{
-        padding-bottom: 2rem;
+        padding-bottom: 4*$default-gap;
     }
     .about-venue-header{
         font-size: $font-size-very-big;
