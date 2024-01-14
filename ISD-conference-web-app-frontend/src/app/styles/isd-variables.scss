@@ -7,6 +7,7 @@ $primary-dark-bg-color: #00277c;
 $primary-darker-bg-color: #02223f;
 $white: white;
 $white-darker: rgb(247, 247, 247);
+$black: rgb(0,0,0);
 $primary-font: 'Poppins';
 $roboto: 'Roboto', sans-serif;
 $lato: 'Lato', sans-serif;
@@ -27,3 +28,4 @@ $default-gap: 1rem;
 $content-gap-from-nav: 5rem;
 $max-content-width: 1200px;
 $content-width: min($max-content-width, 95%)
+
