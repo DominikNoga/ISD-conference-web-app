@@ -1,1 +1,20 @@
-<p>register-page works!</p>
+<div class="container">
+  <!-- <div class="header">
+    <p>About the organizors</p>
+  </div> -->
+  <div class="ticket-grid">
+    <isd-ticket *ngFor="let ticket of tickets" [ticket]="ticket"></isd-ticket>
+  </div>
+  <div class="ad">
+    <div class="side_bar_about">
+      <isd-about-the-tickets></isd-about-the-tickets>
+    </div>
+    <div class="side-bar-organizer">
+      <isd-side-bar-organizer></isd-side-bar-organizer>
+    </div>
+  </div>
+  <div class="checkout">
+    <div class="number-of-tickets"></div>
+    <div class="cost"></div>
+  </div>
+</div>

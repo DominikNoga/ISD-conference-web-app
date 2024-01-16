@@ -1,0 +1,114 @@
+@import "../../../../styles/isd-variables.scss";
+@import "../../../../styles/isd-mixins.scss";
+
+.ticket-wrapper {
+    display: flex;
+    flex-direction: row;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px 30px 30px 30px; 
+    min-height: 220px;
+    width: $content-width;
+    min-width: 600px;
+
+}
+.middle {
+    flex: 4;
+    background-color: $white-darker;
+    display: flex;
+    flex-direction: column; /* Ensure a column-oriented flex container */
+}
+
+.head {
+    width: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 0 0 30px; 
+    background-color: #ade27c;
+    border-right: 2px dashed #cacaca;
+    font-size: 60px;
+    color: white;
+}
+
+.legs {
+    flex: 2;
+    background-color: $white-darker;
+    border-left: 2px dashed #cacaca;
+    border-radius: 0 30px 30px 0;
+    text-align: right;
+    min-width: 170px;
+}
+
+.small {
+    font-size: 9px;
+    padding-right: 10%;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 10%;
+    list-style: inside;
+}
+
+.title {
+    font-size: $font-size-big;
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+.small-title {
+    font-size: $font-size-small;
+}
+
+select {
+    width: 65px;
+    padding: 10px;
+    margin-right: 10%;
+    margin-top: 20%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form {
+    border-radius: 8px;
+    padding-left: 10%;
+}
+.padding-top {
+    padding-top: 10%;
+}
+.ticket-item-title {
+    margin: 0;
+}
+.underline
+{
+    text-decoration: underline;
+}
+
+s, strike{text-decoration:none;position:relative;}
+s::before, strike::before {
+    top: 50%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
+    background:red; /*this is the color of the line*/
+    opacity:.7;
+    content: '';
+    width: 110%;
+    position: absolute;
+    height:.1em;
+    border-radius:.1em;
+    left: -5%;
+    white-space:nowrap;
+    display: block;
+    transform: rotate(-15deg);  
+}
+s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;width:102%;}
+
+.no-padding-top
+{
+    padding-top: 0;
+    margin-top: 0;
+}

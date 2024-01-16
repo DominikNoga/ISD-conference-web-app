@@ -1,0 +1,38 @@
+<div class="ticket-wrapper">
+    <div class="head" [style.background-color]="ticket.Color">
+        0
+    </div>
+    <div class="middle">
+        <div class="title">{{ ticket.TicketType }}</div>
+        <div class="title small-title">{{ ticket.TicketDescription }}</div>
+        <div class="title small-title">
+            The ticked includes
+            <ul>
+                <li>Meal</li>
+                <li>custom T-shirts</li>
+                <li>extra beer</li>
+            </ul>
+        </div>
+        <div class="title small-title underline"><a href="http://wp.pl">READ MORE</a></div>
+    </div>
+    <div class="legs">
+        <div class="title">{{ ticket.DiscountedPrice }}€ <s *ngIf="ticket.order !== 1 ">*{{ ticket.Fullprice }} €</s></div>
+        <div class="small">+ 23% VAT tax</div>
+        <form>
+            <select id="liczba" name="liczba">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <!-- <button type="submit">Wyślij</button> -->
+        </form>
+        <div class="small padding-top">Discount available until {{ticket.DiscountExpiration}}</div>
+        <div class="small " *ngIf="ticket.order === 1 ">Check discound for more papers
+
+        </div>
+
+    </div>
+</div>
