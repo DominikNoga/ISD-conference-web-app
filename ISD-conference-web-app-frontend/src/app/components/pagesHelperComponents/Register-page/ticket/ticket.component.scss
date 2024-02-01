@@ -12,7 +12,8 @@
 
 }
 .middle {
-    flex: 4;
+    // max-width: 520px;
+    flex: 1;
     background-color: $white-darker;
     display: flex;
     flex-direction: column; /* Ensure a column-oriented flex container */
@@ -32,7 +33,8 @@
 }
 
 .legs {
-    flex: 2;
+    width: 220px;
+    // flex: 2;
     background-color: $white-darker;
     border-left: 2px dashed #cacaca;
     border-radius: 0 30px 30px 0;
