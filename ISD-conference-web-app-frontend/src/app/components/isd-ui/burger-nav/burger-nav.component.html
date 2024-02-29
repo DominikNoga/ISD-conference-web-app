@@ -1,0 +1,12 @@
+<div class="burger-nav-wrapper">
+    <ul class="burger-nav">
+        <li *ngFor="let navItem of NAV_ITEMS">
+            {{ navItem.item.label }}
+            <ul class="sub-nav" *ngIf="isDropdownItem(navItem.item)">
+                <li *ngFor="let subItem of castToDropdownItem(navItem.item).items">
+                    {{ subItem.label }}
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

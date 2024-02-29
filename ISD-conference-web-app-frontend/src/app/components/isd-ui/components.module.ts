@@ -11,6 +11,7 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
 import { NavItemComponent } from './nav-item/nav-item.component';
 import { NavDropdownItemComponent } from './nav-dropdown-item/nav-dropdown-item.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { BurgerNavComponent } from './burger-nav/burger-nav.component';
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import { PageHeaderComponent } from './page-header/page-header.component';
         NavItemComponent,
         NavDropdownItemComponent,
         PageHeaderComponent,
+        BurgerNavComponent,
     ],
     exports: [
         FooterComponent,

@@ -1,0 +1,17 @@
+@import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
+
+.burger-nav-wrapper {
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0 0 .5rem rgba(black, .3);
+    padding: $default-gap;
+    width: 100%;
+    .burger-nav {
+        @include simpleFlexLayout();
+        .sub-nav {
+            margin-left: $default-gap;
+            @include simpleFlexLayout();
+        }
+    }
+}
