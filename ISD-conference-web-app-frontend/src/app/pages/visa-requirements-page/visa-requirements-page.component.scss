@@ -2,7 +2,7 @@
 
 //TODO copy all hardcoded values to isd-variables.scss
 
-.location-page-content-wrapper{
+.visa-requirements-page-content-wrapper{
     padding-top: $default-gap;
     .top-text {
         font-family: $roboto;
@@ -26,29 +26,19 @@
         width: 80%;
         float: left;
         padding-left: 20%; 
+        padding-bottom: $content-gap-from-nav;
     }
     .description{
         padding-top: $default-gap;
     }
-    iframe{
-        width: 100%;
-        padding-top: 2*$default-gap;
-        padding-bottom: 2*$default-gap;
-    }
     .small-header{
         font-weight: bold;
     }
-    .how-to-reach-text{
+    .links-text{
         padding-bottom: $default-gap;
     }
-    .guide-text{
+    .link-list{
         padding-top: $default-gap;
         padding-bottom: $default-gap;
-    }
-    .about-venue{
-        padding-bottom: 4*$default-gap;
-    }
-    .about-venue-header{
-        font-size: $font-size-very-big;
     }
 }
