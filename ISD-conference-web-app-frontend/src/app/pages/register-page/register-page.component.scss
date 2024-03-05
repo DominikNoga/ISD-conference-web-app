@@ -8,9 +8,12 @@
     margin-top: 50px;
     margin-bottom: 50px;
     // background-color: rgb(230, 230, 230);
+}
+.top
+{
     display: flex;
-    flex-direction: row;
-    gap: 10px; 
+    flex-direction: column-reverse;
+    gap: 0px; 
 }
 .side_bar_about, .side-bar-organizer
 {
@@ -23,19 +26,28 @@
 .ad
 {
     margin-left: 20px;
+    margin-right: 20px;
     min-width: 230px;
     gap: 40px;
     display: flex;
     flex: 1;
-    flex-direction: column; 
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 .ticket-grid {
-    flex: 2;
+    flex: 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-bottom: 100px;
+    flex-direction: column;
+    // margin-left: 20px;
+    // margin-right: 20px;
+    @media (min-width: 800px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
     // background-color: rgb(202, 202, 202);
 }
 .checkout
@@ -51,4 +63,39 @@
     padding-top: 0;
     margin-top: 0;
 }
-
+@media (min-width: 800px) {
+    .top {
+        flex-direction: row;
+    }
+}
+.number-of-tickets {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .ticket-type {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .separator {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid white;
+  }
+  
+  .total-price {
+    display: block;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  

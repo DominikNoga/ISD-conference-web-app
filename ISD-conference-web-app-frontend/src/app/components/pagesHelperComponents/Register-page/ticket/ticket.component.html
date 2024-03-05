@@ -1,7 +1,7 @@
 <div class="ticket-wrapper">
-    <div class="head" [style.background-color]="ticket.Color">
+    <!-- <div class="head" [style.background-color]="ticket.Color">
         0
-    </div>
+    </div> -->
     <div class="middle">
         <div class="title">{{ ticket.TicketType }}</div>
         <div class="title small-title">{{ ticket.TicketDescription }}</div>
@@ -15,24 +15,42 @@
         </div>
         <div class="title small-title underline"><a href="http://wp.pl">READ MORE</a></div>
     </div>
-    <div class="legs">
-        <div class="title">{{ ticket.DiscountedPrice }}€ <s *ngIf="ticket.order !== 1 ">*{{ ticket.Fullprice }} €</s></div>
-        <div class="small">+ 23% VAT tax</div>
-        <form>
-            <select id="liczba" name="liczba">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <!-- <button type="submit">Wyślij</button> -->
-        </form>
-        <div class="small padding-top">Discount available until {{ticket.DiscountExpiration}}</div>
-        <div class="small " *ngIf="ticket.order === 1 ">Check discound for more papers
+    <div class="legs" [style.background-color]="ticket.Color">
+        <span class="Available" >Available until {{ticket.AvailableUntil.toLocaleDateString('en-GB')}}</span>
 
+        <div class="columnorder">
+            <div class="firstrow">
+                <div class="price">
+                    <div class="title"> {{ ticket.DiscountedPrice }}€ <s>*{{ ticket.Fullprice }} €</s></div>
+                    <div class="small">+ 23% VAT tax</div>
+
+                    <!-- <span class="small">Are you a student or <b>AIS</b> member?</span> -->
+    
+                    <!-- <div class="checkboxestyle">
+                        <div class="checkbox-wrapper-5">
+                            <div class="check">
+                              <input id="check-{{ticket.order}}" type="checkbox">
+                              <label for="check-{{ ticket.order }}"></label>
+                            </div>
+                          </div>
+                    </div> -->
+                </div>
+                <div class="moredis"></div>
+                <form id="{{ticket.order}}">
+                    <select id="liczba" name="liczba" (change)="selectOption(ticket.order, $event)">
+                        <option [value]="0">0</option>
+                        <option [value]="1">1</option>
+                        <option [value]="2">2</option>
+                        <option [value]="3">3</option>
+                        <option [value]="4">4</option>
+                        <option [value]="5">5</option>
+                    </select>
+                </form>
+                <!-- <isd-addbutton></isd-addbutton> -->
+                <div class="until" >Discount until <br> <b>{{ticket.DiscountExpiration.toLocaleDateString('en-GB').split('/').join('.')}}</b></div>
+
+            </div>
         </div>
-
     </div>
 </div>
+

@@ -14,7 +14,8 @@ export class RegisterPageComponent implements OnInit {
     Fullprice: number,
     DiscountedPrice: number,
     TicketDescription: string,
-    DiscountExpiration: string,
+    DiscountExpiration: Date,
+    AvailableUntil: Date,
     Color: string
   }[];
   
@@ -29,10 +30,38 @@ export class RegisterPageComponent implements OnInit {
           DiscountedPrice: ticket.DiscountedPrice,
           TicketDescription: ticket.TicketDescription,
           DiscountExpiration: ticket.DiscountExpiration,
+          AvailableUntil: ticket.AvailableUntil,
           Color: ticket.Color
         }
       )
     );
   }
+  id = 0;
+  value_student = 0;
+  value_normal = 0;
+  // TicketSelected($event: [number, number]): void 
+  // {
+  //   this.id = $event[0];
+  //   this.value = $event[1];
+  // }
 
+  TicketSelected(eventData: { id: number, value: number }): void {
+    this.id = eventData.id;
+    console.log("Ojciec", this.id, "Value:", eventData.value);
+
+    if (this.id === 1) 
+    {
+      this.value_normal = eventData.value;
+    } 
+    else if (this.id === 2) 
+    {
+      this.value_student = eventData.value;
+    }
+    else
+    {
+      console.error("id is not 0 or 1");
+    }
+
+  }
+  
 }

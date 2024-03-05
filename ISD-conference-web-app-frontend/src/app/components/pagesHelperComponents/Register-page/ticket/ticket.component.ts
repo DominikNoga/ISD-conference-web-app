@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ElementRef, Renderer2, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, ElementRef, Renderer2, OnDestroy,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'isd-ticket',
@@ -7,46 +7,35 @@ import { Component, Input, OnInit, ElementRef, Renderer2, OnDestroy } from '@ang
 })
 export class TicketComponent implements OnInit, OnDestroy {
   @Input() ticket!: {
-
     order: number;
     TicketType: string;
     Fullprice: number;
     DiscountedPrice: number;
     TicketDescription: string;
-    DiscountExpiration: string;
+    DiscountExpiration: Date;
+    AvailableUntil: Date;
     Color: string;
   };
 
-  private resizeListener: () => void;
+  constructor() {}
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {
-    this.resizeListener = this.adjustTicketWidth.bind(this);
-  }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-    this.adjustTicketWidth();
-    window.addEventListener('resize', this.resizeListener);
-  }
+  ngOnDestroy(): void {}
 
-  ngOnDestroy(): void {
-    window.removeEventListener('resize', this.resizeListener);
-  }
 
-  private adjustTicketWidth() {
-    const ticketWrapper = this.el.nativeElement.querySelector('.ticket-wrapper');
-    if (ticketWrapper) {
-      let multiplier = 0.5;
-      if(window.innerWidth >600)
-      {
-        multiplier = 0.5;
-        console.log("0.5");
-      }
-      else{
-        multiplier = 1;
-        console.log("1");
-      }
-      const contentWidth = Math.min(1200, window.innerWidth * multiplier);
-      this.renderer.setStyle(ticketWrapper, 'width', `${contentWidth}px`);
+  // @Output() ticketSelected = new EventEmitter<[number,number]>();
+  @Output() ticketSelected = new EventEmitter<{ id: number, value: number }>();
+  selectOption(id: number, $event: any): void {
+    const targetValue = $event?.target?.value;
+  
+    if (targetValue !== undefined && targetValue !== null) {
+      // console.log("Dziecko: ",id, " ", targetValue);
+      this.ticketSelected.emit({ id, value: parseInt(targetValue) });
+    } else {
+      console.error("targetValue is null or undefined");
     }
   }
+  
+  
 }

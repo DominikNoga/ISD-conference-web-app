@@ -8,7 +8,8 @@
     border-radius: 30px 30px 30px 30px; 
     min-height: 220px;
     width: $content-width;
-    min-width: 600px;
+    min-width: 580px;
+    background-color: #ade27c;
 
 }
 .middle {
@@ -19,31 +20,32 @@
     flex-direction: column; /* Ensure a column-oriented flex container */
 }
 
-.head {
-    width: 100px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px 0 0 30px; 
-    background-color: #ade27c;
-    border-right: 2px dashed #cacaca;
-    font-size: 60px;
-    color: white;
-}
+// .head {
+//     width: 100px; 
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 30px 0 0 30px; 
+//     background-color: #ade27c;
+//     border-right: 2px dashed #cacaca;
+//     font-size: 60px;
+//     color: white;
+// }
 
 .legs {
-    width: 220px;
-    // flex: 2;
+    width: 300px;
     background-color: $white-darker;
     border-left: 2px dashed #cacaca;
     border-radius: 0 30px 30px 0;
     text-align: right;
     min-width: 170px;
+    display: flex;
+    flex-direction: column;
 }
 
 .small {
-    font-size: 9px;
+    font-size: 12px;
     padding-right: 10%;
     margin-top: 0;
 }
@@ -51,6 +53,13 @@
 ul {
     padding-left: 10%;
     list-style: inside;
+}
+
+.until
+{
+    margin-left: 50%;
+    margin-right: 10%;
+    text-align: center;
 }
 
 .title {
@@ -68,10 +77,12 @@ ul {
 }
 
 select {
-    width: 65px;
+    width: 40%;
     padding: 10px;
     margin-right: 10%;
-    margin-top: 20%;
+    margin-left: 50%;
+    margin-top: 3%;
+    margin-bottom: 5%;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -79,7 +90,10 @@ select {
 
 form {
     border-radius: 8px;
-    padding-left: 10%;
+    padding-left: 0;
+    display: flex;
+    width: 100%;
+    text-align: right;
 }
 .padding-top {
     padding-top: 10%;
@@ -91,7 +105,18 @@ form {
 {
     text-decoration: underline;
 }
-
+.Available
+{
+    border-radius: 0 0 30px 30px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    width: 80%;
+    text-align: center;
+    background-color: #8e44ad;
+    // background-color: #B67352;
+}
 s, strike{text-decoration:none;position:relative;}
 s::before, strike::before {
     top: 50%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
@@ -114,3 +139,201 @@ s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;wid
     padding-top: 0;
     margin-top: 0;
 }
+.moreinfo
+{
+    text-align: center;
+}
+.Discount
+{
+    // color: #b95555;
+    text-align: center;
+    font-size: $font-size-small;
+    // margin-bottom: 30px;
+    padding-bottom: 5%;
+    // font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.moredis
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+}
+.center
+{
+    text-align: center;
+}
+.hide
+{
+    display: none;
+}
+
+@media screen and (max-width: 800px) 
+{
+    head {display: none;}
+}
+
+@media screen and (max-width: 600px) 
+{
+    .head 
+    {
+        display: block;
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        text-align: center;
+        border-right: 0 da                                                                                                                                                                          shed #cacaca;
+    }
+    .ticket-wrapper {
+        flex-direction: column;
+        min-width: 0;
+        width: 100%;
+    }
+    .legs {
+        background-color: $white-darker;
+        border-top: 2px dashed #cacaca;
+        border-radius: 0 0 30px 30px;
+    }
+    .columnorder
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+    }
+    form
+    {
+        padding-left: 0;
+        padding-right: 0;
+        flex: 1;
+        padding-bottom: 5%;
+        margin-top: 0;
+    }
+    select
+    {
+        margin-top: 0;
+        margin-right: 0;
+        width: 100%;
+    
+    }
+    .price
+    {
+        flex: 2;
+        text-align: center;
+        padding-bottom: 5%;
+        padding-left: 100px;
+    }
+}
+
+
+// CHECKBOX
+
+    .checkboxestyle
+    {
+        // padding-left: 10%;
+        padding-right: 10%;
+        width: 100%;
+        font-size: $font-size-small;
+    }
+
+    .checkbox-wrapper-5 .check {
+        --size: 30px;
+    
+        position: relative;
+        background: linear-gradient(90deg, #9ac1f3, #f099b5);
+        line-height: 0;
+        perspective: 400px;
+        font-size: var(--size);
+      }
+    
+      .checkbox-wrapper-5 .check input[type="checkbox"],
+      .checkbox-wrapper-5 .check label,
+      .checkbox-wrapper-5 .check label::before,
+      .checkbox-wrapper-5 .check label::after,
+      .checkbox-wrapper-5 .check {
+        appearance: none;
+        display: inline-block;
+        border-radius: var(--size);
+        border: 0;
+        transition: .35s ease-in-out;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+    
+      .checkbox-wrapper-5 .check label {
+        width: calc(2.2 * var(--size));
+        height: var(--size);
+        background: #d7d7d7;
+        overflow: hidden;
+      }
+    
+      .checkbox-wrapper-5 .check input[type="checkbox"] {
+        position: absolute;
+        z-index: 1;
+        width: calc(.8 * var(--size));
+        height: calc(.8 * var(--size));
+        top: calc(.1 * var(--size));
+        left: calc(.1 * var(--size));
+        background: linear-gradient(45deg, #dedede, #ffffff);
+        box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+        outline: none;
+        margin: 0;
+      }
+    
+      .checkbox-wrapper-5 .check input[type="checkbox"]:checked {
+        left: calc(1.3 * var(--size));
+      }
+    
+      .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label {
+        background: transparent;
+      }
+    
+      .checkbox-wrapper-5 .check label::before,
+      .checkbox-wrapper-5 .check label::after {
+        content: "· ·";
+        position: absolute;
+        overflow: hidden;
+        left: calc(.15 * var(--size));
+        top: calc(.5 * var(--size));
+        height: var(--size);
+        letter-spacing: calc(-0.04 * var(--size));
+        color: #9b9b9b;
+        font-family: "Times New Roman", serif;
+        z-index: 2;
+        font-size: calc(.6 * var(--size));
+        border-radius: 0;
+        transform-origin: 0 0 calc(-0.5 * var(--size));
+        backface-visibility: hidden;
+      }
+    
+      .checkbox-wrapper-5 .check label::after {
+        content: "●";
+        top: calc(.65 * var(--size));
+        left: calc(.2 * var(--size));
+        height: calc(.1 * var(--size));
+        width: calc(.35 * var(--size));
+        font-size: calc(.2 * var(--size));
+        transform-origin: 0 0 calc(-0.4 * var(--size));
+      }
+    
+      .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::before,
+      .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
+        left: calc(1.55 * var(--size));
+        top: calc(.4 * var(--size));
+        line-height: calc(.1 * var(--size));
+        transform: rotateY(360deg);
+      }
+    
+      .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
+        height: calc(.16 * var(--size));
+        top: calc(.55 * var(--size));
+        left: calc(1.6 * var(--size));
+        font-size: calc(.6 * var(--size));
+        line-height: 0;
+      }
+

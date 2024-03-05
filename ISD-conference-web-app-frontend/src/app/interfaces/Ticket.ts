@@ -5,6 +5,7 @@ export interface Ticket
     DiscountedPrice: number;
     TicketType: string;
     TicketDescription: string;
-    DiscountExpiration: string;
+    DiscountExpiration: Date;
+    AvailableUntil: Date;
     Color: string;
 }

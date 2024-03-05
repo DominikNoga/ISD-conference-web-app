@@ -1,21 +1,42 @@
 <isd-page-header title="ISD Registration"></isd-page-header>
 <div class="container">
-  <!-- <div class="header">
-    <p>About the organizors</p>
-  </div> -->
-  <div class="ticket-grid">
-    <isd-ticket *ngFor="let ticket of tickets" [ticket]="ticket"></isd-ticket>
-  </div>
-  <div class="ad">
-    <div class="side_bar_about">
-      <isd-about-the-tickets></isd-about-the-tickets>
+  <div class="top">
+    <!-- <div class="header">
+      <p>About the organizors</p>
+    </div> -->
+    <div class="ticket-grid">
+      <isd-ticket (ticketSelected)="TicketSelected($event)" *ngFor="let ticket of tickets" [ticket]="ticket"></isd-ticket>
     </div>
-    <div class="side-bar-organizer">
-      <isd-side-bar-organizer></isd-side-bar-organizer>
+    <div class="ad">
+      <div class="side_bar_about">
+        <isd-about-the-tickets></isd-about-the-tickets>
+      </div>
+      <div class="side-bar-organizer">
+        <isd-side-bar-organizer></isd-side-bar-organizer>
+      </div>
     </div>
   </div>
   <div class="checkout">
-    <div class="number-of-tickets"></div>
-    <div class="cost"></div>
+    <div class="number-of-tickets" *ngIf="value_normal !== 0 || value_student !== 0">
+      <br>
+      <span *ngIf="value_normal !== 0" class="ticket-type">
+        {{value_normal}}x Normal tickets:
+        <strong class="price">{{ value_normal * 300 | currency:'EUR':true:'1.2-2' }}</strong>
+      </span>
+      <span *ngIf="value_student !== 0" class="ticket-type">
+        {{value_student}}x Student tickets:
+        <strong class="price">{{ value_student * 200 | currency:'EUR':true:'1.2-2' }}</strong>
+      </span>
+
+      <hr class="separator">
+      <span class="total-price">
+        Total:
+        <strong class="total">{{ (value_normal * 300 + value_student * 200) | currency:'EUR':true:'1.2-2' }}</strong>
+      </span>
+      <br>
+      <isd-addbutton ></isd-addbutton>
+    </div>
+    
+    
   </div>
 </div>
