@@ -42,7 +42,23 @@ export const NAV_ITEMS: NavItem[] = [
     },
     {
         item: {
-            route: '/location',
+            items: [
+                {
+                    route: '/conference-venue',
+                    label: 'Conference venue',
+                    isActive: false
+                },
+                {
+                    route: '/visa-requirements',
+                    label: 'Visa requirements',
+                    isActive: false
+                },
+                {
+                    route: '/travel-information',
+                    label: 'Travel information',
+                    isActive: false
+                }
+            ],
             label: 'Location',
             isActive: false
         }
