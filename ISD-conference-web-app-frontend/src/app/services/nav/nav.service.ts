@@ -7,7 +7,7 @@ import { NavDefaultItem, NavDropdownItem } from 'src/app/interfaces/Nav';
 })
 export class NavService {
   public readonly NAV_ITEMS = NAV_ITEMS;
-  private readonly DISPLAY_BURGER_NAV_TRESHOLD = 1000;
+  private readonly DISPLAY_BURGER_NAV_TRESHOLD = 1100;
   private currentWidnowWidth!: number;
   private burgerNavToggled = false;
 
@@ -21,8 +21,10 @@ export class NavService {
 
   public displayBurgerNav = (): boolean => this.currentWidnowWidth <= this.DISPLAY_BURGER_NAV_TRESHOLD;
 
+  public isBurgerNavToggled = () => this.burgerNavToggled;
+
   public toggleBurgerNav = (): void => {
-    this.burgerNavToggled != this.burgerNavToggled;
+    this.burgerNavToggled = !this.burgerNavToggled;
   }
 
   public isDefaultItem = (navItem: NavDefaultItem | NavDropdownItem): boolean => navItem instanceof Object && 'route' in navItem;

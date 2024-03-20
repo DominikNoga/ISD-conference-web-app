@@ -1,12 +1,26 @@
-<div class="burger-nav-wrapper">
+<div class="burger-nav-wrapper" *ngIf="isNavToggled()"  [@openClose]="isNavToggled() ? 'open' : 'closed'">
     <ul class="burger-nav">
         <li *ngFor="let navItem of NAV_ITEMS">
-            {{ navItem.item.label }}
-            <ul class="sub-nav" *ngIf="isDropdownItem(navItem.item)">
-                <li *ngFor="let subItem of castToDropdownItem(navItem.item).items">
-                    {{ subItem.label }}
-                </li>
-            </ul>
+            <a 
+                *ngIf="!isDropdownItem(navItem.item);else isDropdown" 
+                routerLink="{{ castToDefaultItem(navItem.item).route}}" 
+                class="nav-dropdown-link" 
+                routerLinkActive="nav-dropdown-link-active">
+                {{ navItem.item.label }}
+            </a>
+            <ng-template #isDropdown>
+                <span>{{ navItem.item.label }}</span>
+                <ul class="sub-nav" *ngIf="isDropdownItem(navItem.item)">
+                    <li *ngFor="let subItem of castToDropdownItem(navItem.item).items">
+                        <a 
+                            routerLink="{{ subItem.route }}" 
+                            class="nav-dropdown-link" 
+                            routerLinkActive="nav-dropdown-link-active">
+                            {{ subItem.label }}
+                        </a>
+                    </li>
+                </ul>
+            </ng-template>
         </li>
     </ul>
 </div>

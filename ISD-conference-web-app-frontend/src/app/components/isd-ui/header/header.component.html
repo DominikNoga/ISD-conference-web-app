@@ -6,7 +6,11 @@
                 <img src="assets/isd-logo-white.png" class="isd-logo" alt="No image provided">
             </a>
         </div>
-        <div class="rectangle"></div>
+        <div class="burger-wrapper" *ngIf="displayBurgerNav()">
+            <isd-burger></isd-burger>
+        </div>
+        <div class="triangle">
+        </div>
     </div>
     <isd-nav></isd-nav>
 </header>

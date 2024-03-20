@@ -5,26 +5,42 @@
     $logo-size: 70px;
     $padding-value: 4em;
     @include simpleFlexLayout($direction: row, $gap: 0);
+    position: relative;
 
-    .rectangle {
-        background-color: $primary-bg-color;
-        padding: 0 $padding-value;
-    }
-    .logo-container {
-        background-color: $primary-bg-color;
-        .isd-logo {
-            max-height: $logo-size;
-            @include addOpacityTransition();
+    .logo {
+        @include simpleFlexLayout($direction: row, $gap: 0);
+        width: min(450px, 90%);
+        .rectangle {
+            background-color: $primary-bg-color;
+            width: 30%;
         }
+        .logo-container {
+            background-color: $primary-bg-color;
+            display: grid;
+            place-items: center;
+            padding-right: 1rem;
+            .isd-logo {
+                max-height: $logo-size;
+                @include addOpacityTransition();
+            }
+        }
+    }
+    
+    .burger-wrapper {
+        background-color: $primary-bg-color;
+        display: grid;
+        padding: 0 $default-gap;
+        align-items: center;
+        justify-items: end;
     }
 
     .triangle {
-        $triangle-size: calc($logo-size + 1em);
+        $triangle-size: calc($logo-size + 2rem);
         width: 0; 
         height: 0; 
         border-left: $triangle-size solid  $primary-bg-color; 
         border-right: $triangle-size solid transparent; 
-        border-top: $triangle-size solid transparent; 
+        border-top: $triangle-size solid transparent;
     }
     
 }

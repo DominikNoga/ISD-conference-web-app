@@ -1,0 +1,134 @@
+@import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
+
+$animation-duration: .3s;
+$animation-timing-function: linear;
+$reverse-direction: reverse;
+
+@mixin barAnimation($animation-name, $duration: $animation-duration, $direction: both) {
+    animation: $animation-name $duration $animation-timing-function $direction;
+}
+
+$burger-gap: .5rem;
+.burger {
+    @include simpleFlexLayout($gap: $burger-gap);
+    @include hoverEffect();
+    z-index: 1000;
+    .bar {
+        @include basicBoxShadow(.5rem, .2);
+        width: 2rem;
+        height: 4px;
+        border-radius: .5rem;
+        background-color: white;
+    }
+
+    .top-bar-opened {
+        @include barAnimation(top-bar-closing)
+    }
+
+    .middle-bar-opened {
+        animation-delay: 0.5*$animation-duration;
+        @include barAnimation(middle-bar-closing, $duration: 0.5*$animation-duration)
+    }
+
+    .bottom-bar-opened {
+        @include barAnimation(bottom-bar-closing)
+    }
+
+    .top-bar-closed {
+        @include barAnimation(top-bar-opening);
+    }
+
+    .middle-bar-closed {
+        @include barAnimation(middle-bar-opening, 0.5*$animation-duration)
+    }
+
+    .bottom-bar-closed {
+        @include barAnimation(bottom-bar-opening);
+    }
+}
+
+$translate-height-top: 1.5 * $burger-gap;
+$translate-height-bottom: -1.5 * $burger-gap;
+$angle-top: 45deg;
+$angle-bottom: 135deg;
+
+@keyframes top-bar-opening {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY($translate-height-top) rotate(0);
+    }
+
+    100% {
+        transform: translateY($translate-height-top) rotate($angle-top);
+    }
+}
+
+@keyframes middle-bar-opening {
+    from {
+        opacity: 1;
+        scale: 1;
+    }
+
+    to {
+        opacity: 0;
+        scale: 0;
+    }
+}
+
+@keyframes bottom-bar-opening {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY($translate-height-bottom) rotate(0);
+    }
+
+    100% {
+        transform: translateY($translate-height-bottom) rotate($angle-bottom);
+    }
+}
+
+@keyframes top-bar-closing {
+    0% {
+        transform: translateY($translate-height-top) rotate($angle-top);
+    }
+
+    50% {
+        transform: translateY($translate-height-top) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes middle-bar-closing {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes bottom-bar-closing {
+    0% {
+        transform: translateY($translate-height-bottom) rotate($angle-bottom);
+    }
+
+    50% {
+        transform: translateY($translate-height-bottom) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
