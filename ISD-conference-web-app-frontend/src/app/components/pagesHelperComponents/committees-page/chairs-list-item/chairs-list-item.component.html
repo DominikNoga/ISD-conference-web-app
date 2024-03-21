@@ -1,0 +1,33 @@
+<div class="chair-list-item-wrapper">
+    <div class="chair-function">
+        {{ chair.function }}
+    </div>
+    <div class="chairs-list-item">
+        <div>
+            <img src="{{chair.photo}}" alt="" class="chair-img">
+        </div>
+        <div class="chair-info">
+            <span class="chair-name">
+                {{ chair.name }}
+            </span>
+            <span class="chair-university">
+                {{ chair.workplace.university }}, {{ chair.workplace.country }}
+            </span>
+        </div>
+        <div class="chair-socials">
+            <span class="chair-social-link" title="Send email">
+                <fa-icon [icon]="EMAIL_ICON"></fa-icon>
+            </span>
+            <span class="chair-social-link" title="See linkedin profile">
+                <a href="{{ chair.links.linkedin }}">
+                    <fa-icon [icon]="LINKEDIN_ICON"></fa-icon>
+                </a>
+            </span>
+            <span class="chair-orcid-link" title="See orcid profile">
+                <a href="{{ chair.links.orcid }}">
+                    <fa-icon [icon]="ORCID_ICON"></fa-icon>
+                </a>
+            </span>
+        </div>
+    </div>
+</div>

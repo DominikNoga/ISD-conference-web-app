@@ -28,7 +28,7 @@
                 @include simpleFlexLayout($gap: 2*$default-gap);
             }
 
-            @media screen and (max-width: 1100px) {
+            @media screen and (max-width: $changeHomePageLayoutTreshold) {
                 .description-and-twitts {
                     @include simpleFlexLayout();
                 }

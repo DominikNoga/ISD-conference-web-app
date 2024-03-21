@@ -6,6 +6,8 @@ import { HistoryPageComponents } from "./history-page/history-page.module";
 import { HomePageComponents } from "./home-page/home-page.module";
 import { UiComponentsModule } from "../isd-ui/components.module";
 import { RegisterPageComponents} from "./Register-page/register-page.module";
+import { CommitteesPageComponents } from "./committees-page/committees-page.module";
+
 
 @NgModule({
     declarations: [
@@ -15,6 +17,7 @@ import { RegisterPageComponents} from "./Register-page/register-page.module";
         HistoryPageComponents,
         HomePageComponents,
         RegisterPageComponents
+        CommitteesPageComponents
     ],
     imports: [
         CommonModule,
@@ -22,6 +25,7 @@ import { RegisterPageComponents} from "./Register-page/register-page.module";
         FontAwesomeModule,
         HistoryPageComponents,
         HomePageComponents,
+        CommitteesPageComponents,
         UiComponentsModule
     ]
 })

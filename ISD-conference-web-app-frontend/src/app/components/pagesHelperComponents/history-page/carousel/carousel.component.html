@@ -1,0 +1,36 @@
+<div *ngIf="events && events.length > 0" class="carousel-container">
+    <div class="history-tile fade" *ngFor="let event of events; let i=index " [ngClass]="{'tile-active':selectedIndex===i}">
+        <h2>{{ event.title }}</h2>
+        <p class="event-paragraph" *ngIf="event.topic"><fa-icon [icon]="lightbulbIcon"></fa-icon><span>{{ event.topic }}</span></p>
+        <p class="event-paragraph"><fa-icon [icon]="locationIcon"></fa-icon> <span>{{ event.location }}</span></p>
+        <ng-container *ngIf="event.proceedings && event.proceedings.length">
+            <p *ngFor="let proceeding of event.proceedings" class="event-paragraph">
+                <fa-icon [icon]="bookIcon"></fa-icon>
+                <a class="homepage-link" href="{{ proceeding.link }}">{{ proceeding.title }}</a>
+            </p>
+        </ng-container>
+        <p class="event-paragraph" *ngIf="event.homepage">
+            <fa-icon [icon]="event.isHomePageArchive ? iglooIcon : houseIcon"></fa-icon>
+            <a class="homepage-link" href="{{ event.homepage.link }}">{{ event.homepage.title }} {{ event.isHomePageArchive ? ' (Web archive)' : '' }}</a>
+        </p>
+    </div>
+
+    <div *ngIf="indicators" class ="carousel-dot-container">
+            <span  *ngFor="let dot of events; let i=index" 
+            class="dot" 
+            [ngClass]="{'active':selectedIndex===i}"
+            (click)="selectTile(i)"
+            >
+            </span>
+    </div>
+
+    <div *ngIf="controls" class = "btn-carousel btn-prev">
+        <fa-icon [icon]="faArrowLeft" class="icon-carousel icon-prev"
+        (click)="onPrevClick()"></fa-icon>  
+    </div>
+
+    <div *ngIf="controls" class = "btn-carousel btn-next">
+        <fa-icon [icon]="faArrowRight" class="icon-carousel icon-next"
+        (click)="onNextClick()"></fa-icon>  
+    </div>
+</div>
