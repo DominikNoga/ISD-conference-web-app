@@ -16,7 +16,7 @@ import { CommitteesPageComponents } from "./committees-page/committees-page.modu
     exports: [
         HistoryPageComponents,
         HomePageComponents,
-        RegisterPageComponents
+        RegisterPageComponents,
         CommitteesPageComponents
     ],
     imports: [
