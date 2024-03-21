@@ -1,0 +1,60 @@
+<div class="ticket-wrapper">
+    <!-- <div class="head" [style.background-color]="ticket.Color">
+        0
+    </div> -->
+    <div class="middle">
+        <div class="title">{{ ticket.TicketType }}</div>
+        <div class="title small-title">{{ ticket.TicketDescription }}</div>
+        <div class="title small-title">
+            The ticked includes
+            <ul>
+                <li>Meal</li>
+                <li>custom T-shirts</li>
+                <li>extra beer</li>
+            </ul>
+        </div>
+        <div class="title small-title underline"><a href="http://wp.pl">READ MORE</a></div>
+    </div>
+    <div class="legs" [style.background-color]="ticket.Color">
+        <span class="Available" >Available until {{ticket.AvailableUntil.toLocaleDateString('en-GB').split('/').join('.')}}</span>
+
+        <div class="columnorder">
+            <div class="firstrow">
+                <div class="price" >
+                    <div class="title" *ngIf="ticket.DiscountBool==true"> {{ ticket.DiscountedPrice }}€ <s>*{{ ticket.Fullprice }} €</s></div>
+                    <div class="title" *ngIf="ticket.DiscountBool==false"> {{ ticket.Fullprice }} €</div>
+                    <div class="small">+ 23% VAT tax</div>
+
+                    <!-- <span class="small">Are you a student or <b>AIS</b> member?</span> -->
+    
+                    <!-- <div class="checkboxestyle">
+                        <div class="checkbox-wrapper-5">
+                            <div class="check">
+                              <input id="check-{{ticket.order}}" type="checkbox">
+                              <label for="check-{{ ticket.order }}"></label>
+                            </div>
+                          </div>
+                    </div> -->
+                </div>
+                <div class="moredis"></div>
+                <div class="form">
+                    <form id="{{ticket.order}}">
+                        <select id="liczba" name="liczba" (change)="selectOption(ticket.order, $event, ticket.TicketType)">
+                            <option [value]="0">0</option>
+                            <option [value]="1">1</option>
+                            <option [value]="2">2</option>
+                            <option [value]="3">3</option>
+                            <option [value]="4">4</option>
+                            <option [value]="5">5</option>
+                        </select>
+                    </form>
+                </div>
+
+                <!-- <isd-addbutton></isd-addbutton> -->
+                <div class="until" >Discount until <br> <b>{{ticket.DiscountExpiration.toLocaleDateString('en-GB').split('/').join('.')}}</b></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,83 @@
+//Colours
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #3498db;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+
+.wrapper {
+  text-align: center;
+}
+
+h1 {
+  color: $yellow;
+  font-size: 4rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+  
+  @media screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
+}
+
+// Basic Button Style
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $red;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: auto;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+}
+
+
+//BUTTON 3
+.third {
+  border-color: $blue;
+  color: #fff;
+  box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+  transition: all 150ms ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+  }
+}
+// BUTTON 4
+.fourth {
+  // background: $purple;
+  border-color: $purple;
+  color: #fff;
+  background: {
+    image: linear-gradient(45deg,$purple 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  margin-bottom: 20px;
+  transition: background 300ms ease-in-out;
+  
+  &:hover {
+    background-position: 0;
+  }
+}
