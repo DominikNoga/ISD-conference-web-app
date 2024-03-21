@@ -1,0 +1,33 @@
+@import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
+
+.burger-nav-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0 0 .5rem rgba(black, .3);
+    padding: $default-gap;
+    .burger-nav {
+        @include simpleFlexLayout();
+        width: calc(100vw - 3.5*$default-gap);
+        .sub-nav {
+            margin-left: $default-gap;
+            @include simpleFlexLayout();
+        }
+
+        .nav-dropdown-link {
+            color: black;
+            transition: color .2s;
+            will-change: color;
+            &:hover {
+                color: $primary-bg-color;
+            }
+
+            &-active {
+                color: $primary-bg-color;
+            }
+        }
+    }
+}
