@@ -1,0 +1,18 @@
+@import '../../styles/isd-variables.scss';
+@import '../../styles/isd-mixins.scss';
+
+.isd-committees-wrapper {
+    display: grid;
+    place-items: center;
+    .isd-committees {
+        width: 90%;
+        .committee-title {
+            font-size: $font-size-big;
+        }
+
+        .isd-committees-content-wrapper {
+            @include simpleFlexLayout($direction: row)
+        }
+    }
+}
+

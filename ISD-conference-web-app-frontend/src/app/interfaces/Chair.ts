@@ -15,6 +15,17 @@ export interface Chair {
     }
 }
 
+export interface ChairCsv {
+    name: string;
+    workplace_country: string;
+    workplace_university: string;
+    function: string;
+    photo: string;
+    links_email: string;
+    links_linkedin?: string;
+    links_orcid?: string;
+}
+
 export interface CommitteeMember {
     name: string;
     workplace?: Workplace;

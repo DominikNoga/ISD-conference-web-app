@@ -97,7 +97,7 @@ export const MOCK_CHAIRS: Chair[] = [
             university: 'University of Gdańsk'
         },
         function: 'Conference Office',
-        photo: `${BASE_IMG_PATH}/Anna_Wesierska`,
+        photo: `${BASE_IMG_PATH}/Anna_Wesierska.jpg`,
         links: {
             email: '',
         }

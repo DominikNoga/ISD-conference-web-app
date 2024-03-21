@@ -1,0 +1,52 @@
+@import '../../../../styles/isd-mixins.scss';
+@import '../../../../styles/isd-variables.scss';
+
+
+.chair-list-item-wrapper {
+    @include simpleFlexLayout($gap: .3rem);
+    
+    .chair-function {
+        font-size: $font-size-bigger;
+        font-weight: bold;
+        font-family: $lato;
+        align-self: center;
+    }
+    
+    .chairs-list-item {
+        border: solid 1px black;
+        border-radius: .5rem;
+        padding: $default-gap;
+        background-color: #f0f0f0;
+        @include simpleFlexLayout($direction: row, $justify-content: space-between);
+
+        .chair-img {
+            width: 100px;
+            aspect-ratio: 7/10;
+        }
+
+        .chair-info {
+            @include simpleFlexLayout();
+            .chair-name {
+                font-weight: 500;
+                font-size: $font-size-slightly-bigger;
+            }
+
+            .chair-university {
+                font-size: $font-size-slightly-smaller;
+            }
+        }
+
+        .chair-socials {
+            @include simpleFlexLayout($gap: 0);
+            .chair-social-link {
+                font-size: $font-size-huge;
+                @include addSimpleTransition($property: color, $time: .3s, $before-transition-value: #0041d2, $after-transition-value: #073497);
+            }
+
+            .chair-orcid-link {
+                @extend .chair-social-link;
+                @include addSimpleTransition($property: color, $time: .3s, $before-transition-value: #A6CE39, $after-transition-value: #76971a);
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@import '../../../../styles/isd-variables.scss';
+
+.chairs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $default-gap;
+}
