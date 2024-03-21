@@ -1,5 +1,5 @@
 <nav>
-    <ul class="nav-list">
+    <ul class="nav-list" *ngIf="!displayBurgerNav()">
         <ng-container *ngFor="let navItem of NAV_ITEMS">
             <ng-container *ngIf="isDefaultItem(navItem.item); else isDropdown">
                 <isd-nav-item [navItem]="getNavDefaultItem(navItem)"></isd-nav-item>
@@ -9,4 +9,5 @@
             </ng-template>
         </ng-container>
     </ul>
+    <isd-burger-nav *ngIf="displayBurgerNav()"></isd-burger-nav>
 </nav>
