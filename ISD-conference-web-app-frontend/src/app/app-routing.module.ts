@@ -7,13 +7,17 @@ import { HistoryPageComponent } from './pages/history-page/history-page.componen
 import { LocationPageComponent } from './pages/location-page/location-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { TracksPageComponent } from './pages/tracks-page/tracks-page.component';
+import { VisaRequirementsPageComponent } from './pages/visa-requirements-page/visa-requirements-page.component';
+import { TravelInformationPageComponent } from './pages/travel-information-page/travel-information-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'call-for-papers', component: CallForPapersPageComponent},
   { path: 'committees', component: CommitteesPageComponent},
   { path: 'history', component: HistoryPageComponent},
-  { path: 'location', component: LocationPageComponent},
+  { path: 'conference-venue', component: LocationPageComponent},
+  { path: 'visa-requirements', component: VisaRequirementsPageComponent},
+  { path: 'travel-information', component: TravelInformationPageComponent},
   { path: 'register', component: RegisterPageComponent},
   { path: 'tracks', component: TracksPageComponent},
 ];
