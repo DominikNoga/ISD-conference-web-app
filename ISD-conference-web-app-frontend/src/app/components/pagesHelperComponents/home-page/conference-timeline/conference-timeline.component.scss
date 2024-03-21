@@ -7,3 +7,9 @@
         justify-self: center;
     }
 }
+
+@media screen and (max-width: $changeHomePageLayoutTreshold) {
+    .conference-timeline-wrapper {
+        @include simpleFlexLayout();
+    }
+}

@@ -9,6 +9,7 @@ import { ChairsListItemComponent } from './chairs-list-item/chairs-list-item.com
 import { FullTracksListComponent } from './full-tracks-list/full-tracks-list.component';
 import { FullTracksListItemComponent } from './full-tracks-list-item/full-tracks-list-item.component';
 import { SideNavItemComponent } from './side-nav-item/side-nav-item.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import { SideNavItemComponent } from './side-nav-item/side-nav-item.component';
         CommonModule,
         RouterModule,
         FontAwesomeModule,
-        UiComponentsModule
+        UiComponentsModule,
+        HttpClientModule
     ]
 })
 export class CommitteesPageComponents { };
