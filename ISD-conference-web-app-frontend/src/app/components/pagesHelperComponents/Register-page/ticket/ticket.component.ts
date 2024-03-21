@@ -10,6 +10,7 @@ export class TicketComponent implements OnInit, OnDestroy {
     order: number;
     TicketType: string;
     Fullprice: number;
+    DiscountBool: boolean;
     DiscountedPrice: number;
     TicketDescription: string;
     DiscountExpiration: Date;
@@ -24,14 +25,12 @@ export class TicketComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {}
 
 
-  // @Output() ticketSelected = new EventEmitter<[number,number]>();
-  @Output() ticketSelected = new EventEmitter<{ id: number, value: number }>();
-  selectOption(id: number, $event: any): void {
+  @Output() ticketSelected = new EventEmitter<{ id: number, value: number, name: string }>();
+  selectOption(id: number, $event: any, name: string): void {
     const targetValue = $event?.target?.value;
   
     if (targetValue !== undefined && targetValue !== null) {
-      // console.log("Dziecko: ",id, " ", targetValue);
-      this.ticketSelected.emit({ id, value: parseInt(targetValue) });
+      this.ticketSelected.emit({ id, value: parseInt(targetValue), name });
     } else {
       console.error("targetValue is null or undefined");
     }

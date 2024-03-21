@@ -60,6 +60,11 @@ ul {
     margin-left: 50%;
     margin-right: 10%;
     text-align: center;
+    @media screen and (max-width: 600px) 
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .title {
@@ -161,6 +166,10 @@ s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;wid
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
+    @media screen and (max-width: 600px) 
+    {
+        display: none;
+    }
 }
 .center
 {
@@ -171,30 +180,34 @@ s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;wid
     display: none;
 }
 
-@media screen and (max-width: 800px) 
-{
-    head {display: none;}
-}
-
 @media screen and (max-width: 600px) 
 {
     .head 
     {
         display: block;
         border-radius: 30px 30px 0 0;
+        border: 2px dashed #cacaca;
         width: 100%;
         text-align: center;
         border-right: 0 da                                                                                                                                                                          shed #cacaca;
     }
+    .middle
+    {
+        border: 2px dashed #cacaca;
+        border-radius: 30px 30px 0 0;
+    }
     .ticket-wrapper {
         flex-direction: column;
         min-width: 0;
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        
     }
     .legs {
         background-color: $white-darker;
-        border-top: 2px dashed #cacaca;
+        border: 2px dashed #cacaca;
         border-radius: 0 0 30px 30px;
+        width: 100%;
     }
     .columnorder
     {
@@ -208,14 +221,18 @@ s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;wid
     }
     form
     {
-        padding-left: 0;
-        padding-right: 0;
-        flex: 1;
-        padding-bottom: 5%;
+        padding-left: 25%;
+        padding-right: 25%;
+        // flex: 1;
+        // width: 50%;
+        padding-bottom: 2%;
         margin-top: 0;
+
     }
+
     select
     {
+        margin-left: 0;
         margin-top: 0;
         margin-right: 0;
         width: 100%;
@@ -226,7 +243,7 @@ s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;wid
         flex: 2;
         text-align: center;
         padding-bottom: 5%;
-        padding-left: 100px;
+        // padding-left: 100px;
     }
 }
 

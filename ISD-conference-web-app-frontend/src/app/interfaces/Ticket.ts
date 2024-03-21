@@ -2,6 +2,7 @@ export interface Ticket
 {
     order: number;
     Fullprice: number;
+    DiscountBool: boolean;
     DiscountedPrice: number;
     TicketType: string;
     TicketDescription: string;
