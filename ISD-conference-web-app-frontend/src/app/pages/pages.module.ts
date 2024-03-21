@@ -6,6 +6,8 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { HistoryPageComponent } from './history-page/history-page.component';
 import { CommitteesPageComponent } from './committees-page/committees-page.component';
 import { LocationPageComponent } from './location-page/location-page.component';
+import { VisaRequirementsPageComponent } from './visa-requirements-page/visa-requirements-page.component';
+import { TravelInformationPageComponent } from './travel-information-page/travel-information-page.component';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
@@ -28,6 +30,8 @@ import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/
     HistoryPageComponent,
     CommitteesPageComponent,
     LocationPageComponent,
+    VisaRequirementsPageComponent,
+    TravelInformationPageComponent
   ],
   exports: [
     HomePageComponent,
@@ -36,7 +40,9 @@ import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/
     RegisterPageComponent,
     HistoryPageComponent,
     CommitteesPageComponent,
-    LocationPageComponent
+    LocationPageComponent,
+    VisaRequirementsPageComponent,
+    TravelInformationPageComponent
   ]
 })
 export class PagesModule { }
