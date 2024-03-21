@@ -40,4 +40,8 @@ export class BurgerNavComponent implements OnInit {
   isDropdownItem = (item: NavDefaultItem | NavDropdownItem) => !this.navService.isDefaultItem(item);
 
   isNavToggled = (): boolean => this.navService.isBurgerNavToggled();
+
+  toggleNav = (): void => {
+    this.navService.toggleBurgerNav();
+  }
 }

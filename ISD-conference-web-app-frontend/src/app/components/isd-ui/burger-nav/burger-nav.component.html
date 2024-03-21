@@ -4,7 +4,8 @@
             <a 
                 *ngIf="!isDropdownItem(navItem.item);else isDropdown" 
                 routerLink="{{ castToDefaultItem(navItem.item).route}}" 
-                class="nav-dropdown-link" 
+                class="nav-dropdown-link"
+                (click)="toggleNav()" 
                 routerLinkActive="nav-dropdown-link-active">
                 {{ navItem.item.label }}
             </a>
@@ -14,7 +15,8 @@
                     <li *ngFor="let subItem of castToDropdownItem(navItem.item).items">
                         <a 
                             routerLink="{{ subItem.route }}" 
-                            class="nav-dropdown-link" 
+                            class="nav-dropdown-link"
+                            (click)="toggleNav()" 
                             routerLinkActive="nav-dropdown-link-active">
                             {{ subItem.label }}
                         </a>
