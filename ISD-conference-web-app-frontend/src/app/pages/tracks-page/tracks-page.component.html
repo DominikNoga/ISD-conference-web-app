@@ -1,1 +1,13 @@
-<p>tracks-page works!</p>
+<div>
+    <isd-page-header title="Tracks"></isd-page-header>
+        <p>The ISD 2024 conference emphasizes a number of new and well-established tracks:</p>
+    <div *ngFor="let tile of tiles">
+      <app-tile 
+        [title]="tile.title" 
+        [paragraphs]="tile.paragraphs" 
+        [topics]="tile.topics"
+        [chairs]="tile.chairs"
+      ></app-tile>
+    </div>
+  </div>
+  
