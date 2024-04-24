@@ -22,13 +22,5 @@ export const SIDE_NAV_ITEMS: SideNavItem[] = [
                 idToGo: 'track-3'
             },
         ]
-    },
-    {
-        label: 'Journal-First Papers',
-        idToGo: 'journal-first-papers'
-    },
-    {
-        label: 'International Steering Committee',
-        idToGo: 'international-steering-committee'
     }
 ];
