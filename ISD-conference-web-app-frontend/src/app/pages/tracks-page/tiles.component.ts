@@ -17,33 +17,36 @@ import { Component, Input } from '@angular/core';
   </div>
 `,
   styles: [`
-    .tile {
-      cursor: pointer;
-      border: 3px solid #ccc;
-      padding: 10px;
-      margin: 5px;
-    }
-    .content {
-      margin-top: 10px;
-      padding-right: 300px;
-    }
-    h3 {
-      color: black;
-    }
-    h4 {
-      color: black;
-    }
-    p {
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style-type: disc;
-      margin-bottom: 10px;
-      padding: 25px;
-    }
-    .chair {
-      margin: 3px 0; /* Zmniejszono odstęp między kolejnymi nowymi liniami */
-    }
+  .tile {
+    cursor: pointer;
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin-left: 365px; /* Margines po lewej stronie */
+    margin-right: 365px; /* Margines po prawej stronie */
+  }
+  
+  /* Pozostałe style pozostają bez zmian */
+  .content {
+    margin-top: 10px;
+    padding-right: 300px;
+  }
+  h3 {
+    color: black;
+  }
+  h4 {
+    color: black;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    padding: 25px;
+  }
+  .chair {
+    margin: 3px 0; /* Zmniejszono odstęp między kolejnymi nowymi liniami */
+  }  
   `]
 })
 export class TileComponent {
