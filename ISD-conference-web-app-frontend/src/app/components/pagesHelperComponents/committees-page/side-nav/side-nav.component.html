@@ -1,4 +1,10 @@
-<aside class="side-nav-wrapper">
+<isd-burger
+    class="side-nav-burger"
+    [animationClass]="animationClass" 
+    (onBurgerClick)="toggleSideNav()"
+    barsColor="black">
+</isd-burger>
+<aside class="side-nav-wrapper" *ngIf="isDisplayed">
     <ul class="side-nav">
         <isd-side-nav-item *ngFor="let item of sideNavItems" [navItem]="item"></isd-side-nav-item>
     </ul>

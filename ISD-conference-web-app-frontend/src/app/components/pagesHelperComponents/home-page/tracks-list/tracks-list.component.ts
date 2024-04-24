@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { YEAR } from 'src/app/constants/constants';
-import { Track } from 'src/app/interfaces/Track';
-import { MOCK_TRACKS } from 'src/app/mock_data/mock_tracks_data';
 
 @Component({
   selector: 'isd-tracks-list',
@@ -18,13 +16,8 @@ export class TracksListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.tracks =  MOCK_TRACKS.map(track => (
-        {
-          title: track.title,
-          order: track.order
-        }
-      )
-    );
+    // TODO: get tracks from csv
+    this.tracks =  []
   }
 
 }

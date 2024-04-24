@@ -1,0 +1,8 @@
+@import "../../../../styles/isd-mixins.scss";
+@import "../../../../styles/isd-variables.scss";
+
+.tracks-list-wrapper {
+    .tracks-list {
+        @include simpleFlexLayout($gap: 2rem);
+    }
+}

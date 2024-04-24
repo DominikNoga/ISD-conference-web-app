@@ -7,7 +7,7 @@
             </a>
         </div>
         <div class="burger-wrapper" *ngIf="displayBurgerNav()">
-            <isd-burger></isd-burger>
+            <isd-burger animationClass="animationClass" (onBurgerClick)="toggleBurgerNav()"></isd-burger>
         </div>
         <div class="triangle">
         </div>

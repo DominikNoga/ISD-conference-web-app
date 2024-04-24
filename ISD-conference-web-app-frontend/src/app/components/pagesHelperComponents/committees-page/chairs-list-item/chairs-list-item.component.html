@@ -1,5 +1,5 @@
 <div class="chair-list-item-wrapper">
-    <div class="chair-function">
+    <div *ngIf="displayTitle" class="chair-function">
         {{ chair.function }}
     </div>
     <div class="chairs-list-item">

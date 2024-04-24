@@ -2,14 +2,20 @@
     <div class="isd-committees">
         <isd-page-header title="Committees"></isd-page-header>
         <div class="isd-committees-content-wrapper">
-            <isd-side-nav>
+            <isd-side-nav class="side-nav">
             </isd-side-nav>
             <div class="isd-committees-content">
-                <isd-section>
-                    <isd-section-header class="committee-title">
+                <isd-section class="committees-page-section" padding="1rem">
+                    <isd-section-header class="section-title">
                         Organizing Committee
                     </isd-section-header>
                     <isd-chairs-list id="organizing-committee"></isd-chairs-list>
+                </isd-section>
+                <isd-section class="committees-page-section" padding="1rem">
+                    <isd-section-header class="section-title">
+                        Tracks
+                    </isd-section-header>
+                    <isd-full-tracks-list id="tracks"></isd-full-tracks-list>
                 </isd-section>
             </div>
         </div>

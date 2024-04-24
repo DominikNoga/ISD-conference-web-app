@@ -9,10 +9,22 @@ import { SIDE_NAV_ITEMS } from './side-nav.constants';
 })
 export class SideNavComponent implements OnInit {
   sideNavItems: SideNavItem[] = SIDE_NAV_ITEMS;
+  isDisplayed = false;
+  readonly CLOSED = 'closed';
+  readonly OPENED = 'opened';
+  animationClass: 'opened' | 'closed' = this.OPENED;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleSideNav() {
+    this.isDisplayed = !this.isDisplayed;
+    this.toggleAnimationClass();
+  }
+
+  public toggleAnimationClass(): void {
+    this.animationClass = this.animationClass === this.CLOSED ? this.OPENED : this.CLOSED;
+  }
 }

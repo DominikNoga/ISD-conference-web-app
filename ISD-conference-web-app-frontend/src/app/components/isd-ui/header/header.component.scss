@@ -5,7 +5,6 @@
     $logo-size: 70px;
     $padding-value: 4em;
     @include simpleFlexLayout($direction: row, $gap: 0);
-    position: relative;
 
     .logo {
         @include simpleFlexLayout($direction: row, $gap: 0);

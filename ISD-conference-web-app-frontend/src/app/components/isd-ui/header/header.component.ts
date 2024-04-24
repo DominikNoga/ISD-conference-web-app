@@ -7,12 +7,21 @@ import { NavService } from 'src/app/services/nav/nav.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  burgerAnimationClass!: string;
+
   constructor(private navService: NavService) { }
 
   ngOnInit(): void {
+    this.navService.animationClass$.subscribe(animationClass => {
+      this.burgerAnimationClass = animationClass;
+    });
   }
 
   displayBurgerNav(): boolean {
     return this.navService.displayBurgerNav();
+  }
+
+  toggleBurgerNav = (): void => {
+    this.navService.toggleBurgerNav();
   }
 }

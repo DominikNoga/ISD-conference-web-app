@@ -1,0 +1,15 @@
+@import '../../../../styles/isd-mixins.scss';
+@import '../../../../styles/isd-variables.scss';
+
+.side-nav-wrapper {
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    font-family: $lato;
+    font-size: $font-size-slightly-bigger;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .side-nav-burger {
+        translate: 1rem, 0;
+    }
+}

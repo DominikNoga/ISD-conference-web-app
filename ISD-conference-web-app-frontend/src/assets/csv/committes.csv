@@ -1,9 +1,259 @@
-name,workplace_country,workplace_university,function,photo,links_email,links_linkedin,links_orcid
-Bartosz Marcinkowski,Poland,University of Gdańsk,General Chair,assets/mock_chair_img/Bartosz_Marcinkowski.jpg,,,,
-Adam Przybyłek,Poland,Gdańsk University of Technology,Program Chair,assets/mock_chair_img/Adam_Przybylek.jpg,,,,
-Muhammad Ovais Ahmad,Sweden,Karlstad University,Publicity Chair,assets/mock_chair_img/Muhammad-Ovais-AHMAD.jpg,,,,
-Aleksander Jarzębowicz,Poland,Gdańsk University of Technology,Proceedings Chair,assets/mock_chair_img/Aleksander_Jarzębowicz.jpg,,,,
-Jacek Maślankowski,Poland,University of Gdańsk,Local Arrangement Co-Chair,assets/mock_chair_img/Jacek_Maslankowski.jpg,,,,
-Marek Bednarczyk,Poland,Polish-Japanese Academy of Information Technology,Local Arrangement Co-Chair,assets/mock_chair_img/Marek_Bednarczyk.jpg,,,,
-Anna Węsierska,Poland,University of Gdańsk,Conference Office,assets/mock_chair_img/Anna_Wesierska.jpg,,,
-Dariusz Kralewski,Poland,University of Gdańsk,Web Chair,assets/mock_chair_img/Dariusz_Kralewski.jpg,,,
+id,person id,first name,last name,email,country,affiliation,Web page,role,track_id,track name
+1,22,Ademar,Aguiar,,Portugal,University of Porto,,PC member,3,T3
+2,1,Muhammad Ovais,Ahmad,,Sweden,Karlstad University,,track chair,6,T6
+3,1,Muhammad Ovais,Ahmad,,Sweden,Karlstad University,,PC member,3,T3
+4,23,Fernando,Almeida,,Portugal,University of Porto,http://paginas.fe.up.pt/~ei98047/,PC member,3,T3
+5,90,Glenda,Amaral,,Italy,Free University of Bozen-Bolzano,,PC member,2,T2
+6,91,Dario,Amoroso d'Aragona,,Italy,Tampere University,https://damorosodaragona.github.io/,PC member,1,T1
+7,92,Alvaro,Arenas,,Spain,"IE Business School, IE University",http://www.ie.edu/business-school/faculty-research/faculty/alvaro-arenas/,PC member,5,T5
+8,24,Alessandra,Bagnato,,France,Softeam,,PC member,3,T3
+9,93,Fernanda,Baião,,Brazil,PUC-Rio,,PC member,2,T2
+10,94,Alexander,Bakhtin,,Finland,University of Oulu,,PC member,1,T1
+11,25,João,Barata,,Portugal,University of Coimbra,,PC member,3,T3
+12,26,Jörg,Becker,,Germany,University of Münster,http://www.ercis.de,track chair,5,T5
+13,27,Woubshet,Behutiye,,Finland,University of Oulu,,PC member,3,T3
+14,95,Lasse,Berntzen,,Norway,University of South-Eastern Norway,http://www.usn.no,PC member,6,T6
+15,95,Lasse,Berntzen,,Norway,,http://www.usn.no,PC member,5,T5
+16,96,Dominik,Bork,,Austria,TU Wien,,PC member,2,T2
+17,7,Federico,Branco,,Portugal,,http://www.utad.pt,PC member,7,T7
+18,97,Marian,Bubak,,Poland,AGH Krakow PL and University of Amsterdam NL,http://www.cyf-kr.edu.pl/~gebubak/,PC member,5,T5
+19,98,Alena,Buchalcevova,,Czechia,University of Economics,,PC member,3,T3
+20,28,Robert Andrei,Buchmann,,Romania,Babeș-Bolyai University of Cluj Napoca,,PC member,3,T3
+21,28,Robert Andrei,Buchmann,,Romania,Babeș-Bolyai University of Cluj Napoca,,PC member,2,T2
+22,99,Wojciech,Cellary,,Poland,Poznan University of Economics and Business,http://www.kti.ue.poznan.pl/wojciech_cellary.html,PC member,5,T5
+23,20,Lina,Ceponiene,,Lithuania,,,PC member,7,T7
+24,29,Tomas,Cerny,,United States,University of Arizona,,track chair,1,T1
+25,30,François,Charoy,,France,Université de Lorraine - LORIA - Inria,http://www.loria.fr/~charoy,PC member,7,T7
+26,222,Md Showkat Hossain,Chy,,United States,Baylor University,,PC member,1,T1
+27,100,Uros,Cibej,,Slovenia,University of Ljubljana,,PC member,4,T4
+28,101,Cristina Chuva,Costa,,Portugal,University of Coimbra,,PC member,1,T1
+29,102,Ireneusz,Czarnowski,,Poland,Gdynia Maritime University,http://umg.edu.pl/i.czarnowski,PC member,4,T4
+30,223,Gabriela,Czibula,,Romania,Babes-Bolyai University,,PC member,4,T4
+31,31,Paulo Rupino,da Cunha,,Portugal,University of Coimbra,http://eden.dei.uc.pt/~rupino,track chair,1,T1
+32,103,Tiago Silva,Da Silva,,Brazil,ICT/UNIFESP - Universidade Federal de São Paulo - Instituto de Ciência e Tecnologia,http://www.sjc.unifesp.br/,PC member,3,T3
+33,104,Sergio,de Cesare,,United Kingdom,University of Westminster,,PC member,2,T2
+34,105,Pavlos,Delias,,Greece,International Hellenic University,https://pavlosdeliassite.wordpress.com,PC member,4,T4
+35,32,Boris,Delibašić,,Serbia,University of Belgrade,,track chair,4,T4
+36,33,Anna,Derezinska,,Poland,"Institute of Computer Science, Warsaw University of Technology",,PC member,3,T3
+37,224,Michal,Doležel,,Czechia,,https://nb.vse.cz/~qdolm05/,PC member,5,T5
+38,106,Drazen,Draskovic,,Serbia,University of Belgrade - School of Electrical Engineering,http://www.etf.bg.ac.rs,PC member,4,T4
+39,225,Helena,Dudycz,,Poland,,,PC member,5,T5
+40,107,Arpita,Dutta,,Singapore,National University of Singapore,,PC member,3,T3
+41,34,Dariusz,Dymek,,Poland,Krakow University of Economics,,PC member,7,T7
+42,34,Dariusz,Dymek,,Poland,Cracow University of Economics,,PC member,1,T1
+43,108,Michael,Dzandu,,United Kingdom,University of Westminster,,PC member,2,T2
+44,109,Jens,Dörpinghaus,,Germany,Federal Institute for Vocational Education and Training (BIBB),,PC member,6,T6
+45,110,Amr,Elsayed,,Egypt,Baylor University,,PC member,1,T1
+46,111,Jacinto,Estima,,Portugal,"University of Coimbra, CISUC, Department of Informatics Engineering",https://jestima.github.io,PC member,1,T1
+47,112,Pedropaulo,Favatobarcelos,,,,,PC member,2,T2
+48,113,Pedro Paulo,Favatos Barcelos,,Netherlands,University of Twente,https://people.utwente.nl/p.p.favatobarcelos,PC member,2,T2
+49,226,Samuel,Fosso-Wamba,,France,,http://fossowambasamuel.com/,PC member,5,T5
+50,114,Yannick,Francillette,,Canada,UQAC,,PC member,3,T3
+51,35,Renata,Gabryelczyk,,Poland,University of Warsaw,,PC member,7,T7
+52,115,Frederik,Gailly,,Belgium,"Faculty of Economics and Business Adminsitration, Ghent University",,PC member,2,T2
+53,116,Graham,Gal,,United States,Isenberg School of Management,,PC member,2,T2
+54,117,Felix,Garcia,,Spain,"Alarcos Research Group, Information and Systems Department, Escuela Superior de informática, University of Castilla-La Mancha",http://alarcos.inf-cr.uclm.es/,PC member,2,T2
+55,118,Gabriel,García-Mireles,,Mexico,Universidad de Sonora,,PC member,3,T3
+56,36,Bartłomiej,Gawin,,Poland,University of Gdańsk,,PC member,7,T7
+57,37,Mouzhi,Ge,,Germany,Deggendorf Institute of Technology,,PC member,4,T4
+58,119,Hadi,Ghanbari,,Finland,Aalto University School of Business,,PC member,6,T6
+59,120,Krzysztof,Goczyła,,Poland,Gdansk University of Technology,,PC member,2,T2
+60,120,Krzysztof,Goczyła,,Poland,Gdansk University of Technology,,PC member,5,T5
+61,121,Xun,Gong,,China,South west Jiaotong University,,PC member,5,T5
+62,122,Tony,Gorschek,,Sweden,BTH,http://www.gorschek.com,PC member,3,T3
+63,8,Janis,Grabis,,,Riga Technical University,,PC member,7,T7
+64,9,Jānis,Grabis,,Latvia,Riga Technical University,http://iti.rtu.lv/vitk/en/employees/grabis-janis,PC member,7,T7
+65,38,Mariusz,Grabowski,,Poland,"Krakow University of Economics, Poland",http://janek.uek.krakow.pl/~grabowsm/,PC member,7,T7
+66,38,Mariusz,Grabowski,,Poland,Cracow University of Economics,http://janek.uek.krakow.pl/~grabowsm/,PC member,1,T1
+67,39,Eduardo,Guerra,,Brazil,Free University of Bolzen-Bolzano,,PC member,3,T3
+68,123,Tomas,Gustavsson,,Sweden,Karlstads universitet,https://www.kau.se/forskare/tomas-gustavsson,PC member,6,T6
+69,124,Ridewaan,Hanslo,,South Africa,University of Pretoria,,PC member,3,T3
+70,125,Igor,Hawryszkiewycz,,Australia,"University of Technology, Sydney",http://www-staff.it.uts.edu.au/~igorh,PC member,3,T3
+71,126,Sen,He,,United States,The University of Arizona,,PC member,1,T1
+72,40,Samedi,Heng,,Belgium,UCLouvain,,PC member,3,T3
+73,127,Sebastian,Herold,,Sweden,"Karlstad University, Department of Computer Science",http://www.kau.se/cs,PC member,1,T1
+74,128,Bogumila,Hnatkowska,,Poland,"Institute of Informatics, Wroclaw University of Technology",,PC member,2,T2
+75,129,Helena,Holmström Olsson,,Sweden,University of Malmo,,PC member,6,T6
+76,41,Danial,Hooshyar,,Estonia,University of Tartu,,PC member,6,T6
+77,130,Adrian,Iftene,,Romania,"""Alexandru Ioan Cuza"" University of Iasi",http://profs.info.uaic.ro/~adiftene,PC member,4,T4
+78,131,Radu Tudor,Ionescu,,Romania,"University of Bucharest, Faculty of Mathematics and Computer Science",http://fmi.unibuc.ro,PC member,4,T4
+79,42,Hasan,Jamil,,United States,University of Idaho,http://www2.cs.uidaho.edu/~jamil/,PC member,6,T6
+80,43,Andrea,Janes,,Austria,FHV Vorarlberg University of Applied Sciences,,PC member,3,T3
+81,43,Andrea,Janes,,Austria,FHV Vorarlberg University of Applied Sciences,,PC member,1,T1
+82,132,Tomasz,Janowski,,Poland,Gdańsk University of Technology,"https://mostwiedzy.pl/en/tomasz-janowski,1131039-1/bio",PC member,5,T5
+83,44,Arkadiusz,Januszewski,,Poland,UTP University of Science and Technology,,PC member,7,T7
+84,45,Aleksander,Jarzebowicz,,Poland,Gdansk University of Technology,,PC member,3,T3
+85,133,Piotr,Jedrzejowicz,,Poland,Gdynia Maritime University,,PC member,5,T5
+86,46,Marius Rohde,Johannessen,,Norway,University of South-Eastern Norway,,PC member,7,T7
+87,47,Björn,Johansson,,Sweden,Linköping University,,PC member,3,T3
+88,134,Miloš,Jovanović,,Serbia,"Faculty of Organizational Sciences, University of Belgrade",http://www.fon.bg.ac.rs,PC member,4,T4
+89,2,Georgia,Kapitsaki,,Cyprus,University of Cyprus,http://www.cs.ucy.ac.cy/~gkapi/,track chair,6,T6
+90,135,Georgia,Kapitsaki,,Cyprus,University of Cyprus,,PC member,3,T3
+91,136,Dimitris,Karagiannis,,Austria,University of Vienna,http://www.dke.univie.ac.at,PC member,3,T3
+92,48,Marija,Katic,,United Kingdom,University of London,,PC member,3,T3
+93,49,Kathrin,Kirchner,,Denmark,Technical University of Denmark,,PC member,7,T7
+94,10,Mārīte,Kirikova,,Latvia,Riga Technical University,https://ortus.rtu.lv/science/en/experts/1244,track chair,7,T7
+95,137,Styliani,Kleanthous,,Cyprus,CYENS CoE and Open University of Cyprus,,PC member,6,T6
+96,138,Mirjana,Kljajić Borštnar,,Slovenia,,,PC member,4,T4
+97,227,Vitaliy,Kobets,,Ukraine,Kherson State University,http://www.ksu.ks.ua/About/Faculty/FPhysMathemInformatics/ChairInformatics/Staff/KobetzVN.aspx,PC member,5,T5
+98,50,Ella,Kolkowska,,Sweden,Örebro University,,PC member,7,T7
+99,51,Sylwia,Kopczyńska,,Poland,Poznan University of Technology,,PC member,3,T3
+100,228,Henryk,Krawczyk,,Poland,Gdańsk University of Technology,,PC member,5,T5
+101,139,Marek,Kretowski,,Poland,Bialystok University of Technology,,PC member,4,T4
+102,52,Martin,Kropp,,Switzerland,University of Applied Sciences and Arts Northwestern Switzerland,http://www.fhnw.ch,PC member,3,T3
+103,140,Natalia,Kryvinska,,Slovakia,"Head of Information Systems Department, Faculty of Management Comenius University in Bratislava, Slovakia",,PC member,4,T4
+104,141,Miklós,Krész,,Hungary,University of Szeged,,PC member,4,T4
+105,53,Marcin,Kulawiak,,Poland,Gdansk University of Technology,,PC member,4,T4
+106,142,Casper,Lassenius,,Finland,Aalto University,http://lassenius.info,PC member,3,T3
+107,143,Niklas,Lavesson,,Sweden,Blekinge Institute of Technology,,PC member,4,T4
+108,54,Przemysław,Lech,,Poland,University of Gdańsk,,PC member,7,T7
+109,144,Maria,Lencastre,,Brazil,Universidade de Pernambuco,http://www.ecomp.poli.br,PC member,2,T2
+110,145,Florin,Leon,,Romania,"""Gheorghe Asachi"" Technical University of Iasi",http://florinleon.byethost24.com,PC member,4,T4
+111,146,Rafal,Leszczyna,,Poland,Gdansk University of Technology,,PC member,5,T5
+112,147,Xiaozhou,Li,,Finland,University of Oulu,,PC member,1,T1
+113,148,Sherlock,Licorish,,New Zealand,University of Otago,http://infosci.otago.ac.nz/,PC member,6,T6
+114,11,Audrius,Lopata,,Lithuania,Kaunas University of Technology,,PC member,7,T7
+115,3,Ivan,Luković,,Serbia,"University of Belgrade, Faculty of Organizational Sciences",https://fon.bg.ac.rs/nastavnici/ivan-lukovic/,track chair,4,T4
+116,55,Paweł,Lustofin,,Poland,Krakow University of Economics,,PC member,7,T7
+117,56,Viljan,Mahnič,,Slovenia,University of Ljubljana,http://www.fri.uni-lj.si/si/viljan-mahnic/default.html,PC member,3,T3
+118,229,Tim A.,Majchrzak,,Norway,,,PC member,5,T5
+119,12,Henrique,Mamede,,Portugal,,,PC member,7,T7
+120,13,Henrique-São,Mamede,,,,,PC member,7,T7
+121,149,George,Mangalaraj,,United States,Western Illinois University,http://www.wiu.edu/users/gm106/,PC member,3,T3
+122,57,Katerina,Mangaroska,,Norway,University of South-Eastern Norway,,PC member,7,T7
+123,4,Bartosz,Marcinkowski,,Poland,University of Gdansk,http://kie.wzr.pl,superchair,,
+124,150,Andreas,Martin,,Switzerland,FHNW University of Applied Sciences Northwestern Switzerland,https://andreasmartin.ch,PC member,2,T2
+125,151,Sanda,Martincic-Ipsic,,Croatia,University of Rijeka,,PC member,4,T4
+126,152,Christoph,Matthies,,Germany,"Hasso Plattner Institute, University of Potsdam",http://www.christophmatthies.de,PC member,3,T3
+127,230,Raimundas,Matulevicius,,Estonia,University of Tartu,,PC member,1,T1
+128,153,Manuel,Mazzara,,Russia,Innopolis University,,PC member,4,T4
+129,5,Jacek,Maślankowski,,Poland,University of Gdańsk,http://maslankowski.pl,track chair,5,T5
+130,5,Jacek,Maślankowski,,Poland,University of Gdańsk,http://maslankowski.pl,PC member,3,T3
+131,154,Paulo,Melo,,Portugal,"Faculty of Economics, University of Coimbra",,PC member,1,T1
+132,58,Jakub,Miler,,Poland,Gdansk University of Technology,http://iag.pg.gda.pl,PC member,3,T3
+133,155,Gordana,Milosavljevic,,Serbia,Faculty of Technical Sciences,,PC member,6,T6
+134,156,Pavle,Milosevic,,Serbia,"University of Belgrade, Faculty of Organizational Sciences",,PC member,4,T4
+135,59,Miguel,Mira da Silva,,Portugal,University of Lisbon,,track chair,2,T2
+136,59,Miguel,Mira da Silva,,Portugal,Instituto Superior Técnico,,PC member,3,T3
+137,60,Alok,Mishra,,Norway,Norwegian University of Science and Technology,http://www.atilim.edu.tr/~amishra/,PC member,3,T3
+138,157,Sanjay,Misra,,Norway,Institute For Energy Technology,,PC member,3,T3
+139,158,Durga Prasad,Mohapatra,,India,"NIT, Rourkela",http://www.nitrkl.ac.in,PC member,3,T3
+140,159,Miguel Ehécatl,Morales Trujillo,,New Zealand,University of Canterbury,,PC member,3,T3
+141,159,Miguel Ehécatl,Morales Trujillo,,New Zealand,University of Canterbury,,PC member,6,T6
+142,160,Mikolaj,Morzy,,Poland,Poznan University of Technology,http://www.cs.put.poznan.pl/mmorzy,PC member,4,T4
+143,161,Michael,Mrissa,,Slovenia,,https://osebje.famnit.upr.si/~michael.mrissa/doku.php,PC member,4,T4
+144,162,Waseem,Muhammad,,Finland,University of Jyväskylä,,PC member,3,T3
+145,61,Karolina,Muszyńska,,Poland,University of Szczecin,,PC member,3,T3
+146,62,Michael,Neumann,,Germany,Hochschule Hannover,https://www.linkedin.com/in/michael-neumann-8060131b6/,PC member,3,T3
+147,63,Yen Ying,Ng,,Poland,Nicolaus Copernicus University,,PC member,3,T3
+148,231,Ngoc Thanh,Nguyen,,Poland,,http://www.staff-ksi.pwr.edu.pl/nguyen/,PC member,5,T5
+149,14,Ovidiu,Noran,,Australia,Griffith University,https://www.researchgate.net/profile/Ovidiu_Noran,PC member,7,T7
+150,163,Jacob,Nørbjerg,,Denmark,Copenhagen Business School,https://www.cbs.dk/en/research/departments-and-centres/department-of-digitalization/staff/jnodigi,PC member,6,T6
+151,164,Nikola,Obrenović,,Serbia,"BioSense Institute, University of Novi Sad",https://biosens.rs/en/employees/nikola-obrenovic-2,PC member,4,T4
+152,165,Nikolaus,Obwegeser,,Switzerland,Bern University of Applied Sciences,https://www.bfh.ch/de/ueber-die-bfh/personen/m4ujq5h3zs5m/,PC member,3,T3
+153,64,Mirosław,Ochodek,,Poland,Poznan University of Technology,http://www.cs.put.poznan.pl/mochodek,PC member,3,T3
+154,166,Yousra,Odeh,,Jordan,Applied Science University,http://web.asu.edu.jo/asumember/en/default.aspx?MenuId=1&MemberId=4051,PC member,2,T2
+155,167,Piotr,Oprocha,,Poland,AGH University of Science and Technology,http://home.agh.edu.pl/~oprocha/,PC member,4,T4
+156,232,Mieczysław,Owoc,,Poland,,http://www.ue.wroc.pl,PC member,5,T5
+157,65,Necmettin,Ozkan,,Turkey,Kuveyt Turk Participation Bank,,PC member,3,T3
+158,66,Grażyna,Paliwoda-Pękosz,,Poland,"Krakow University of Economics, Department of Informatics",,PC member,7,T7
+159,67,Malgorzata,Pankowska,,Poland,University of Economics,http://web.ae.katowice.pl/pank,PC member,5,T5
+160,168,Jason,Papathanasiou,,Greece,University of Macedonia,,PC member,4,T4
+161,169,Maria,Papoutsoglou,,Cyprus,University of Cyprus,,PC member,6,T6
+162,170,Luka,Pavlic,,Slovenia,University of Maribor,,PC member,6,T6
+163,68,Rui Humberto,Pereira,,Portugal,ISCAP/IPP,,PC member,3,T3
+164,171,Ioan,Petri,,United Kingdom,Cardiff University,https://sites.google.com/site/ioanpetriv2/,PC member,4,T4
+165,172,Andrija,Petrović,,Serbia,,,PC member,4,T4
+166,173,Andrea,Pinna,,Italy,Università di Cagliari,,PC member,5,T5
+167,233,Nava,Pliskin,,Israel,,,PC member,5,T5
+168,69,Geert,Poels,,Belgium,Ghent University,,track chair,2,T2
+169,70,Matthias,Pohl,,Germany,Otto-von-Guericke-Universität Magdeburg,http://www.mrcc.ovgu.de/mrcc/team/matthias-pohl/,PC member,3,T3
+170,174,Ana,Poledica,,Serbia,"Faculty of Organizational Sciences, University of Belgrade",,PC member,4,T4
+171,71,Aneta,Poniszewska-Maranda,,Poland,"Institute of Information Technology, Lodz University of Technology",,PC member,3,T3
+172,175,Małgorzata,Porada Rochoń,,Poland,University of Szczecin,,PC member,6,T6
+173,72,Alexander,Poth,,Germany,Volkswagen AG,,PC member,3,T3
+174,73,Henderik A.,Proper,,Austria,"TU Wien, Vienna, Austria",http://www.erikproper.eu,PC member,7,T7
+175,6,Adam,Przybylek,,Poland,Gdansk University of Technology,https://github.com/przybylek,superchair,,
+176,6,Adam,Przybylek,,Poland,Gdansk University of Technology,https://github.com/przybylek,track chair,3,T3
+177,176,Michal,Przybylek,,Poland,Warsaw University,,PC member,3,T3
+178,177,Sandro,Radovanović,,Serbia,"University of Belgrade, Faculty of Organizational Sciences",,PC member,4,T4
+179,74,Raman,Ramsin,,Iran,Sharif University of Technology,http://sharif.edu/~ramsin/,PC member,3,T3
+180,234,Ewa,Ratajczak-Ropel,,Poland,Gdynia Maritime University,,PC member,5,T5
+181,178,Vítor,Ribeiro,,Portugal,University of Coimbra,,PC member,1,T1
+182,75,Andreas,Riel,,France,EMIRAcle c/o Grenoble Institute of Technology,http://www.emiracle.eu,PC member,3,T3
+183,76,Sonja,Ristic,,Serbia,"University of Novi Sad, Faculty of Technical Sciences",,PC member,3,T3
+184,179,Mariia,Rizun,,Poland,University of Economics in Katowice,,PC member,6,T6
+185,180,Nina,Rizun,,Poland,Gdańsk University of Technology,,PC member,4,T4
+186,77,Alberto,Rodrigues da Silva,,Portugal,University of Lisbon,http://isg.inesc-id.pt/alb/,track chair,3,T3
+187,181,Ben,Roelens,,Netherlands,"Open Universiteit, Ghent University",https://research.ou.nl/en/persons/ben-roelens-2,PC member,2,T2
+188,235,Michael,Rosemann,,Australia,,,PC member,5,T5
+189,78,Bruno,Rossi,,Czechia,MASARYK UNIVERSITY,http://www.unlimited2.com,PC member,3,T3
+190,182,Francisco,Ruiz,,Spain,University of Castilla la Mancha,http://alarcos.inf-cr.uclm.es/per/fruiz,PC member,2,T2
+191,183,Zdenek,Rybola,,Czechia,Czech Technical University,http://ccmi.fit.cvut.cz/about-us/zdenek-rybola/,PC member,3,T3
+192,15,Kurt,Sandkuhl,,Germany,The University of Rostock,,PC member,7,T7
+193,184,Rodrigo,Santos,,Brazil,UNIRIO,https://orcid.org/0000-0003-4749-2551,PC member,6,T6
+194,236,Salma,Sassi,,France,LIUPPA,,PC member,5,T5
+195,185,Gordana,Savic,,Serbia,Faculty of Organizational Sciences,,PC member,4,T4
+196,79,Eva-Maria,Schön,,Germany,University of Applied Sciences Emden/Leer,https://www.hs-emden-leer.de/en/,PC member,3,T3
+197,186,Bran,Selic,,Canada,Malina Software Corp.,,PC member,2,T2
+198,187,Mali,Senapathi,,New Zealand,Auckland University of Technology,,PC member,3,T3
+199,188,Dongwan,Shin,,United States,New Mexico Tech,,PC member,1,T1
+200,189,Jose Luis,Sierra,,Spain,Universidad Complutense de Madrid,http://ilsa.fdi.ucm.es,PC member,6,T6
+201,190,Marcin,Sikorski,,Poland,Gdansk University of Technology,,PC member,3,T3
+202,237,Gheorghe Cosmin,Silaghi,,Romania,"Babes-Bolyai University, Business Information Systems dept.",https://econ.ubbcluj.ro/cv.php?id=87,PC member,5,T5
+203,238,Janice,Sipior,,United States,Villanova University,,PC member,5,T5
+204,16,Tomas,Skersys,,Lithuania,,http://www.ktu.lt,PC member,7,T7
+205,191,Michal,Smialek,,Poland,Warsaw University of Technology,https://smialek.iem.pw.edu.pl/,PC member,3,T3
+206,17,Piotr,Soja,,Poland,Krakow University of Economics,http://piotrsoja.uek.krakow.pl,track chair,7,T7
+207,192,Jacopo,Soldani,,Italy,University of Pisa,,PC member,1,T1
+208,80,Érica,Souza,,Brazil,UTFPR,,PC member,3,T3
+209,193,Maria,Spichkova,,Australia,RMIT University,http://www.spichkova.com,PC member,3,T3
+210,194,Janusz,Stal,,Poland,Cracow University of Economics,http://www.uek.krakow.pl,PC member,1,T1
+211,195,Odd,Steen,,Sweden,Lund University,,PC member,6,T6
+212,18,Janis,Stirna,,Sweden,Stockholm University,,PC member,7,T7
+213,81,Diane,Strode,,New Zealand,Whitireia Polytechnic,https://sites.google.com/site/dianestrodepublic/,PC member,3,T3
+214,196,Sergey,Stupnikov,,Russia,"Institute of Informatics Problems, Russian Academy of Sciences",http://synthesis.ipi.ac.ru/synthesis/staff/ssa,PC member,4,T4
+215,197,Tor,Stålhane,,Norway,Norwegian University of Science and Technology,,PC member,3,T3
+216,239,Reima,Suomi,,Finland,,,PC member,5,T5
+217,19,Oleg,Svatoš,,Czechia,University of Economics in Prague,http://kit.vse.cz,PC member,7,T7
+218,82,Jakub,Swacha,,Poland,University of Szczecin,http://iiwz.wneiz.pl/jakubs/,PC member,3,T3
+219,82,Jakub,Swacha,,Poland,,http://iiwz.wneiz.pl/jakubs/,PC member,5,T5
+220,198,Piotr,Szczuko,,Poland,Gdansk University of Technology,,PC member,4,T4
+221,199,Joanna,Szłapczyńska,,Poland,Gdańsk University of Technology,,PC member,5,T5
+222,83,Mary,Sánchez-Gordón,,Norway,Østfold University College,,PC member,3,T3
+223,200,Davide,Taibi,,Italy,University of Oulu,,PC member,1,T1
+224,201,Marzieh,Talebpour,,United Kingdom,University of Westminster,,PC member,2,T2
+225,202,Torben,Tambo,,Denmark,Aarhus University,www.hih.au.dk,PC member,6,T6
+226,84,Adel,Taweel,,United Kingdom,King’s College London/Birzeit University,,PC member,3,T3
+227,203,Rainer,Telesko,,Switzerland,University of Applied Sciences Northwestern Switzerland,,PC member,2,T2
+228,204,Sven,Theobald,,Germany,Fraunhofer IESE,,PC member,3,T3
+229,205,Paul,Townend,,Sweden,Umeå University,,PC member,1,T1
+230,206,Nikolaos,Tselikas,,Greece,University of Peloponnese,,PC member,6,T6
+231,207,Konstantinos,Tsilionis,,Netherlands,Eindhoven University of Technology,,PC member,3,T3
+232,85,Doruk,Tuncel,,Germany,Siemens AG,,PC member,3,T3
+233,86,Wilfrid,Utz,,Germany,OMILAB gGmbH,https://www.omilab.org,PC member,3,T3
+234,208,Polyxeni,Vassilakopoulou,,Norway,University of Agder,,PC member,7,T7
+235,209,Jan,Verelst,,Belgium,University of Antwerp,https://www.uantwerpen.be/en/staff/jan-verelst/,PC member,2,T2
+236,240,Catalin,Vrabie,,,,,PC member,5,T5
+237,87,Valentino,Vranić,,Slovakia,Slovak University of Technology in Bratislava,http://fiit.sk/~vranic/,PC member,3,T3
+238,210,Yves,Wautelet,,Belgium,Katholieke Universiteit Leuven,,PC member,2,T2
+239,210,Yves,Wautelet,,Belgium,Katholieke Universiteit Leuven,,PC member,3,T3
+240,211,Hans,Weigand,,Netherlands,Tilburg University,,PC member,2,T2
+241,212,Heinz Roland,Weistroffer,,United States,Virginia Commonwealth University,http://www.weistroffer.net,PC member,7,T7
+242,213,Alicja,Wieczorkowska,,Poland,Polish-Japanese Institute of Information Technology,,PC member,4,T4
+243,214,Dominique,Winter,,Germany,HS Emden/Leer,http://www.designik.de,PC member,3,T3
+244,215,Guido,Wirtz,,Germany,University of Bamberg,http://www.uni-bamberg.de/en/pi/team/wirtz-guido/,PC member,1,T1
+245,216,Bogdan,Wiszniewski,,Poland,Gdansk University of Technology,http://www.eti.pg.gda.pl,PC member,5,T5
+246,88,Robert,Wrembel,,Poland,"Poznan Unviersity of Technology, Institute of Computing Science",http://www.cs.put.poznan.pl/rwrembel,PC member,4,T4
+247,241,Konrad,Wrona,,Netherlands,NATO Communications and Information Agency,,PC member,5,T5
+248,217,Michał Ryszard,Wróbel,,Poland,Gdansk University of Technology,,PC member,4,T4
+249,217,Michał Ryszard,Wróbel,,Poland,Gdansk University of Technology,,PC member,6,T6
+250,242,Jarosław,Wątróbski,,Poland,"West Pomeranian University of Technology, Szczecin Department of Computer Science and Information Technology",,PC member,5,T5
+251,218,Jorge,Yero Salazar,,United States,Baylor University,,PC member,1,T1
+252,219,Daniela,Zaharie,,Romania,West University of Timisoara,http://www.info.uvt.ro/~dzaharie,PC member,4,T4
+253,243,Andrew,Zaliwski,,New Zealand,Whitireia NZ,http://whitireia.ac.nz,PC member,5,T5
+254,220,Eftim,Zdravevski,,Macedonia,"University ""Ss.Cyril and Methodius"" Faculty Of Computer Science and Engineering",http://www.finki.ukim.mk,PC member,4,T4
+255,89,Zheying,Zhang,,Finland,"Faculty of Information Technology and Communication Sciences, Tampere University",,PC member,3,T3
+256,221,Beata,Zielosko,,Poland,"Univeristy of Sielsia, Institute  of Computer Science",http://zsi.tech.us.edu.pl/~bzielosko,PC member,4,T4
+257,244,Iryna,Zolotaryova,,Ukraine,Simon Kuznets Kharkiv National University of Economics,http://www.ei.ksue.edu.ua/,PC member,5,T5
+258,21,Algirdas,Šukys,,Lithuania,,,PC member,7,T7

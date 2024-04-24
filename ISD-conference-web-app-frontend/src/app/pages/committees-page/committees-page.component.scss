@@ -5,14 +5,22 @@
     display: grid;
     place-items: center;
     .isd-committees {
-        width: 90%;
-        .committee-title {
+        width: 100%;
+        .section-title {
             font-size: $font-size-big;
         }
 
         .isd-committees-content-wrapper {
-            @include simpleFlexLayout($direction: row)
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            justify-items: baseline;
+
+            .side-nav {
+                height: max-content;
+            }
         }
+
+        
     }
 }
 

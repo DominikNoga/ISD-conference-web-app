@@ -1,1 +1,21 @@
-<p>full-tracks-list-item works!</p>
+<div class="track-container">
+    <isd-section-header>{{ track.name }}: {{ track.title }}</isd-section-header>
+    <section>
+        <isd-section-header class="header-smaller">Track Chairs</isd-section-header>
+        <div class="track-chairs">
+            <isd-chairs-list-item *ngFor="let chair of track.chairs" [chair]="chair"></isd-chairs-list-item>
+        </div>
+    </section>
+
+    <section>
+        <isd-section-header class="header-smaller">Program Committee</isd-section-header>
+        <div class="program-committee">
+            <ul class="pc-list">
+                <li *ngFor="let pcMember of track.committee">
+                    {{ pcMember.name }}, {{ pcMember.workplace ? pcMember.workplace.university : '' }}
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+</div>
