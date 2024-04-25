@@ -14,7 +14,7 @@ export class FullTracksListComponent implements OnInit {
 
   ngOnInit(): void {
     this.csvDataService.getTracksCsvData().subscribe(tracks => {
-      this.tracks = tracks;
+      this.tracks = tracks.splice(1, tracks.length - 2);
     });
   }
 

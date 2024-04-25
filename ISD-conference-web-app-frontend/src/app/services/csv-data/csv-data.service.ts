@@ -13,8 +13,8 @@ export class CsvDataService {
 
   constructor(private http: HttpClient) { }
 
-  getCsvData(path: string): Observable<Chair[]> {
-    return this.http.get(`assets/csv/${path}.csv`, { responseType: 'text' }).pipe(
+  getOrganizingCommitteeData(): Observable<Chair[]> {
+    return this.http.get(`assets/csv/organizing_committe.csv`, { responseType: 'text' }).pipe(
       map(data => <OrganizingChairCsvData[]>Papa.parse(data, { header: true }).data),
       map((OrganizingChairCsvData: OrganizingChairCsvData[]) => this.mapCsvDataToOrganizingCommittee(OrganizingChairCsvData))
     );
@@ -30,10 +30,6 @@ export class CsvDataService {
         );
       })
     );
-  }
-
-  getOrganizingCommitteeData(): Observable<Chair[]> {
-    return this.getCsvData('organizing_committe');
   }
 
   mapCsvDataToOrganizingCommittee(csvData: OrganizingChairCsvData[]): Chair[] {
