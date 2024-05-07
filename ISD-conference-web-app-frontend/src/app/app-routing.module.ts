@@ -9,6 +9,7 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
 import { TracksPageComponent } from './pages/tracks-page/tracks-page.component';
 import { VisaRequirementsPageComponent } from './pages/visa-requirements-page/visa-requirements-page.component';
 import { TravelInformationPageComponent } from './pages/travel-information-page/travel-information-page.component';
+import { KeynotesPageComponent } from './pages/keynotes-page/keynotes-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'travel-information', component: TravelInformationPageComponent},
   { path: 'register', component: RegisterPageComponent},
   { path: 'tracks', component: TracksPageComponent},
+  { path: 'keynotes', component: KeynotesPageComponent},
 ];
 
 @NgModule({

@@ -7,17 +7,21 @@ import { HomePageComponents } from "./home-page/home-page.module";
 import { UiComponentsModule } from "../isd-ui/components.module";
 import { RegisterPageComponents} from "./Register-page/register-page.module";
 import { CommitteesPageComponents } from "./committees-page/committees-page.module";
+import { KeynoteComponent } from './keynote/keynote.component';
 
 
 @NgModule({
     declarations: [
     
+  
+    KeynoteComponent
   ],
     exports: [
         HistoryPageComponents,
         HomePageComponents,
-        RegisterPageComponents
-        CommitteesPageComponents
+        RegisterPageComponents,
+        CommitteesPageComponents,
+        KeynoteComponent
     ],
     imports: [
         CommonModule,

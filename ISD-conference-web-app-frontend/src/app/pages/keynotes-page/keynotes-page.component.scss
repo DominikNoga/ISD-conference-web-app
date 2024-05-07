@@ -1,0 +1,86 @@
+@import '../../styles/isd-variables.scss';
+@import '../../styles/isd-mixins.scss';
+@import '../../components/pagesHelperComponents/Register-page/ticket/ticket.component.scss';
+
+$clr-dark: #0f172a;
+$clr-light: #f1f5f9;
+$clr-accent: #e11d48;
+$blue: #0b6ec7;
+
+
+:host {
+  display: block; /* Zapewnienie, że styl będzie dotyczył komponentu keynotes-page */
+  background-color: $blue; /* Kolor tła */
+}
+
+.custom-header{
+  font-family: "veneer-three", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  display: block;
+  font-size: 4em;
+  text-transform: none;
+  color: #fff;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.container {
+  color: #fff;
+  max-width: $max-content-width;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+  grid-gap: 50px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@import url("https://p.typekit.net/p.css?s=1&k=ddd5mls&ht=tk&f=37897.37899.37900.52107.52108.52109.52110.52111.52112&a=85773288&app=typekit&e=css");
+
+
+
+@font-face {
+font-family:"veneer";
+src:url("https://use.typekit.net/af/f9f9de/0000000000000000774ba0e2/30/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/f9f9de/0000000000000000774ba0e2/30/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/f9f9de/0000000000000000774ba0e2/30/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("opentype");
+font-display:block;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"veneer";
+src:url("https://use.typekit.net/af/be7eaf/0000000000000000774ba0e3/30/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/be7eaf/0000000000000000774ba0e3/30/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/be7eaf/0000000000000000774ba0e3/30/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3") format("opentype");
+font-display:block;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"veneer-two";
+src:url("https://use.typekit.net/af/36aaa2/0000000000000000774ba0e5/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/36aaa2/0000000000000000774ba0e5/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/36aaa2/0000000000000000774ba0e5/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("opentype");
+font-display:block;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"veneer-two";
+src:url("https://use.typekit.net/af/ae874d/0000000000000000774ba0e4/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/ae874d/0000000000000000774ba0e4/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/ae874d/0000000000000000774ba0e4/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("opentype");
+font-display:block;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"veneer-three";
+src:url("https://use.typekit.net/af/f93692/0000000000000000774ba0e6/30/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/f93692/0000000000000000774ba0e6/30/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/f93692/0000000000000000774ba0e6/30/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3") format("opentype");
+font-display:block;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"veneer-three";
+src:url("https://use.typekit.net/af/3962ab/0000000000000000774ba0e7/30/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/3962ab/0000000000000000774ba0e7/30/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/3962ab/0000000000000000774ba0e7/30/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("opentype");
+font-display:block;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-bebas-neue-by-fontfabric { font-family: "bebas-neue-by-fontfabric",sans-serif; }
+.tk-veneer { font-family: "veneer",sans-serif; }
+.tk-veneer-two { font-family: "veneer-two",sans-serif; }
+.tk-veneer-three { font-family: "veneer-three",sans-serif; }

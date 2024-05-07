@@ -1,0 +1,81 @@
+@import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
+@import '../../../pages/keynotes-page/keynotes-page.component.scss';
+
+.person {
+  max-width: $max-content-width;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  min-width: 300px
+  // border: 5px solid black;
+}
+.left {
+  width: 300px
+}
+.right {
+  text-align: left;
+  width: 66%;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%; // Dodaj to, aby kontener odpowiednio reagował na zmiany szerokości
+}
+
+@media screen and (max-width: 1000px) {
+  .items-container {
+    flex-direction: column;
+  }
+  .right {
+    margin-top: 4rem;
+  }
+}
+
+.additional-info {
+  max-width: $max-content-width;
+}
+
+.person img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.show-info-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ff002b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.additional-info {
+  margin-top: 10px;
+}
+
+.speaker {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 400;
+  font-family: veneer-three;
+}
+
+.from {
+  font-size: 1em;
+  margin-bottom: 0.83em;
+}
+
+.title {
+  font-family: veneer-two;
+  font-size: 1.5em;
+  font-weight: 500;
+}

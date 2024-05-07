@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { UiComponentsModule } from '../components/isd-ui/components.module';
 import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/pagesHelperComponents.module';
+import { KeynotesPageComponent } from './keynotes-page/keynotes-page.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/
     CommitteesPageComponent,
     LocationPageComponent,
     VisaRequirementsPageComponent,
-    TravelInformationPageComponent
+    TravelInformationPageComponent,
+    KeynotesPageComponent
   ],
   exports: [
     HomePageComponent,
@@ -42,7 +44,8 @@ import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/
     CommitteesPageComponent,
     LocationPageComponent,
     VisaRequirementsPageComponent,
-    TravelInformationPageComponent
+    TravelInformationPageComponent,
+    KeynotesPageComponent
   ]
 })
 export class PagesModule { }
