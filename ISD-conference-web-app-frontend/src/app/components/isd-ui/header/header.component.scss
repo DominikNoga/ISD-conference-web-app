@@ -1,11 +1,24 @@
 @import '../../../styles/isd-variables.scss';
 @import '../../../styles/isd-mixins.scss';
 
-.isd-header {
+
+.wrapper{
+
+    //the code is quite messed up...
+
+width:100%;
+position:fixed;
+top:0px;
+z-index: 1;
+transition: 0.3s ease;
+visibility: hidden;
+top: -100px;
+
+.isd-header {  
     $logo-size: 70px;
     $padding-value: 4em;
     @include simpleFlexLayout($direction: row, $gap: 0);
-    position: relative;
+    //position: relative;
 
     .logo {
         @include simpleFlexLayout($direction: row, $gap: 0);
@@ -44,3 +57,13 @@
     }
     
 }
+}
+
+.visible{
+    opacity: 1; 
+    background-color: $white-darker;
+    position: fixed;
+    visibility:visible;
+    top: -0px
+}
+
