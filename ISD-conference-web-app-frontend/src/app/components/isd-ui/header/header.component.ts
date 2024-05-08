@@ -24,8 +24,9 @@ export class HeaderComponent implements OnInit {
     let currentScroll = window.scrollY ;
     let delta = 5;
     
-
+    //debonce the scroll
   if(Math.abs(this.lastScrollTop - currentScroll) >= delta){
+    //if scrolling up, or if the user is on the top of the page show the header
     if (currentScroll >= this.lastScrollTop && window.scrollY > 70) {
       // Scrolling down
       this.isMenuVisible = false;
@@ -33,9 +34,7 @@ export class HeaderComponent implements OnInit {
       // Scrolling up
       this.isMenuVisible = true;
     }
-    console.log("Current scroll:", currentScroll)
-    console.log("LastScrollTop: ", this.lastScrollTop)
-  
+
     this.lastScrollTop = currentScroll;
   }
 }

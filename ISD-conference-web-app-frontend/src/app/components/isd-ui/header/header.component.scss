@@ -4,21 +4,18 @@
 
 .wrapper{
 
-    //the code is quite messed up...
-
-width:100%;
+width:100%; //stretch the header so the bar looks okay when scrolling up
 position:fixed;
-top:0px;
-z-index: 1;
+z-index: 1; //display header above anything else
 transition: 0.3s ease;
-visibility: hidden;
-top: -100px;
+visibility: hidden; //by default, the header is invisible, the .visible class handles making it visible
+top: -100px; 
+background-color: $white-darker;
 
 .isd-header {  
     $logo-size: 70px;
     $padding-value: 4em;
     @include simpleFlexLayout($direction: row, $gap: 0);
-    //position: relative;
 
     .logo {
         @include simpleFlexLayout($direction: row, $gap: 0);
@@ -60,10 +57,7 @@ top: -100px;
 }
 
 .visible{
-    opacity: 1; 
-    background-color: $white-darker;
-    position: fixed;
     visibility:visible;
-    top: -0px
+    top: 0px 
 }
 
