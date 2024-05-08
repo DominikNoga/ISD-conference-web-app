@@ -1,0 +1,31 @@
+@import "../../styles/isd-variables.scss";
+@import "../../styles/isd-mixins.scss";
+
+.call-for-papers {
+    font-family: $primary-font;
+    .top-text {
+        font-size: $font-size-huge;
+        font-weight: bold;
+        font-family: $roboto-header;
+        text-align: center;
+        padding: $content-gap-from-nav 0 45px 0;
+    }
+
+    .sections-separator {
+        width: calc($content-width - 2 * $default-gap);
+        background-color: black;
+        height: 2px;
+        border: none;
+    }
+
+    .call-for-papers-link {
+        color: $primary-bg-color;
+        @include hoverEffect() {
+            text-decoration: underline
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+      }
+}
