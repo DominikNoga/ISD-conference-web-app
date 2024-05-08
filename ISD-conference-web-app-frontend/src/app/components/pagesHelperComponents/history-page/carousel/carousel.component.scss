@@ -2,13 +2,13 @@
 @import '../../../../styles/isd-mixins.scss';
 
 .carousel-container{
-    height: 250px;
+ 
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
     position:relative;
     margin:auto;
     text-align:center;
-   // border-left: solid black 1px;
     border-radius: .5rem 0 0 .5rem;
-    padding-left: 5rem;
 
     .history-tile{
         display:none;
@@ -16,12 +16,15 @@
     } 
     
     .tile-active{
-        display:block;
+        display:inherit;
+        grid-column-start: 2;
+        text-align: left;
         width:100%;
     }
 
     .event-paragraph {
         @include simpleFlexLayout($direction: row, $gap: 0.5*$default-gap);
+        max-width: 80vw;
     }
 
     .carousel-dot-container{
@@ -29,7 +32,6 @@
         right:0;
         left:0;
         bottom:0;
-        display:flex;
         justify-content: center;
         padding:0;
         margin-bottom: -3rem;
@@ -41,7 +43,7 @@
         width: 13px;
         margin: 0 5px;
         background-color: #0b6ec7;
-                border-radius: 50%;
+        border-radius: 50%;
         display:inline-block;
         transition: opacity 0.6s ease;
         opacity:0.5;
@@ -66,14 +68,12 @@ opacity:1;
         }
     }
 
-    .btn-carousel{
-        position:absolute;
-        top:58px;
-        bottom:0;
-        display: flex;
+  .btn-carousel{
+        grid-row-start: 1;
         align-items: center;
         justify-content: center;
-        width:15%;
+        align-self: center; 
+        justify-self: center; 
         padding:0;
         color:#000;
         text-align: center;
@@ -83,11 +83,11 @@ opacity:1;
     }
 
     .btn-prev{
-        left:-50px;
+        grid-column-start: 1;
     }
 
     .btn-next{
-        right:0;
+        grid-column-start: 3;
     }
 
     .icon-carousel{
@@ -112,27 +112,12 @@ opacity:1;
         .carousel-dot-container{
             display: none;
         }
-    }
-
-}
-
-
-/*
-.history-tile {
-    border-left: solid black 1px;k
-    border-radius: .5rem 0 0 .5rem;
-    padding-left: .5rem;
-
-    .homepage-link {
-        color: $primary-bg-color;
-        @include hoverEffect() {
-            text-decoration: underline;
+        .icon-prev, .icon-next{
+            font-size:15px;
         }
+    
     }
-    
-    
 
-    
 }
 
-*/
+

@@ -14,6 +14,8 @@ import { RouterModule } from '@angular/router';
 import { UiComponentsModule } from '../components/isd-ui/components.module';
 import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/pagesHelperComponents.module';
 import { KeynotesPageComponent } from './keynotes-page/keynotes-page.component';
+import { TileComponent } from '../pages/tracks-page/tiles.component';
+
 
 @NgModule({
   imports: [
@@ -34,6 +36,8 @@ import { KeynotesPageComponent } from './keynotes-page/keynotes-page.component';
     VisaRequirementsPageComponent,
     TravelInformationPageComponent,
     KeynotesPageComponent
+    TileComponent
+
   ],
   exports: [
     HomePageComponent,
@@ -46,6 +50,8 @@ import { KeynotesPageComponent } from './keynotes-page/keynotes-page.component';
     VisaRequirementsPageComponent,
     TravelInformationPageComponent,
     KeynotesPageComponent
+    TileComponent
+
   ]
 })
 export class PagesModule { }
