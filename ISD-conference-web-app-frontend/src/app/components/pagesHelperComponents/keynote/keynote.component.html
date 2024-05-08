@@ -4,9 +4,11 @@
 
             <img src="assets/mock_chair_img/{{person.image}}" alt="Person Image">
 
+            <!-- {{this.toggleCountService.getNumberOfToggles()}} -->
+            <!-- {{this.toggleCountService.getNumberOfToggles()}} -->
             <div class="speaker">{{person.name}}</div>
             <div class="from">{{person.from}}</div>
-            <div class="title">{{person.title}}</div>
+            <div class="title2">{{person.title}}</div>
             <button class="show-info-btn" (click)="toggleAdditionalInfo()">More Info</button>
         </div>
          <div class="right" *ngIf="additionalInfoVisible"> 
