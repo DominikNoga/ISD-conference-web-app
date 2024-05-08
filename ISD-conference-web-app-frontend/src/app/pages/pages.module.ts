@@ -13,7 +13,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { UiComponentsModule } from '../components/isd-ui/components.module';
 import { PagesHelperCompnentsModule } from '../components/pagesHelperComponents/pagesHelperComponents.module';
+import { KeynotesPageComponent } from './keynotes-page/keynotes-page.component';
 import { TileComponent } from '../pages/tracks-page/tiles.component';
+
 
 @NgModule({
   imports: [
@@ -33,7 +35,9 @@ import { TileComponent } from '../pages/tracks-page/tiles.component';
     LocationPageComponent,
     VisaRequirementsPageComponent,
     TravelInformationPageComponent,
+    KeynotesPageComponent
     TileComponent
+
   ],
   exports: [
     HomePageComponent,
@@ -45,7 +49,9 @@ import { TileComponent } from '../pages/tracks-page/tiles.component';
     LocationPageComponent,
     VisaRequirementsPageComponent,
     TravelInformationPageComponent,
+    KeynotesPageComponent
     TileComponent
+
   ]
 })
 export class PagesModule { }

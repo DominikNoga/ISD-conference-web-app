@@ -1,0 +1,91 @@
+@import '../../../styles/isd-variables.scss';
+@import '../../../styles/isd-mixins.scss';
+@import '../../../pages/keynotes-page/keynotes-page.component.scss';
+
+.person {
+  max-width: $max-content-width;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  min-width: 300px;
+  height: 500px;
+  // border: 5px solid black;
+}
+.left {
+  width: 300px
+}
+.right {
+  text-align: left;
+  flex: 1;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 94%; // Dodaj to, aby kontener odpowiednio reagował na zmiany szerokościa
+  margin-left: auto;
+  margin-right:  auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .items-container {
+    flex-direction: column;
+
+  }
+  .right {
+    margin-top: 4rem;
+    margin-left: minmax(20px,3%);
+  }
+}
+
+.additional-info {
+  max-width: $max-content-width;
+}
+
+.person img {
+  max-width: auto;
+  max-height: 200px;
+  border-radius: 10%;
+}
+
+.show-info-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #ff002b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.additional-info {
+  margin-top: 10px;
+}
+
+.speaker {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 400;
+  font-family: veneer-three;
+  height: 40px;
+}
+
+.from {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  height: 30px;
+}
+
+.title2 {
+  font-family: veneer-two;
+  font-size: 1.5em;
+  font-weight: 500;
+  max-height: 100px;
+  min-height: 80px;
+}
