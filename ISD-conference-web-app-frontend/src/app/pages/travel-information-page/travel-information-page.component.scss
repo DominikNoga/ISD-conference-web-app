@@ -1,8 +1,6 @@
 @import '../../styles/isd-variables.scss';
 
-//TODO copy all hardcoded values to isd-variables.scss
-
-.location-page-content-wrapper{
+.travel-information-content-wrapper{
     padding-top: $default-gap;
     .top-text {
         font-family: $roboto;
@@ -12,7 +10,7 @@
         font-size: $font-size-huge;
         padding-top: 2*$default-gap;
     }
-    .venue-name{
+    .sub-header{
         font-family: $roboto;
         color: $black;
         width: 100%;
@@ -26,6 +24,7 @@
         width: 80%;
         float: left;
         padding-left: 20%; 
+        padding-bottom: $default-gap;
     }
     .description{
         padding-top: $default-gap;
@@ -37,18 +36,5 @@
     }
     .small-header{
         font-weight: bold;
-    }
-    .how-to-reach-text{
-        padding-bottom: $default-gap;
-    }
-    .guide-text{
-        padding-top: $default-gap;
-        padding-bottom: $default-gap;
-    }
-    .about-venue{
-        padding-bottom: 4*$default-gap;
-    }
-    .about-venue-header{
-        font-size: $font-size-very-big;
     }
 }
