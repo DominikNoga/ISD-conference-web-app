@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Track } from 'src/app/interfaces/Track';
 
 @Component({
   selector: 'isd-tracks-list-item',
@@ -6,10 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./tracks-list-item.component.scss']
 })
 export class TracksListItemComponent implements OnInit {
-  @Input() track!: {
-    order: number;
-    title: string;
-  };
+  @Input() track!: Track;
   
   constructor() { }
 

@@ -26,7 +26,6 @@ $side-nav-width: 300px;
 
             .side-nav {
                 width: $side-nav-width;
-                position: absolute;
                 height: max-content;
             }
         }
@@ -38,7 +37,7 @@ $side-nav-width: 300px;
                 @include simpleFlexLayout(column, center);
 
                 .side-nav {
-                    position: relative;
+                    position: static;
                     width: calc(100% - 4*$default-gap);
                     border-bottom: solid 3px black;
                 }
