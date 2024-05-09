@@ -1,0 +1,16 @@
+@import '../../../../styles/isd-mixins.scss';
+@import '../../../../styles/isd-variables.scss';
+
+.side-nav-wrapper {
+    font-family: $lato;
+    font-size: $font-size-slightly-bigger;
+
+    .side-nav {
+        list-style-type: disc;
+        color: black;
+
+        .item {
+            color: #0041d2;
+        }
+    }
+}

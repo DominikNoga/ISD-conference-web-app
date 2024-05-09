@@ -11,6 +11,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 })
 export class ChairsListItemComponent implements OnInit {
   @Input() chair!: Chair;
+  @Input() displayTitle = false;
   readonly ORCID_ICON = faOrcid;
   readonly LINKEDIN_ICON = faLinkedin;
   readonly EMAIL_ICON = faEnvelope;

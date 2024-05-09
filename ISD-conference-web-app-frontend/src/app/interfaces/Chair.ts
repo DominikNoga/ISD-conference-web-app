@@ -15,7 +15,7 @@ export interface Chair {
     }
 }
 
-export interface ChairCsv {
+export interface OrganizingChairCsvData {
     name: string;
     workplace_country: string;
     workplace_university: string;
@@ -26,7 +26,21 @@ export interface ChairCsv {
     links_orcid?: string;
 }
 
-export interface CommitteeMember {
+export interface TracksCommitteeCsvData {
+    id: string;
+    person_id: string;
+    "first name": string;
+    "last name": string;
+    email: string;
+    country: string;
+    affiliation: string;
+    "Web page": string;
+    role: string;
+    track_id: string;
+    "track name": string;
+}
+
+export interface ProgramCommitteeMember {
     name: string;
     workplace?: Workplace;
 }

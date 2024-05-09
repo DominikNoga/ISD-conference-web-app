@@ -1,6 +1,7 @@
 import { SideNavItem } from "src/app/interfaces/SideNav";
+import { Track } from "src/app/interfaces/Track";
 
-export const SIDE_NAV_ITEMS: SideNavItem[] = [
+export const getSideNavItems = (tracks: Track[]): SideNavItem[] => [
     {
         label: 'Organizing Committee',
         idToGo: 'organizing-committee'
@@ -8,27 +9,9 @@ export const SIDE_NAV_ITEMS: SideNavItem[] = [
     {
         label: 'Tracks',
         idToGo: 'tracks',
-        subMenu: [
-            {
-                label: 'Managing IS Development and Operations',
-                idToGo: 'track-1'
-            },
-            {
-                label: 'Information Systems Modelling',
-                idToGo: 'track-2'
-            },
-            {
-                label: 'Lean and Agile Software Development',
-                idToGo: 'track-3'
-            },
-        ]
-    },
-    {
-        label: 'Journal-First Papers',
-        idToGo: 'journal-first-papers'
-    },
-    {
-        label: 'International Steering Committee',
-        idToGo: 'international-steering-committee'
+        subMenu: tracks.map(track => ({
+            label: track.title,
+            idToGo: track.name
+        }))
     }
 ];

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Track } from 'src/app/interfaces/Track';
 
 @Component({
   selector: 'isd-full-tracks-list-item',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./full-tracks-list-item.component.scss']
 })
 export class FullTracksListItemComponent implements OnInit {
+  @Input() track!: Track;
 
   constructor() { }
 

@@ -1,0 +1,25 @@
+@import "../../../../styles/isd-mixins.scss";
+@import "../../../../styles/isd-variables.scss";
+
+.track-container {
+    .header-smaller {
+        font-size: 0.8em;
+    }
+
+    > section {
+        margin-top: $default-gap;
+        .track-chairs {
+            @include simpleFlexLayout(row);
+        }
+    
+        .program-committee {
+            padding-left: 2rem;
+            .pc-list {
+                list-style-type: disc;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    
+}
