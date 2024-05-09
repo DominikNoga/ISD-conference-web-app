@@ -2,7 +2,9 @@
 @import '../../../../styles/isd-variables.scss'; 
 
 .side-nav-item {
-    .side-nav-item {
+    .side-nav-link {
+        text-wrap: wrap;
+        word-wrap: break-word;
         &:hover {
             cursor: pointer;
             text-decoration: underline;
@@ -16,7 +18,7 @@
     .subNav {
         list-style-type: circle;
         .sub-menu-item {
-            @extend .side-nav-item;
+            @extend .side-nav-link;
             margin-left: $default-gap;
         }
     }

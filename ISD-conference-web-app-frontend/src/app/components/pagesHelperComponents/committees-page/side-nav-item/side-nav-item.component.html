@@ -1,5 +1,5 @@
 <li class="side-nav-item">
-    <span class="side-nav-item" [ngClass]="{'with-side-nav': hasSubNav()}" (click)="scrollToElement($event, navItem.idToGo)">{{navItem.label}}</span>
+    <span class="side-nav-link" [ngClass]="{'with-side-nav': hasSubNav()}" (click)="scrollToElement($event, navItem.idToGo)">{{navItem.label}}</span>
     <ul class="subNav" *ngIf="hasSubNav()">
         <li *ngFor="let subItem of navItem.subMenu" class="sub-menu-item">
             <span class="side-sub-nav-item" (click)="scrollToElement($event, subItem.idToGo)">{{ subItem.label }}</span>

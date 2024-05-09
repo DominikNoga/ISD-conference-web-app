@@ -1,26 +1,49 @@
 @import '../../styles/isd-variables.scss';
 @import '../../styles/isd-mixins.scss';
 
+$side-nav-width: 300px;
+
 .isd-committees-wrapper {
     display: grid;
     place-items: center;
+
     .isd-committees {
-        width: 90%;
+        width: min($max-content-width, 95%);
+
         .section-title {
             font-size: $font-size-big;
         }
 
         .isd-committees-content-wrapper {
             display: grid;
-            grid-template-columns: 1fr 4fr;
+            grid-template-columns: $side-nav-width 1fr;
             justify-items: baseline;
+            position: relative;
+
+            .isd-committees-content {
+                grid-column-start: 2;
+            }
 
             .side-nav {
+                width: $side-nav-width;
+                position: absolute;
                 height: max-content;
             }
         }
+    }
 
-        
+    @media screen and (max-width: 1040px) {
+        .isd-committees {
+            .isd-committees-content-wrapper {
+                @include simpleFlexLayout(column, center);
+
+                .side-nav {
+                    position: relative;
+                    width: calc(100% - 4*$default-gap);
+                    border-bottom: solid 3px black;
+                }
+            }
+        }
+
     }
 }
-
