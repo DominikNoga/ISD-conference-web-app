@@ -3,7 +3,6 @@
 
 .home-page-content-wrapper {
     padding-top: $content-gap-from-nav;
-
     .conference-topics-list {
         list-style-type: initial;
         margin-left: $default-gap*3;
@@ -34,5 +33,22 @@
                 }
             }
         }
+    }
+}
+img{
+    width: $icon-width;
+}
+.linkedin{
+    width: $icon-div-width;
+    height: $icon-div-width;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+    bottom: 10%;
+}
+
+@media screen and (max-width: $changeHomePageLayoutTreshold) {
+    .linkedin {
+        margin-bottom: 1em;
     }
 }
