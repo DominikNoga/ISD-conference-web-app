@@ -1,0 +1,6 @@
+"order","Fullprice","DiscountBool","DiscountedPrice","TicketType","TicketDescription","DiscountExpiration","AvailableUntil","Color"
+"1","500","true","400","Presenting author","for Paper, Poster, or Journal-first Paper","2023-06-14T00:00:00.000Z","2023-06-14T00:00:00.000Z","#98FF98"
+"2","300","false","300","Discounted fee for additional paper","for Paper, Poster, or Journal-first Paper","2023-06-14T00:00:00.000Z","2023-06-14T00:00:00.000Z","#B0E57C"
+"3","50","false","300","Extra page","for Paper, Poster, or Journal-first Paper","2023-06-14T00:00:00.000Z","2023-06-14T00:00:00.000Z","#ffe4e1"
+"4","400","true","300","Normal ticket","Non-presenting participant (including non-presenting authors)","2023-06-14T00:00:00.000Z","2023-06-14T00:00:00.000Z","#85A7FF"
+"5","300","true","200","Discouted ticked","Active AIS members and students Non-presenting participant (including non-presenting authors)","2023-06-14T00:00:00.000Z","2023-06-14T00:00:00.000Z","#ECB159"

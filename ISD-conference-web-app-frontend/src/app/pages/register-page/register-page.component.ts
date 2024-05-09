@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Ticket } from 'src/app/interfaces/Ticket';
-import { MOCK_TRACKS } from 'src/app/mock_data/tickets_data';
+// import { MOCK_TRACKS } from 'src/app/mock_data/tickets_data';
+import { CsvDataService } from 'src/app/services/csv-data/csv-data.service';
 import { ChangeDetectorRef } from '@angular/core';
 @Component({
   selector: 'isd-register-page',
@@ -8,44 +9,17 @@ import { ChangeDetectorRef } from '@angular/core';
   styleUrls: ['./register-page.component.scss']
 })
 export class RegisterPageComponent implements OnInit {
-  tickets!: {
-    order: number,
-    TicketType: string,
-    Fullprice: number,
-    DiscountBool: boolean;
-    DiscountedPrice: number,
-    TicketDescription: string,
-    DiscountExpiration: Date,
-    AvailableUntil: Date,
-    Color: string
-  }[];
-  
-  constructor(private cdr: ChangeDetectorRef) { }
+  tickets!: Ticket[];
 
-  ngOnInit(): void {
-    this.tickets =  MOCK_TRACKS.map((ticket: Ticket) => (
-        {
-          TicketType: ticket.TicketType,
-          order: ticket.order,
-          Fullprice: ticket.Fullprice,
-          DiscountBool: ticket.DiscountBool,
-          DiscountedPrice: ticket.DiscountedPrice,
-          TicketDescription: ticket.TicketDescription,
-          DiscountExpiration: ticket.DiscountExpiration,
-          AvailableUntil: ticket.AvailableUntil,
-          Color: ticket.Color
-        }
-      )
-    );
+  constructor(private cdr: ChangeDetectorRef, private csvDataService: CsvDataService) { }
+
+  ngOnInit(): void 
+  {
+    this.csvDataService.getTicketsData().subscribe(tickets => {
+      this.tickets = tickets;
+      // console.log("Tickets:", this.tickets);
+    })
   }
-  // TicketSelected($event: [number, number]): void 
-  // {
-  //   this.id = $event[0];
-  //   this.value = $event[1];
-  // }
-
-
-  //ticketValues: Map<number, number> = new Map();
   ticketValues: Map<number, { id: number, value: number, name: string }> = new Map();
 
   TicketSelected(eventData: { id: number, value: number, name: string }): void 

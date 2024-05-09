@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./call-for-papers-page.component.scss']
 })
 export class CallForPapersPageComponent implements OnInit {
+  readonly PADDING_BETWEEN_SECTIONS = '1rem';
 
   constructor() { }
 

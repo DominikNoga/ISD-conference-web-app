@@ -21,6 +21,13 @@ export const NAV_ITEMS: NavItem[] = [
     },
     {
         item: {
+            route: '/keynotes',
+            label: 'Keynotes',
+            isActive: false
+        }
+    },
+    {
+        item: {
             route: '/register',
             label: 'Register',
             isActive: false
