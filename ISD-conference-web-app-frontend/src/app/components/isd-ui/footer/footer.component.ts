@@ -17,4 +17,13 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToElement(event: Event, elementId: string): void {
+    event.preventDefault();
+    const element = document.getElementById(elementId);
+    console.log(element)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }

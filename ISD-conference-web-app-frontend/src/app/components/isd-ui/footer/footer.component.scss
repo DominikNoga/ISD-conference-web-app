@@ -79,6 +79,7 @@
                 @include simpleFlexLayout($direction: row, $align-items: center, $gap: 0.5*$default-gap);
                 &:hover {
                     color: white;
+                    cursor: pointer;
                 }
             }
         }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { YEAR } from 'src/app/constants/constants';
+import { Track } from 'src/app/interfaces/Track';
+import { CsvDataService } from 'src/app/services/csv-data/csv-data.service';
 
 @Component({
   selector: 'isd-tracks-list',
@@ -7,17 +9,15 @@ import { YEAR } from 'src/app/constants/constants';
   styleUrls: ['./tracks-list.component.scss']
 })
 export class TracksListComponent implements OnInit {
-  tracks!: {
-    title: string,
-    order: number
-  }[];
+  tracks!: Track[];
   readonly YEAR = YEAR;
 
-  constructor() { }
+  constructor(private csvDataService: CsvDataService) { }
 
   ngOnInit(): void {
-    // TODO: get tracks from csv
-    this.tracks =  []
+    this.csvDataService.getTracksCsvData().subscribe(tracks => {
+      this.tracks = tracks;
+    });
   }
 
 }

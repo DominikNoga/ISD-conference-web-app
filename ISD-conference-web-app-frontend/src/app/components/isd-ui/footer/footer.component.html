@@ -33,7 +33,7 @@
     <div class="bottom-footer-wrapper">
         <section class="bottom-footer">
             <span class="copyright">&copy; ISD 2025 City, Country</span>
-            <a href="#top" class="backToTop"><span>Back to top</span><fa-icon [icon]="upIcon"></fa-icon></a>
+            <span (click)="scrollToElement($event, 'top-of-page')" class="backToTop"><span>Back to top</span><fa-icon [icon]="upIcon"></fa-icon></span>
         </section>
     </div>
 </footer>

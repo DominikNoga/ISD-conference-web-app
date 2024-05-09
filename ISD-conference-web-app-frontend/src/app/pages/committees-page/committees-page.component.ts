@@ -7,6 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class CommitteesPageComponent implements OnInit {
   readonly SCROLL_TRESHOLD = 150;
+  readonly SCREEN_WIDTH_TRESHOLD = 1040;
   isFixedPosition = false;
   constructor() { }
 
@@ -15,7 +16,7 @@ export class CommitteesPageComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    if (window.scrollY > this.SCROLL_TRESHOLD) {
+    if (window.scrollY > this.SCROLL_TRESHOLD && innerWidth > this.SCREEN_WIDTH_TRESHOLD) {
       this.isFixedPosition = true;
     } else {
       this.isFixedPosition = false;
