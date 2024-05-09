@@ -1,11 +1,21 @@
 @import '../../../styles/isd-variables.scss';
 @import '../../../styles/isd-mixins.scss';
 
-.isd-header {
+
+.wrapper{
+
+width:100%; //stretch the header so the bar looks okay when scrolling up
+position:fixed;
+z-index: 1; //display header above anything else
+transition: 0.3s ease;
+visibility: hidden; //by default, the header is invisible, the .visible class handles making it visible
+top: -100px; 
+background-color: $white-darker;
+
+.isd-header {  
     $logo-size: 70px;
     $padding-value: 4em;
     @include simpleFlexLayout($direction: row, $gap: 0);
-    position: relative;
 
     .logo {
         @include simpleFlexLayout($direction: row, $gap: 0);
@@ -44,3 +54,10 @@
     }
     
 }
+}
+
+.visible{
+    visibility:visible;
+    top: 0px 
+}
+

@@ -1,3 +1,4 @@
+<div class = "wrapper" [ngClass]="{'visible': isMenuVisible}" (window:scroll)="onScroll($event)">
 <header class="isd-header" id="top">
     <div class="logo">
         <div class="rectangle"></div>
@@ -14,3 +15,4 @@
     </div>
     <isd-nav></isd-nav>
 </header>
+</div>
