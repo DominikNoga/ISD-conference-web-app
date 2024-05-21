@@ -2,47 +2,9 @@
 <div class="container">
   <div class="side-bar-organizer">Please read the fee structure and registration details carefully before proceeding to registration. Double-check that your e-mail is correct. The bank <b> account number</b> to which the fee is to be paid shall be <b>included</b> in the confirmation of registration.</div>  
   <div class="checkout mt-2">
-
-
-    <!-- <div class="number-of-tickets" *ngIf="ticketValues.size > 0">
-      <br>
-
-      <span *ngFor="let ticket of ticketValues.entries()" class="ticket-type">
-        {{ ticket[1].value }}x {{ ticket[1].name }}:
-        <strong class="price">{{ calculatePrice(ticket[1]) | currency:'EUR':true:'1.2-2' }}</strong>
-      </span>
-    
-      <hr class="separator">
-      <span class="total-price">
-        Total:
-        <strong class="total">{{ calculateTotalPrice() | currency:'EUR':true:'1.2-2' }}</strong>
-      </span>
-      <br>
-      <isd-addbutton></isd-addbutton>
-    </div> -->
-    <isd-form></isd-form>
-    
-    
+  <isd-form></isd-form>
   </div>
   <div class="top">
     <isd-accordion></isd-accordion>
-
-
-
-    <!-- <div class="header"><p>About the organizors</p></div> -->
-    <!-- <div class="ticket-grid"> -->
-      <!-- <isd-ticket (ticketSelected)="TicketSelected($event)" *ngFor="let ticket of tickets" [ticket]="ticket"></isd-ticket> -->
-    <!-- </div> -->
-    
-    
-    <!-- <div class="ad">
-      <div class="side_bar_about">
-        <isd-about-the-tickets></isd-about-the-tickets>
-      </div>
-      <div class="side-bar-organizer">
-        <isd-side-bar-organizer></isd-side-bar-organizer>
-      </div>
-    </div> -->
   </div>
-
 </div>
