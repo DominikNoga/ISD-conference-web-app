@@ -1,0 +1,22 @@
+.fig table {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table th{
+  height: 60px; 
+  vertical-align: middle;
+
+}
+.custom-table-row
+{
+  color: #fff;
+  background: #6c7ae0;
+
+}
+.table-primary-custom th,
+.table-primary-custom td {
+  color: #fff;
+  background: #6c7ae0;
+  border: #343a40;
+}

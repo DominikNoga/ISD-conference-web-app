@@ -8,12 +8,18 @@
     margin-top: 50px;
     margin-bottom: 50px;
     // background-color: rgb(230, 230, 230);
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
 .top
 {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0px; 
+    // display: flex;
+    // flex-direction: column-reverse;
+    // gap: 0px; 
+    // justify-content: space-between;
+    margin-top: 10px;
+
 }
 .side_bar_about, .side-bar-organizer
 {
@@ -25,6 +31,7 @@
 }
 .ad
 {
+  margin-top: 18px;
     margin-left: 20px;
     margin-right: 20px;
     min-width: 230px;
@@ -55,9 +62,10 @@
 {
     background-color: #55b96a;
     // min-width: 600px;
-    min-height: 200px;
+    //min-height: 60px;
     width: $content-width -400;
     max-width: $max-content-width;
+    border-radius: var(0.375em);
 }
 .no-padding-top
 {
@@ -99,4 +107,12 @@
   .total {
     font-weight: bold;
   }
+  .AIS
+  {
+    height: 300px;
+    margin: 30px 0 30px 0;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+  }
+
   
