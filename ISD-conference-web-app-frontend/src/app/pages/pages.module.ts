@@ -35,7 +35,7 @@ import { TileComponent } from '../pages/tracks-page/tiles.component';
     LocationPageComponent,
     VisaRequirementsPageComponent,
     TravelInformationPageComponent,
-    KeynotesPageComponent
+    KeynotesPageComponent,
     TileComponent
 
   ],
@@ -49,7 +49,7 @@ import { TileComponent } from '../pages/tracks-page/tiles.component';
     LocationPageComponent,
     VisaRequirementsPageComponent,
     TravelInformationPageComponent,
-    KeynotesPageComponent
+    KeynotesPageComponent,
     TileComponent
 
   ]
