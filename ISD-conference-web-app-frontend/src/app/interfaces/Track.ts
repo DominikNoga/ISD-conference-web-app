@@ -1,10 +1,14 @@
-import { Chair, CommitteeMember } from "./Chair";
+import { Chair, ProgramCommitteeMember } from "./Chair";
 
 export interface Track {
-    order: number;
-    topics: string[];
-    description: string;
+    name: string;
     title: string;
     chairs: Chair[];
-    committee: CommitteeMember[]
+    committee: ProgramCommitteeMember[]
+}
+
+export interface TrackCsvData {
+    id: number;
+    name: string;
+    "long name": string;
 }

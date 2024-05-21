@@ -14,6 +14,7 @@ $lato: 'Lato', sans-serif;
 $roboto-header: 'Roboto Mono', monospace;
 
 // font-sizes
+$font-size-extra-huge: 2.5em;
 $font-size-huge: 2em;
 $font-size-very-big: 1.75em;
 $font-size-bigger: 1.5em;
@@ -28,5 +29,6 @@ $default-gap: 1rem;
 $content-gap-from-nav: 5rem;
 $max-content-width: 1200px;
 $changeHomePageLayoutTreshold: 1100px;
-$content-width: min($max-content-width, 95%)
-
+$content-width: min($max-content-width, 95%);
+$icon-width: 3rem;
+$icon-div-width: 3rem;

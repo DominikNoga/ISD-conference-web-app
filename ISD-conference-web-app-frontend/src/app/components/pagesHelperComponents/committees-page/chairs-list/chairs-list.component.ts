@@ -14,7 +14,7 @@ export class ChairsListComponent implements OnInit {
   constructor(private csvDataService: CsvDataService) { }
 
   ngOnInit(): void {
-    this.csvDataService.getCommittiesData().subscribe(chairs => {
+    this.csvDataService.getOrganizingCommitteeData().subscribe(chairs => {
       this.chairs = chairs;
     })
   }

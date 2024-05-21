@@ -1,4 +1,5 @@
-<header class="isd-header" id="top">
+<div class = "wrapper" [ngClass]="{'visible': isMenuVisible}" (window:scroll)="onScroll($event)">
+<header class="isd-header" id="top-header">
     <div class="logo">
         <div class="rectangle"></div>
         <div class="logo-container">
@@ -7,10 +8,11 @@
             </a>
         </div>
         <div class="burger-wrapper" *ngIf="displayBurgerNav()">
-            <isd-burger></isd-burger>
+            <isd-burger animationClass="animationClass" (onBurgerClick)="toggleBurgerNav()"></isd-burger>
         </div>
         <div class="triangle">
         </div>
     </div>
     <isd-nav></isd-nav>
 </header>
+</div>

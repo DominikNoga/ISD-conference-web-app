@@ -3,7 +3,7 @@
 
 .track-item-wrapper {
     font-size: $font-size-big;
-    font-weight: 500    ;
+    font-weight: 500;
     height: 8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: $white;
@@ -13,7 +13,5 @@
     place-items: center;
     @include addSimpleTransition($property: box-shadow, $time: .5s, $before-transition-value: 0 0 6px rgba(black, .2), $after-transition-value: 0 0 15px rgba(black, .3));
 
-    .track-item-title {
-        
-    }
+    .track-item-title {}
 }

@@ -1,5 +1,5 @@
 <div class="chair-list-item-wrapper">
-    <div class="chair-function">
+    <div *ngIf="displayTitle" class="chair-function">
         {{ chair.function }}
     </div>
     <div class="chairs-list-item">
@@ -19,7 +19,7 @@
                 <fa-icon [icon]="EMAIL_ICON"></fa-icon>
             </span>
             <span class="chair-social-link" title="See linkedin profile">
-                <a href="{{ chair.links.linkedin }}">
+                <a href="{{ chair.links.linkedin }}" target="_blank">
                     <fa-icon [icon]="LINKEDIN_ICON"></fa-icon>
                 </a>
             </span>

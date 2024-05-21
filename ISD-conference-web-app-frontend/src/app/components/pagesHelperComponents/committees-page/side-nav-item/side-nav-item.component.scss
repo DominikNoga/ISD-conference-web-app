@@ -1,0 +1,25 @@
+@import '../../../../styles/isd-mixins.scss';
+@import '../../../../styles/isd-variables.scss'; 
+
+.side-nav-item {
+    .side-nav-link {
+        text-wrap: wrap;
+        word-wrap: break-word;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    .with-side-nav {
+        color: black;
+    }
+
+    .subNav {
+        list-style-type: circle;
+        .sub-menu-item {
+            @extend .side-nav-link;
+            margin-left: $default-gap;
+        }
+    }
+}
