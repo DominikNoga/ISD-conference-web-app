@@ -1,56 +1,93 @@
 @import '../../styles/isd-variables.scss';
 
-//TODO copy all hardcoded values to isd-variables.scss
+.video-header {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
 
-.location-page-content-wrapper{
-    padding-top: $default-gap;
-    .top-text {
-        font-family: $roboto;
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .custom-header {
+            font-family: 'veneer-three', sans-serif !important;
+            font-weight: 400 !important;
+            font-style: normal !important;
+            font-size: 4em;
+            text-transform: none;
+            color: $white;
+            text-align: center;
+            padding-top: 5rem;
+        }
+    }
+}
+
+.venue-info,
+.how-to-reach,
+.about-venue {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+    h2, h3 {
+        font-family: $primary-font;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-family: $lato;
+        margin-bottom: 0.5rem;
         color: $black;
+    }
+
+    a {
+        color: $primary-dark-bg-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.map-container {
+    iframe {
         width: 100%;
-        text-align: center;
-        font-size: $font-size-huge;
-        padding-top: 2*$default-gap;
+        border: 0;
+        border-radius: 0.5rem;
+        height: 450px;
     }
-    .venue-name{
-        font-family: $roboto;
-        color: $black;
-        width: 100%;
-        text-align: left;
-        font-size: $font-size-very-big; 
-        padding-top: $default-gap;
+}
+
+.accordion-button {
+    background-color: $primary-darker-bg-color;
+    color: $white;
+
+    &:not(.collapsed) {
+        color: $white;
+        background-color: #800080;
     }
-    .content{
-        font-family: $roboto;
-        text-align: left;
-        width: 80%;
-        float: left;
-        padding-left: 20%; 
-    }
-    .description{
-        padding-top: $default-gap;
-    }
-    iframe{
-        width: 100%;
-        padding-top: 2*$default-gap;
-        padding-bottom: 2*$default-gap;
-    }
-    .small-header{
-        font-weight: bold;
-    }
-    .how-to-reach-text{
-        padding-bottom: $default-gap;
-    }
-    .guide-text{
-        padding-top: $default-gap;
-        padding-bottom: $default-gap;
-        width: 50%;
-        margin: auto;
-    }
-    .about-venue{
-        padding-bottom: 4*$default-gap;
-    }
-    .about-venue-header{
-        font-size: $font-size-very-big;
-    }
+}
+
+.accordion-body {
+    font-family: $lato;
+    color: $black;
 }
