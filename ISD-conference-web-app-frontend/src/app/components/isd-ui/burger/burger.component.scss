@@ -14,6 +14,7 @@ $burger-gap: .5rem;
     @include simpleFlexLayout($gap: $burger-gap);
     @include hoverEffect();
     z-index: 1000;
+    
     .bar {
         @include basicBoxShadow(.5rem, .2);
         width: 2rem;

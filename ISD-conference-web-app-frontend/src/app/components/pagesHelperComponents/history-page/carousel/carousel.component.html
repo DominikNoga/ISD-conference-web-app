@@ -1,5 +1,5 @@
 <div *ngIf="events && events.length > 0" class="carousel-container">
-    <div class="history-tile fade" *ngFor="let event of events; let i=index " [ngClass]="{'tile-active':selectedIndex===i}">
+    <div class="history-tile fade2" *ngFor="let event of events; let i=index " [ngClass]="{'tile-active':selectedIndex===i}">
         <h2>{{ event.title }}</h2>
         <p class="event-paragraph" *ngIf="event.topic"><fa-icon [icon]="lightbulbIcon"></fa-icon><span>{{ event.topic }}</span></p>
         <p class="event-paragraph"><fa-icon [icon]="locationIcon"></fa-icon> <span>{{ event.location }}</span></p>
