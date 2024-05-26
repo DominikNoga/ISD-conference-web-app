@@ -37,8 +37,6 @@ background-color: $white-darker;
         }
     }
 
-
-    
     .burger-wrapper {
         background-color: $primary-bg-color;
         display: grid;
@@ -48,7 +46,7 @@ background-color: $white-darker;
     }
 
     .triangle {
-        $triangle-size: calc($logo-size + 3rem);
+        $triangle-size: calc($logo-size + 2rem);
         width: 0; 
         height: 0; 
         border-left: $triangle-size solid  $primary-bg-color; 
