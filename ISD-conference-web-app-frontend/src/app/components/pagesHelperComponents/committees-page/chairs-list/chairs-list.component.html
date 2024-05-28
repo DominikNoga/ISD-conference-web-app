@@ -1,3 +1,19 @@
 <div class="chairs-list" id="{{ listId }}">
-    <isd-chairs-list-item *ngFor="let chair of chairs" [chair]="chair" [displayTitle]="true"></isd-chairs-list-item>
+    <section class="sub-list">
+        <isd-chairs-list-item
+            *ngFor="let chair of chairs" 
+            [chair]="chair" 
+            [displayTitle]="true">
+        </isd-chairs-list-item>
+    </section>
+    <isd-section-header>
+        Local Arrangement Co-Chairs
+    </isd-section-header>
+    <section class="sub-list">
+        <isd-chairs-list-item
+            *ngFor="let chair of localCoChairs" 
+            [chair]="chair">
+
+        </isd-chairs-list-item>
+    </section>
 </div>

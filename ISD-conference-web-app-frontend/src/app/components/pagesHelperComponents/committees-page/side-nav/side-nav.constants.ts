@@ -10,7 +10,7 @@ export const getSideNavItems = (tracks: Track[]): SideNavItem[] => [
         label: 'Tracks',
         idToGo: 'tracks',
         subMenu: tracks.map(track => ({
-            label: track.title,
+            label: `${track.name}:  ${track.title}`,
             idToGo: track.name
         }))
     }

@@ -1,8 +1,8 @@
 name,workplace_country,workplace_university,function,photo,links_email,links_linkedin,links_orcid
-Bartosz Marcinkowski,Poland,University of Gdańsk,General Chair,assets/mock_chair_img/Bartosz_Marcinkowski.jpg,,,,
-Adam Przybyłek,Poland,Gdańsk University of Technology,Program Chair,assets/mock_chair_img/Adam_Przybylek.jpg,,,,
-Muhammad Ovais Ahmad,Sweden,Karlstad University,Publicity Chair,assets/mock_chair_img/Muhammad Ovais_Ahmad.jpg,,,,
-Aleksander Jarzębowicz,Poland,Gdańsk University of Technology,Proceedings Chair,assets/mock_chair_img/Aleksander_Jarzebowicz.jpg,,,,
+Bartosz Marcinkowski,Poland,University of Gdańsk,General Chair,assets/mock_chair_img/Bartosz_Marcinkowski.jpg,,https://www.linkedin.com/in/bartosz-marcinkowski-905a222/,https://orcid.org/0000-0002-7230-2978,
+Adam Przybyłek,Poland,Gdańsk University of Technology,Program Chair,assets/mock_chair_img/Adam_Przybylek.jpg,,https://www.linkedin.com/in/adampap/,https://orcid.org/0000-0002-8231-709X,
+Yen Ying Ng,Poland,Nicolaus Copernicus University,Publicity Chair,assets/mock_chair_img/Yen Ying_Ng.jpg,,https://www.linkedin.com/in/yen-ying-ng/,https://orcid.org/0000-0001-5388-2025,
+Aleksander Jarzębowicz,Poland,Gdańsk University of Technology,Proceedings Chair,assets/mock_chair_img/Aleksander_Jarzebowicz.jpg,,https://www.linkedin.com/in/aleksander-jarz%C4%99bowicz-124233269/,https://orcid.org/0000-0003-3181-4210,
 Jacek Maślankowski,Poland,University of Gdańsk,Local Arrangement Co-Chair,assets/mock_chair_img/Jacek_Maślankowski.jpg,,,,
 Marek Bednarczyk,Poland,Polish-Japanese Academy of Information Technology,Local Arrangement Co-Chair,assets/mock_chair_img/Marek_Bednarczyk.jpg,,,,
 Anna Węsierska,Poland,University of Gdańsk,Conference Office,assets/mock_chair_img/Anna_Wesierska.jpg,,,

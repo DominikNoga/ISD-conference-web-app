@@ -15,16 +15,16 @@
             </span>
         </div>
         <div class="chair-socials">
-            <span class="chair-social-link" title="Send email">
+            <span *ngIf="chair.links.email" class="chair-social-link" title="Send email">
                 <fa-icon [icon]="EMAIL_ICON"></fa-icon>
             </span>
-            <span class="chair-social-link" title="See linkedin profile">
+            <span *ngIf="chair.links.linkedin" class="chair-social-link" title="See linkedin profile">
                 <a href="{{ chair.links.linkedin }}" target="_blank">
                     <fa-icon [icon]="LINKEDIN_ICON"></fa-icon>
                 </a>
             </span>
-            <span class="chair-orcid-link" title="See orcid profile">
-                <a href="{{ chair.links.orcid }}">
+            <span *ngIf="chair.links.orcid" class="chair-orcid-link" title="See orcid profile">
+                <a target="_blank" href="{{ chair.links.orcid }}">
                     <fa-icon [icon]="ORCID_ICON"></fa-icon>
                 </a>
             </span>

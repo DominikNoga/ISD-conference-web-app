@@ -1,7 +1,12 @@
 @import '../../../../styles/isd-variables.scss';
+@import '../../../../styles/isd-mixins.scss';
 
 .chairs-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: $default-gap;
+    @include simpleFlexLayout(column);
+
+    .sub-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $default-gap;
+    }
 }
