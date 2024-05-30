@@ -105,10 +105,9 @@ export class CsvDataService {
           university: csvItem.affiliation
         },
         function: csvItem.role,
-        photo: `assets/mock_chair_img/${csvItem['first name']}_${csvItem['last name']}.jpg`,
+        photo: `${this.ASSETS_IMG_PREFIX}/${csvItem['first name']}_${csvItem['last name']}.jpg`,
         links: {
           email: csvItem.email || '',
-          linkedin: csvItem['Web page'] || '',
         }
       }));
   }

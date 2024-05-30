@@ -16,7 +16,9 @@
         </div>
         <div class="chair-socials">
             <span *ngIf="chair.links.email" class="chair-social-link" title="Send email">
-                <fa-icon [icon]="EMAIL_ICON"></fa-icon>
+                <a href="mailto:{{chair.links.email}}">
+                    <fa-icon [icon]="EMAIL_ICON"></fa-icon>
+                </a>
             </span>
             <span *ngIf="chair.links.linkedin" class="chair-social-link" title="See linkedin profile">
                 <a href="{{ chair.links.linkedin }}" target="_blank">

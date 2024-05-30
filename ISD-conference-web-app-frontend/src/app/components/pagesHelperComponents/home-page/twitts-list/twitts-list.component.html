@@ -1,6 +1,6 @@
 <div class="twitts-list-wrapper">
     <header class="twitts-list-header" (click)="goToTwitter()">
-        <a target="_blank" [href]="LINK_TO_ISD_TWITTER">Tweets from @isdconf</a>
+        <a target="_blank" [href]="LINK_TO_ISD_TWITTER">Tweets from &#64;isdconf</a>
     </header>
     <div class="twitts-list-content">
         <div class="twitter-icon">
@@ -16,6 +16,8 @@
                 </span>
             </div>
         </div>
-        <button class="see-twitts-btn">View on Twitter</button>
+        <a class="see-twitts-btn" target="_blank" [href]="LINK_TO_ISD_TWITTER">
+            View on Twitter
+        </a>
     </div>
 </div>
