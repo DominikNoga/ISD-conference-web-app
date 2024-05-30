@@ -9,15 +9,15 @@ import { CsvDataService } from 'src/app/services/csv-data/csv-data.service';
 })
 export class ChairsListComponent implements OnInit {
   chairs!: Chair[];
-  localCoChairs!: Chair[];
+  webChair!: Chair;
   @Input() listId!: string;
   
   constructor(private csvDataService: CsvDataService) { }
 
   ngOnInit(): void {
     this.csvDataService.getOrganizingCommitteeData().subscribe(chairs => {
-      this.chairs = chairs.filter(chair => chair.function !== 'Local Arrangement Co-Chair');
-      this.localCoChairs = chairs.filter(chair => chair.function === 'Local Arrangement Co-Chair');
+      this.chairs = chairs.filter(chair => chair.function !== 'Web Chair' && chair.function !== 'Steering committee member');
+      this.webChair = chairs.find(chair => chair.function === 'Web Chair')!;
     })
   }
 

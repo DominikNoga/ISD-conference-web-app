@@ -13,5 +13,9 @@ export const getSideNavItems = (tracks: Track[]): SideNavItem[] => [
             label: `${track.name}:  ${track.title}`,
             idToGo: track.name
         }))
+    },
+    {
+        label: 'International Steering Committee',
+        idToGo: 'internationalSteeringCommittee'
     }
 ];

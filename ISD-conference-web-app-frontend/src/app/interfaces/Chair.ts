@@ -17,10 +17,10 @@ export interface Chair {
 
 export interface OrganizingChairCsvData {
     name: string;
+    surname: string;
     workplace_country: string;
     workplace_university: string;
     function: string;
-    photo: string;
     links_email: string;
     links_linkedin?: string;
     links_orcid?: string;

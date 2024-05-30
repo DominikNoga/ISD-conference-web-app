@@ -11,6 +11,7 @@ import { FullTracksListComponent } from './full-tracks-list/full-tracks-list.com
 import { FullTracksListItemComponent } from './full-tracks-list-item/full-tracks-list-item.component';
 import { SideNavItemComponent } from './side-nav-item/side-nav-item.component';
 import { HttpClientModule } from "@angular/common/http";
+import { SteeringCommitteeComponent } from "./steering-committee/steering-committee.component";
 
 
 @NgModule({
@@ -20,12 +21,14 @@ import { HttpClientModule } from "@angular/common/http";
         ChairsListItemComponent,
         FullTracksListComponent,
         FullTracksListItemComponent,
-        SideNavItemComponent
+        SideNavItemComponent,
+        SteeringCommitteeComponent
     ],
     exports: [
         SideNavComponent,
         ChairsListComponent,
         FullTracksListComponent,
+        SteeringCommitteeComponent
     ],
     imports: [
         CommonModule,

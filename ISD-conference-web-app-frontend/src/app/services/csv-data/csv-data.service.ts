@@ -11,6 +11,7 @@ import { keynote } from 'src/app/interfaces/keynote';import { Track, TrackCsvDat
   providedIn: 'root'
 })
 export class CsvDataService {
+  readonly ASSETS_IMG_PREFIX = 'assets/mock_chair_img';
 
   constructor(private http: HttpClient) { }
 
@@ -35,13 +36,13 @@ export class CsvDataService {
 
   mapCsvDataToOrganizingCommittee(csvData: OrganizingChairCsvData[]): Chair[] {
     return csvData.map(csvItem => ({
-      name: csvItem.name,
+      name: `${csvItem.name} ${csvItem.surname}`,
       workplace: {
         country: csvItem.workplace_country,
         university: csvItem.workplace_university
       },
       function: csvItem.function,
-      photo: csvItem.photo,
+      photo: `${this.ASSETS_IMG_PREFIX}/${csvItem.name}_${csvItem.surname}.jpg`,
       links: {
         email: csvItem.links_email || '',
         linkedin: csvItem.links_linkedin || '',

@@ -51,7 +51,6 @@ import { TileComponent } from '../pages/tracks-page/tiles.component';
     TravelInformationPageComponent,
     KeynotesPageComponent,
     TileComponent
-
   ]
 })
 export class PagesModule { }

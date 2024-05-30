@@ -37,7 +37,7 @@
         }
 
         .chair-socials {
-            @include simpleFlexLayout($gap: 0);
+            @include simpleFlexLayout($align-items: center, $gap: 0);
             .chair-social-link {
                 font-size: $font-size-huge;
                 @include addSimpleTransition($property: color, $time: .3s, $before-transition-value: #0041d2, $after-transition-value: #073497);

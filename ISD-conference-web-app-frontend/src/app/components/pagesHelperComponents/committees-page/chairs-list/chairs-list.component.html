@@ -6,14 +6,10 @@
             [displayTitle]="true">
         </isd-chairs-list-item>
     </section>
-    <isd-section-header>
-        Local Arrangement Co-Chairs
-    </isd-section-header>
-    <section class="sub-list">
+    <section class="web-chair">
         <isd-chairs-list-item
-            *ngFor="let chair of localCoChairs" 
-            [chair]="chair">
-
+            [chair]="webChair"
+            [displayTitle]="true">
         </isd-chairs-list-item>
     </section>
 </div>
