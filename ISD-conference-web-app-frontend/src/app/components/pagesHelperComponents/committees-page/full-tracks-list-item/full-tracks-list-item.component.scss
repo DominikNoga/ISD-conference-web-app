@@ -6,14 +6,18 @@
         font-size: 0.8em;
     }
 
-    > section {
+    >section {
         margin-top: $default-gap;
+
         .track-chairs {
-            @include simpleFlexLayout(row);
+            display: grid;
+            column-gap: $default-gap;
+            grid-template-columns: 1fr 1fr;
         }
-    
+
         .program-committee {
             padding-left: 2rem;
+
             .pc-list {
                 list-style-type: disc;
                 padding: 0;
@@ -21,5 +25,5 @@
             }
         }
     }
-    
+
 }

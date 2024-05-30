@@ -20,5 +20,4 @@ export class ChairsListItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

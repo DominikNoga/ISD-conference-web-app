@@ -57,6 +57,7 @@ $border: 1px solid rgba(0, 0, 0, 0.3);
             font-weight: bold;
             border-radius: 2rem;
             padding: .7rem 1rem;
+            text-align: center;
             @include addOpacityTransition();
         }
     }

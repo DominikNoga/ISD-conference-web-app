@@ -1,3 +1,15 @@
 <div class="chairs-list" id="{{ listId }}">
-    <isd-chairs-list-item *ngFor="let chair of chairs" [chair]="chair" [displayTitle]="true"></isd-chairs-list-item>
+    <section class="sub-list">
+        <isd-chairs-list-item
+            *ngFor="let chair of chairs" 
+            [chair]="chair" 
+            [displayTitle]="true">
+        </isd-chairs-list-item>
+    </section>
+    <section class="web-chair">
+        <isd-chairs-list-item
+            [chair]="webChair"
+            [displayTitle]="true">
+        </isd-chairs-list-item>
+    </section>
 </div>
