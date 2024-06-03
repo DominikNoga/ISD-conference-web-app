@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CsvDataService } from 'src/app/services/csv-data/csv-data.service';
 
 @Component({
   selector: 'isd-call-for-papers-page',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CallForPapersPageComponent implements OnInit {
   readonly PADDING_BETWEEN_SECTIONS = '1rem';
+  tracks: string[] = [];
 
-  constructor() { }
+  constructor(private csvDataService: CsvDataService) {}
 
   ngOnInit(): void {
+    this.csvDataService.getTracksCsvData().subscribe(tracksData => {
+      this.tracks = tracksData.map(track => track['title']);
+    });
   }
-
 }

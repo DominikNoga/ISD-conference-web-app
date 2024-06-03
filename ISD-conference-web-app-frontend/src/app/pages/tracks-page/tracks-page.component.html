@@ -4,9 +4,10 @@
   <div *ngFor="let tile of tiles">
     <div class="tile-container">
       <div class="tile-wrapper">
-        <app-tile *ngFor="let tile of tiles" [title]="tile.title" [paragraphs]="tile.paragraphs" [topics]="tile.topics"
+        <app-tile [title]="tile.title" [paragraphs]="tile.paragraphs" [topics]="tile.topics"
           [chairs]="tile.chairs"></app-tile>
       </div>
     </div>
   </div>
+  <br><br>
 </div>

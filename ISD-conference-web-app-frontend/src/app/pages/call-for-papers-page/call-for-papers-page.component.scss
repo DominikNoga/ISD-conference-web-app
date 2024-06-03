@@ -16,6 +16,7 @@
         background-color: black;
         height: 2px;
         border: none;
+        margin: 0 auto; /* Center the tile horizontally */
     }
 
     .call-for-papers-link {
@@ -27,5 +28,6 @@
 
     ul {
         list-style-type: disc;
+        padding-left: 20px;
       }
 }
