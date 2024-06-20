@@ -1,4 +1,9 @@
 @import '../../styles/isd-variables.scss';
+@font-face {
+    font-family:"veneer-two";
+    src:url("https://use.typekit.net/af/ae874d/0000000000000000774ba0e4/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/ae874d/0000000000000000774ba0e4/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/ae874d/0000000000000000774ba0e4/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("opentype");
+    font-display:block;font-style:normal;font-weight:400;font-stretch:normal;
+    }
 
 .video-header {
     position: relative;
@@ -26,14 +31,16 @@
         align-items: center;
 
         .custom-header {
-            font-family: 'veneer-three', sans-serif !important;
-            font-weight: 400 !important;
-            font-style: normal !important;
+            //font-family: 'veneer-two', 'Poppins' !important;
+            font-weight: 400;
+            font-style: normal;
             font-size: 4em;
             text-transform: none;
             color: $white;
             text-align: center;
             padding-top: 5rem;
+
+            font-family: "veneer-two", 'Poppins' !important;
         }
     }
 }
